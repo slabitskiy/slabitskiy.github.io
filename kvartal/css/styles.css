@@ -12,7 +12,12 @@
 	-o-webkit-transition: all 0.3s ease;
 	-moz--webkit-transition: all 0.3s ease;*/
 }
-
+.wrap-gallery{
+	max-width: 1058px;
+    min-width: 300px;
+    padding: 0 10px;
+    margin: auto;
+}
 html, body{
 	height: 100%;
 }
@@ -290,13 +295,24 @@ header .menu-2{
 	line-height: 43px;
 	background: #567d84;
 	margin: 0 0 8px 0;
+    display: table;
+    width: 86.6%;
+    padding: 0px 6.8%;
 }
 header .menu-2 a{
 	color: #fff;
 	font-size: 18.75px;
 	border-left: 1.5px solid #447780;
 	border-right: 1.5px solid #447780;
-	padding: 0 30px;
+	/*padding: 0 30px;*/
+	display: table-cell;
+	width: 14%;
+}
+header .menu-2 a:first-child{
+	width: 28%;
+}
+header .menu-2 a:nth-child(3){
+	width: 28%;
 }
 header .menu-2 a:first-child{
 	border-left: 3px solid #447780;
@@ -1235,6 +1251,179 @@ footer ul li{
 .content-bottom{
 	margin-top: -8px;
 }
+/*gallery*/
+
+.gallery .gallery-img{
+	margin-bottom: 30px;
+	float: left;
+	width: 700px;
+	height: 445px;
+	position: relative;
+	margin-top: 30px;
+}
+.gallery .gallery-img .img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.gallery .gallery-img .img img{
+	width: 100%;
+	height: 100%;
+}
+.gallery .gallery-nav{
+	position: absolute;
+	right: 5px;
+	bottom: 0;
+	background: rgba(54, 97, 122, 0.78);
+}
+.gallery .gallery-nav .nav-button{
+	width: 50px;
+	height: 51px;
+	display: inline-block;
+	vertical-align: bottom;
+}
+.gallery .gallery-nav .prev{
+	text-align: right;
+}
+.gallery .gallery-nav .nav-button .img-butt{
+	height: 32px;
+	width: 22px;
+	display: inline-block;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.gallery .gallery-nav .prev .img-butt{
+	background: url('../images/leftGallery.png') no-repeat center right;
+	margin-right: 2px;
+}
+.gallery .gallery-nav .next .img-butt{
+	margin-left: 2px;
+	background: url('../images/rightGallery.png') no-repeat center left;
+}
+.gallery .gallery-tabs{
+	float: right;
+	margin-left: 10px;
+	width: 345px;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+.gallery .gallery-tabs .tabs-title{
+	 border: 2px solid rgba(168, 25, 46, 0.38);
+    max-width: 345px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    text-align: center;
+    position: relative;
+}
+.gallery .gallery-tabs .tabs-title:after{
+		display: block;
+	content: '';
+	width: 21px;
+	height: 32px;
+	background: url('../images/downArrow.png') no-repeat center;
+	position: absolute;
+	bottom: -42px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+.gallery .gallery-tabs .tabs-title h2{
+	font-size: 18px;
+	text-transform: uppercase;
+	padding: 25px 0;
+}
+.gallery .gallery-tabs .tab{
+	position: relative;
+	margin-bottom: 15px;
+	background: #f3f3f3;
+	cursor: pointer;
+}
+.gallery .gallery-tabs .tab:after{
+	display: block;
+	content: '';
+	height: 0;
+	clear: both;
+}
+.gallery .gallery-tabs .tab .tabs-preview,
+.gallery .gallery-tabs .tab .tab-text{
+	display: inline-block;
+	vertical-align: middle;
+}
+.gallery .gallery-tabs .tab .tab-text{
+	width: 160px;
+	margin-left: 20px;
+}
+.gallery .gallery-tabs .tab .tab-text .text{
+	/*margin-top: 20px;*/
+	font-size: 16px;
+}
+.gallery-imgs .row{
+	position: relative;
+	margin: 0 -10px;
+}
+.gallery-imgs .row:after{
+	display: block;
+	content: '';
+	height: 0;
+	clear: both;
+}
+.gallery-imgs .imgs-tab{
+	display: none;
+}
+.gallery-imgs .activeTab{
+	display: block;
+}
+.gallery-tabs .activeTab{
+	background: #E8E8E8!important;
+}
+.gallery-imgs .img{
+	float: left;
+	padding-left: 10px;
+	padding-bottom: 5px;
+	cursor: pointer;
+}
+.gallery-imgs .img img{
+	border:2px solid #c7c9ca;
+	width: 164px;
+	height: 108px;
+}
+.gallery-contacts .left{
+	float: left;
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+.gallery-contacts .contact-block{
+	margin-right: 14px;
+	height: 58px;
+	width: 339px;
+	text-align: center;
+	border:2px solid #e5e5e5;
+}
+.gallery-contacts .contact-block img,
+.gallery-contacts .contact-block span{
+	vertical-align: middle;
+	display: inline-block;
+	margin-top: 10px;
+}
+.gallery-contacts .contact-block span{
+	margin-left: 15px;
+	color: #144e59;
+	font-size: 18px;
+}
+.gallery-contacts .contact-button .gallery-contact__button{
+	height: 60px;
+	width: 344px;
+	background: #e01602;
+	display: block;
+	text-align: center;
+	line-height: 60px;
+	color: #fff;
+	font-weight: 700;
+
+font-size: 20px;
+}
 /*media*/
 @media (max-width:1090px) {
 	.map-contact .contact-form,
@@ -1273,4 +1462,11 @@ footer ul li{
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+}
+.ymaps_https___api_maps_yandex_ru_2_1_29_release__islands_icon___ED4543{
+	list-style-image: url('../images/on_map_big.png')!important;
+	background-image: url('../images/on_map_big.png')!important;
+	    background-size: 89px 67px!important;
+	    width: 89px!important;
+	    height: 67px!important;
 }
