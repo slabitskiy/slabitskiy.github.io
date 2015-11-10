@@ -1,0 +1,357 @@
+@media screen and (max-width: 1070px) and (min-width: 320px){
+    header .top{
+        padding: 15px;
+    }
+    header .logo{
+        width: 180px;
+    }
+    header .phone-block h2{
+        font-size: 18px;
+        margin: 0px 0px 5px;
+    }
+    header .select .container{
+        width: 185px;
+        padding: 0px 0px 0px 30px;
+        margin: 0px 0px 0px -30px;
+    }
+    header .top h1{
+        font-size: 14px;
+        width: 230px;
+        margin: 3px auto 0px;
+    }
+    header .menu a{
+        font-size: 13px;
+        width: 16%;
+        text-transform: uppercase;
+    }
+    header .menu .empty-2{
+        width: 0.8%
+    }
+    header .search .title{
+        text-transform: uppercase;
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+    .search .float-left{
+        text-align: center;
+        float: none;
+        margin: 0 0 20px 0;
+    }
+    .search .point{
+        margin: 0 10px;
+    }
+    .search .float-right{
+        float: none;
+    }
+    .search button{
+        text-transform: uppercase;
+        height: 46px;
+        padding: 0 45px;
+        margin: 0 auto 10px;
+    }
+    .slider{
+        width: 100%;
+        height: auto;
+    }
+    .slider-point.float-left{
+        float: none;
+        margin: 0 0 10px 0;
+    }
+    .tabs-block{
+        width: 100%;
+        height: auto;
+        overflow: auto;
+    }
+    .tabs-block.float-right{
+        float: none;
+    }
+    /*.tabs-point .tab span{
+        width: 50%;
+        vertical-align: middle;
+        display: inline-block;
+        margin: 0 0 0 20px;
+    }*/
+    .tabs-block .tabs-point{
+        text-align: center;
+    }
+    .tabs-point .tab{
+        display: inline-block;
+        vertical-align: top;
+        width: 30%;
+    }
+    .tabs-point .tab img{
+        display: none;
+    }
+    .tabs-point .tab span{
+        display: block;
+        text-align: center;
+    }
+    .tab-point-2:hover:after, 
+    .tab-point-2.active:after{
+        display: none;
+    }
+    .click{
+        width: 100%;
+    }
+    .tab-point-2{
+        width: 33.33333333%;
+        float: left;
+    }
+    .tab-point-2 span{
+        padding: 0;
+        text-align: center;
+    }
+    .content{
+        width: 100%;
+        height: auto;
+    }
+    .what h3{
+        width: 80%;
+        padding: 20px 10%;
+    }
+    footer{
+        padding: 30px 20px 25px;
+    }
+    footer .logo{
+        width: 190px;
+    } 
+    footer .logo img{
+        width: 100%;
+        height: 100%;
+    }
+    footer p{
+        font-size: 15px;
+        padding: 7px 0 0 10px;
+    }
+    footer ul{
+        margin: 0 20px;
+    }
+    footer ul li{
+        font-size: 15px;
+    }
+    span.m-pad{
+        padding: 9px 0px 0px;
+    }
+}
+@media screen and (max-width: 768px) and (min-width: 320px){
+    header .top{
+        text-align: center;
+    }
+    header .logo{
+        float: none;
+        margin: 0 auto 10px;
+    }
+    header .top h1{
+        display: none;
+    }
+    .float-right{
+        float: none;
+        display: inline-block;
+        vertical-align: top;
+        text-align: left;
+    }
+    header .menu .empty-2{
+        display: none;
+    }
+    header .menu a{
+        width: 100%;
+        height: 48px;
+        margin: 1px 0;
+    }
+    header .menu-2 a{
+        font-size: 13px;
+        width: 50%;
+        padding: 0;
+        border-left: 0;
+        border-right: 0;
+    }
+    header .menu-2 a:first-child,
+    header .menu-2 a:last-child{
+        border-left: 0;
+        border-right: 0;
+    }
+    header .search .title{
+        font-size: 16px;
+        line-height: 46px;
+        margin: 0 0 10px 0;
+    }
+    .search .point{
+        margin: 0 10px 10px 0;
+    }
+    .search .float-right{
+        width: 100%;
+    }
+    .tabs-point .tab{
+        font-size: 12px;
+        line-height: 13px;
+    }
+    .tabs-point .tab span{
+        width: 100%;
+    }
+    span.m-pad{
+        padding: 0;
+    }
+    .popup{
+        width: 300px;
+    }
+    .tab-point-2{
+        width: 100%;
+    }
+    .content-bg{
+        width: auto;
+    }
+    .empty p{
+        font-size: 14px;
+    }
+    .checks{
+        line-height: 33px;
+        height: 111px;
+    }
+    .go-to{
+        font-size: 14px;
+    }
+    .what h2{
+        font-size: 18px;
+    }
+    .what h3{
+        font-size: 14px;
+    }
+    .one-block .one{
+        margin: 0px 5px 20px 5px;
+    }
+    .text h2{
+        font-size: 18px;
+    }
+    .text-point{
+        font-size: 14px;
+        padding: 20px;
+    }
+    footer p{
+        font-size: 12px;
+        margin: 0 0 20px 0;
+    }
+    footer ul li{
+        font-size: 12px;
+        background: transparent url(../images/bullet-hover.png) left 3px no-repeat;
+    }
+
+}
+@media screen and (max-width: 500px){
+    .contacts-top .inline:not(:first-child) ul {
+        margin-left: 30px;
+        padding-top: 10px;
+    }
+    .contacts-top .inline ul {
+        margin-left: 30px;
+        padding-top: 10px;
+    }
+    .contacts-top > div {
+        display: block;
+    }
+}
+@media screen and (max-width: 480px){
+    .tab-point-2 span {
+        padding-left: 60px;
+        padding-top: 25px;
+    }
+}
+@media screen and (max-width: 400px){
+    .tab-point-2 span {
+        padding-left: 91px;
+        padding-top: 25px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1080px){
+    .table-kvartal-row > div {
+        display: block;
+
+    }
+    .table-kvartal-row > div .bottom-block-link {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1020px){
+    #arendatory-carousel .owl-prev {
+        left: 10px;
+    }
+    #arendatory-carousel .owl-next {
+        right: 10px;
+    }
+}
+@media screen and (max-width: 770px){
+    .office-vozm-list > li.arrow-office-down {
+        display: none;
+    }
+    .office-vozm-list > li {
+        display: block;
+        width: 100%;
+        margin-top: 15px;
+    }
+    .office-vozm-list > li a {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 920px){
+    .row_office.title {
+        display: none;
+    }
+    .podbor {
+        display: block;
+    }
+    .row_office {
+        display: table;
+        width: 100%;
+    }
+    .row_office > div {
+        display: block;
+        text-align: right;
+        height: auto;
+        padding: 5px 10px;
+        min-height: 34px;
+    }
+    .row_office > div.adres {
+        width: auto;
+    }
+    .row_office > div:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+    .row_office > div b {
+        font-size: 16.67px;
+    }
+    .row_office:nth-child(odd) > div:not(:last-child) {
+        border-right: 0px;
+    }
+
+}
+@media screen and (max-width: 800px){
+    .post-img {
+        float: none;
+        text-align: center;
+    }
+    .post-img img {
+        text-align: center;
+        display: inline;
+    }
+    .post-content {
+        float: none;
+        max-width: 100%;
+    }
+    .post-content .content-more a {
+        margin-right: 15px;
+    }
+    .news-posts {
+        width: 97%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 319px){
+    .wrap{
+        min-width: 1050px;
+    }
+}
