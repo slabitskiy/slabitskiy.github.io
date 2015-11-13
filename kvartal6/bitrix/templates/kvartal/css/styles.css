@@ -1036,7 +1036,7 @@ footer ul li{
 }
 .contacts-top .inline{
     
-    vertical-align: bottom;
+    vertical-align: top;
 }
 .contacts-top .email,
 .contacts-bottom .email{
