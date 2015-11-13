@@ -1010,6 +1010,10 @@ footer ul li{
     resize: none;
     max-width: 300px;
 }
+.map-contact .contact-form button:hover{
+    background: #bf1201;
+
+}
 .map-contact .map{
     width: 610px;
     height: 430px;
