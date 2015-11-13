@@ -31,7 +31,7 @@ var map;
                 map: map, visible:true,
                 title: ' Невский р-н, пр. Обуховской Обороны д. 86',
 	 link:'/',
-                icon: '../bitrix/templates/kvartal/images/on_map_big.png'
+                icon: 'bitrix/templates/kvartal/images/on_map_big.png'
             });
 
 

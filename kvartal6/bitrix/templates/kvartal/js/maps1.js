@@ -30,7 +30,7 @@ var map;
                 map: map, visible:true,
                 title: ' Московский район ул. Новорыбинская д.19-12',
 	 link:'/',
-                icon: '../bitrix/templates/kvartal/images/on_map_big.png'
+                icon: 'bitrix/templates/kvartal/images/on_map_big.png'
             });
 
 

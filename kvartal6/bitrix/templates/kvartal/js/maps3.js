@@ -31,7 +31,7 @@ var map;
                  visible:true,
                 title: 'Калининский р-н, ул. Арсенальная, д.78',
 	 link:'/',
-                icon: '../bitrix/templates/kvartal/images/on_map_big.png'
+                icon: 'bitrix/templates/kvartal/images/on_map_big.png'
             });
 marker3.setMap(map);
 
