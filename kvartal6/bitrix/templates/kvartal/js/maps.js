@@ -30,21 +30,21 @@ var map;
                 map: map, visible:true,
                 title: ' Московский район ул. Новорыбинская д.19-12',
 	 link:'/',
-                icon: '/bitrix/templates/kvartal/images/on_map_big.png'
+                icon: 'bitrix/templates/kvartal/images/on_map_big.png'
             });
   marker2 = new google.maps.Marker({
                 position: myLatLng2,
                 map: map, visible:true,
                 title: ' Невский р-н, пр. Обуховской Обороны д. 86',
 	 link:'/',
-                icon: '/bitrix/templates/kvartal/images/on_map_big.png'
+                icon: 'bitrix/templates/kvartal/images/on_map_big.png'
             });
   marker3 = new google.maps.Marker({
                 position: myLatLng3,
                  visible:true,
                 title: 'Калининский р-н, ул. Арсенальная, д.78',
 	 link:'/',
-                icon: '/bitrix/templates/kvartal/images/on_map_big.png'
+                icon: 'bitrix/templates/kvartal/images/on_map_big.png'
             });
 marker3.setMap(map);
 
