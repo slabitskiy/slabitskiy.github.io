@@ -46,6 +46,11 @@
 			.on('mousemove.sliderns', slideResize)
 			.on('touchmove.sliderns', slideResize);
 		$(this).find('.versus-form-js').css('pointer-events', 'none');
+		$('#beforeAfter').on('mouseleave',function(){
+			$(this).off('mousemove.sliderns')
+					.off('touchmove.sliderns');
+					console.log('leave')
+		})
 	};
 
 	var disableSliderDrag = function (e) {
@@ -66,9 +71,9 @@
 		.on('mousedown touchstart', enableSliderDrag)
 		.on('mouseup touchend', disableSliderDrag);
 	};
-
+	
 	$.fn.slider.defaultOptions= {
-			initialPosition: 0.5,
+			initialPosition: 0.001,
 			showInstruction: false,
 			instructionText: 'Click and Drag'
 	};	
