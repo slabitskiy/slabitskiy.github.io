@@ -49,8 +49,7 @@
 		$('#beforeAfter').on('mouseleave',function(){
 			$(this).off('mousemove.sliderns')
 					.off('touchmove.sliderns');
-					console.log('leave')
-		})
+			})
 	};
 
 	var disableSliderDrag = function (e) {
@@ -73,7 +72,7 @@
 	};
 	
 	$.fn.slider.defaultOptions= {
-			initialPosition: 0.001,
+			initialPosition: 0.5,
 			showInstruction: false,
 			instructionText: 'Click and Drag'
 	};	
