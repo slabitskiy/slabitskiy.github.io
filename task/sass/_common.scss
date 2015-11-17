@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+
+@mixin cf {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    }
+
+.cf::after{
+    @include cf;    
+}
+
+.cf::after{
+    @include cf;
+}
+
+.sect{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    position: relative;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align:left;
+}
+
+.float-left{
+    float:left;
+}
+
+button {
+    border: 0;
+    display: block;
+}
