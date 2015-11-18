@@ -1686,6 +1686,8 @@ tbody.collapse.in {
       border: 6px solid rgba(0, 0, 0, 0.5);
       border-radius: 50px;
       pointer-events: none; }
+      .versus-polzunok-strelki:hover {
+        cursor: pointer; }
 
 .brutal-level {
   background-color: #121117;
@@ -1734,27 +1736,31 @@ tbody.collapse.in {
       .brutal-level-block-imagewrapper-procent {
         position: absolute;
         top: 50%;
-        left: 0;
+        left: -10px;
         color: #000;
+        margin-top: -15px;
         font-size: 29px;
         font-weight: 800;
         text-transform: uppercase;
-        line-height: 2.172;
+        line-height: 1;
         text-align: center;
-        -moz-transform: matrix(0, -0.99214, 0.98959, 0, 0, 0);
-        -webkit-transform: matrix(0, -0.99214, 0.98959, 0, 0, 0);
-        -ms-transform: matrix(0, -0.99214, 0.98959, 0, 0, 0); }
+        -webkit-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+                transform: rotate(-90deg);
+        display: block;
+        height: 30px;
+        width: 85px;
+        text-align: center; }
     .brutal-level-block-imageinner {
       background-image: url("../img/bar-in.png");
       background-repeat: no-repeat;
       background-position: center bottom;
-      height: 500px;
+      height: 0px;
       width: 46px;
       position: absolute;
       bottom: 10px;
       left: 9px;
-      -webkit-transition: height 2s ease-in-out;
-              transition: height 2s ease-in-out; }
+      will-change: height; }
       .brutal-level-block-imageinner.full {
         height: 500px; }
     .brutal-level-block-goods {
