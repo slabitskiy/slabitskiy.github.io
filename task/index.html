@@ -6,6 +6,7 @@
     <title>Барбершоп - TOP GUN</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/imgslider.css">
+    <link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
 
@@ -166,7 +167,7 @@
 
 
 <!-- Блок уровня брутальности -->
-    <div class="brutal-level">
+    <div class="brutal-level" id="brutal-level">
         <h2 class="brutal-level-header">Уровень брутальности после выхода из 
             <span class="brutal-level-header-line2">барбершопа TOP GUN</span>
         </h2>
@@ -174,7 +175,9 @@
          <div class="brutal-level-block">
                <div class="brutal-level-block-imagewrapper">
                     <div class="brutal-level-block-imageinner"></div>
-                    <span class="brutal-level-block-imagewrapper-procent">91%</span>
+                    <span class="brutal-level-block-imagewrapper-procent">
+                      
+                    </span>
                </div>
 
                 <div class="brutal-level-block-goods">
@@ -426,17 +429,8 @@
 
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src='js/imgslider.js'></script>
-        <script src="js/jquery-ui-1.8.13.custom.min.js"></script>
-        <script src="js/jquery.beforeafter-1.4.js"></script>
+        <script src='js/scrollAnimate.js'></script>
         <script src="js/scroll.js"></script>
         <script src="js/menu.min.js"></script>
-        <script>
-        $(document).ready(function(){
-            var beforeAfterSlider = $('#beforeAfter');
-            beforeAfterSlider.slider();
-            // beforeAfterSlider.beforeAfter();
-                          
-          })
-        </script>
 </body>
 </html>
