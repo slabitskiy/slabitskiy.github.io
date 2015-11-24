@@ -11,11 +11,15 @@
     <title>Index</title>
     <meta name="description" content="">
    <link rel="stylesheet" href="css/plugins.css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300italic,300,400italic,500italic,700,500,700italic,900,900italic&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">-->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body >
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+<symbol id="product-compare" viewBox="0 0 24 24">
+    <path d="M7,11l-4,4l4,4v-3h7v-2H7V11z M21,9l-4-4v3h-7v2h7v3L21,9z"></path>
+</symbol>
+</svg>
 <div class="header header__white">
     <div class="container">
         <div class="row">
@@ -501,8 +505,8 @@
                         </div>
                         <!-- dropdown bottom -->
                         <div class="dropdown-footer">
-                            <a href="/" class="dropdown-button button-call waves-effect waves-light">Оформить заказ</a>
-                            <a href="/" class="dropdown-button button-infav waves-effect waves-light">В корзину</a>
+                            <a href="/" class="dropdown-button button-call waves-effect waves-light">Позвоните мне</a>
+                            <a href="/" class="dropdown-button button-infav waves-effect waves-light">В контакты</a>
                         </div>
                         <!-- end -->
                     </div>
@@ -560,7 +564,12 @@
 			<!-- nav -->
 			<div class="menu_nav">
 				<div class="nav-item">
-					<a href="/" class="item-link">Доставка и оплата<b class="img mom"></b></a>
+					<a href="/" class="item-link">Доставка и оплата<b class="img mom">
+						<!-- <svg  width="17px" height="20px">
+							<use xlink:href="#mom"  width="17px" height="20px">
+							</use>
+						</svg> -->
+					</b></a>
 					<!-- drop -->
 					<div class="dropdown">
 						<div class="dropdown-title">
@@ -714,7 +723,11 @@
 					<!-- end drop -->
 				</div>
 				<div class="nav-item">
-					<a href="" class="item-link">Питание и кормление<b class="img eat"></b></a>
+					<a href="" class="item-link">Питание и кормление<b class="img eat">
+							<!-- <svg width="20px" height="20px">
+							<use xlink:href="#eat" width="20px" height="20px">
+											</svg> -->
+					</b></a>
 								<!-- drop -->
 					<div class="dropdown">
 						<div class="dropdown-title">
@@ -867,12 +880,36 @@
 					</div>
 					<!-- end drop -->
 				</div>
-				<div class="nav-item"><a href="" class="item-link">Подгузники и гигиена<b class="img gig"></b></a></div>
-				<div class="nav-item"><a href="" class="item-link">Одежда и обувь<b class="img clothes"></b></a></div>
-				<div class="nav-item"><a href="" class="item-link">Детская комната<b class="img room"></b></a></div>
-				<div class="nav-item"><a href="" class="item-link">Прогулки и поездки<b class="img walk"></b></a></div>
-				<div class="nav-item"><a href="" class="item-link">Игрушки<b class="img toys"></b></a></div>
-				<div class="nav-item"><a href="" class="item-link">Акции и скидки<b class="img act"></b></a></div>
+				<div class="nav-item"><a href="" class="item-link">Подгузники и гигиена<b class="img gig">
+					<!-- <svg width="20px" height="25px">
+							<use xlink:href="#gig" width="20px" height="25px">
+						</svg> -->
+				</b></a></div>
+				<div class="nav-item"><a href="" class="item-link">Одежда и обувь<b class="img clothes">
+					<!-- <svg  width="20px" height="20px">
+							<use xlink:href="#clothes"  width="20px" height="20px">
+						</svg> -->
+				</b></a></div>
+				<div class="nav-item"><a href="" class="item-link">Детская комната<b class="img room">
+					<!-- <svg width="20px" height="16px">
+							<use xlink:href="#room" width="20px" height="16px">
+						</svg> -->
+				</b></a></div>
+				<div class="nav-item"><a href="" class="item-link">Прогулки и поездки<b class="img walk">
+					<!-- <svg  width="18px" height="22px">
+							<use xlink:href="#walk"  width="18px" height="22px">
+						</svg> -->
+				</b></a></div>
+				<div class="nav-item"><a href="" class="item-link">Игрушки<b class="img toys">
+					<!-- <svg  width="20px" height="18px">
+							<use xlink:href="#toys"  width="20px" height="18px">
+						</svg> -->
+				</b></a></div>
+				<div class="nav-item"><a href="" class="item-link">Акции и скидки<b class="img act">
+					<!-- <svg  width="18px" height="18px">
+							<use xlink:href="#action" width="18px" height="18px">
+						</svg> -->
+				</b></a></div>
 				<div id="navHover"></div>
 			</div>
 			<!-- end nav -->
@@ -910,13 +947,45 @@
 						<img src="img/slide.jpg" alt="">
 					</div>
 				</div>
+				<div class="slider-nav left waves-effect" id="indexNavLeft">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+						<polygon points="15.4,7.4 14,6 8,12 14,18 15.4,16.6 10.8,12 "></polygon>
+					</svg>
+				</div>
+				<div class="slider-nav right waves-effect" id="indexNavRight">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+							<polygon points="10,6 8.6,7.4 13.2,12 8.6,16.6 10,18 16,12 "></polygon>
+					</svg>
+				</div>
 			</div>
 			<div class="advantages">
-				<div class="advantages-block"><a href="" class="advantages-link buy"><b class="img basket"></b><span class="text">Как сделать заказ?</span></a></div>
-				<div class="advantages-block"><a href="" class="advantages-link delivery"><b class="img car"></b><span class="text">Доставка и оплата</span></a></div>
-				<div class="advantages-block"><a href="" class="advantages-link programs"><b class="img id"></b><span class="text">Программа лояльности</span></a></div>
-				<div class="advantages-block"><a href="" class="advantages-link 
-				save"><b class="img umb"></b><span class="text">Защита покупателя</span></a></div>
+				<div class="advantages-block">
+					<a href="" class="advantages-link buy"> <b class="img basket">
+					</b>
+						<span class="text">Как сделать заказ?</span>
+					</a>
+				</div>
+				<div class="advantages-block">
+					<a href="" class="advantages-link delivery"> <b class="img car">
+					</b>
+						<span class="text">Доставка и оплата</span>
+					</a>
+				</div>
+				<div class="advantages-block">
+					<a href="" class="advantages-link programs">
+						<b class="img id">
+						</b>
+						<span class="text">Программа лояльности</span>
+					</a>
+				</div>
+				<div class="advantages-block">
+					<a href="" class="advantages-link 
+				save">
+						<b class="img umb">
+						</b>
+						<span class="text">Защита покупателя</span>
+					</a>
+				</div>
 				<div class="clearfix"></div>
 			</div>
 			
@@ -926,8 +995,8 @@
 						<p class="text">Популярные</p>
 					</div>
 					<div class="product-nav">
-						<div class="nav-button left" id="pop-cat-l"></div>
-						<div class="nav-button right" id="pop-cat-r"></div>
+						<div class="nav-button left waves-effect" id="pop-cat-l"></div>
+						<div class="nav-button right waves-effect" id="pop-cat-r"></div>
 					</div>
 					<div class="categories-all">
 						<div class="all-top dropdown-button" data-activates='all-top1'>
@@ -945,7 +1014,8 @@
 				</div>
 				<div class="product-slider" id="popProd">
 				<!-- product -->
-				<div class="product">
+				<div class="product-block">
+				   <div class="product">
 				    <div class="product-top">
 				        <a href="" class="openProductModal">
 				            <div class="white"></div>
@@ -971,7 +1041,7 @@
 				                        <div class="text">В закладки</div>
 				                    </div>
 				                    <div class="dropup-button add-favorites">
-				                        <b class="img img-fav"></b>
+				                        <b class="img img-fav "></b>
 				                        <b class="in"></b>
 				                    </div>
 				                </li>
@@ -980,7 +1050,12 @@
 				                        <div class="text">Сравнить</div>
 				                    </div>
 				                    <div class="dropup-button add-compare">
-				                        <b class="img img-comp"></b>
+				                        <b class="img img-comp">
+				                            <svg width="24px" height="13px">
+				                               <use xlink:href="#product-compare" width="24px" height="22px">
+				                              </use>
+				                            </svg>
+				                        </b>
 				                        <div class="in"></div>
 				                    </div>
 				                </li>
@@ -989,7 +1064,8 @@
 				                        <div class="text">В корзину</div>
 				                    </div>
 				                    <div class="dropup-button add-basket">
-				                        <b class="img img-bask"></b>
+				                        <b class="img img-bask">
+				                        </b>
 				                    </div>
 				                </li>
 				            </ul>
@@ -1015,7 +1091,9 @@
 				        </div>
 				    </div>
 				</div>
-				<div class="product">
+				</div>
+				<div class="product-block">
+				   <div class="product">
 				    <div class="product-top">
 				        <a href="" class="openProductModal">
 				            <div class="white"></div>
@@ -1041,7 +1119,7 @@
 				                        <div class="text">В закладки</div>
 				                    </div>
 				                    <div class="dropup-button add-favorites">
-				                        <b class="img img-fav"></b>
+				                        <b class="img img-fav "></b>
 				                        <b class="in"></b>
 				                    </div>
 				                </li>
@@ -1050,7 +1128,12 @@
 				                        <div class="text">Сравнить</div>
 				                    </div>
 				                    <div class="dropup-button add-compare">
-				                        <b class="img img-comp"></b>
+				                        <b class="img img-comp">
+				                            <svg width="24px" height="13px">
+				                               <use xlink:href="#product-compare" width="24px" height="22px">
+				                              </use>
+				                            </svg>
+				                        </b>
 				                        <div class="in"></div>
 				                    </div>
 				                </li>
@@ -1059,7 +1142,8 @@
 				                        <div class="text">В корзину</div>
 				                    </div>
 				                    <div class="dropup-button add-basket">
-				                        <b class="img img-bask"></b>
+				                        <b class="img img-bask">
+				                        </b>
 				                    </div>
 				                </li>
 				            </ul>
@@ -1085,7 +1169,9 @@
 				        </div>
 				    </div>
 				</div>
-				<div class="product">
+				</div>
+				<div class="product-block">
+				   <div class="product">
 				    <div class="product-top">
 				        <a href="" class="openProductModal">
 				            <div class="white"></div>
@@ -1111,7 +1197,7 @@
 				                        <div class="text">В закладки</div>
 				                    </div>
 				                    <div class="dropup-button add-favorites">
-				                        <b class="img img-fav"></b>
+				                        <b class="img img-fav "></b>
 				                        <b class="in"></b>
 				                    </div>
 				                </li>
@@ -1120,7 +1206,12 @@
 				                        <div class="text">Сравнить</div>
 				                    </div>
 				                    <div class="dropup-button add-compare">
-				                        <b class="img img-comp"></b>
+				                        <b class="img img-comp">
+				                            <svg width="24px" height="13px">
+				                               <use xlink:href="#product-compare" width="24px" height="22px">
+				                              </use>
+				                            </svg>
+				                        </b>
 				                        <div class="in"></div>
 				                    </div>
 				                </li>
@@ -1129,7 +1220,8 @@
 				                        <div class="text">В корзину</div>
 				                    </div>
 				                    <div class="dropup-button add-basket">
-				                        <b class="img img-bask"></b>
+				                        <b class="img img-bask">
+				                        </b>
 				                    </div>
 				                </li>
 				            </ul>
@@ -1155,7 +1247,9 @@
 				        </div>
 				    </div>
 				</div>
-				<div class="product">
+				</div>
+				<div class="product-block">
+				   <div class="product">
 				    <div class="product-top">
 				        <a href="" class="openProductModal">
 				            <div class="white"></div>
@@ -1181,7 +1275,7 @@
 				                        <div class="text">В закладки</div>
 				                    </div>
 				                    <div class="dropup-button add-favorites">
-				                        <b class="img img-fav"></b>
+				                        <b class="img img-fav "></b>
 				                        <b class="in"></b>
 				                    </div>
 				                </li>
@@ -1190,7 +1284,12 @@
 				                        <div class="text">Сравнить</div>
 				                    </div>
 				                    <div class="dropup-button add-compare">
-				                        <b class="img img-comp"></b>
+				                        <b class="img img-comp">
+				                            <svg width="24px" height="13px">
+				                               <use xlink:href="#product-compare" width="24px" height="22px">
+				                              </use>
+				                            </svg>
+				                        </b>
 				                        <div class="in"></div>
 				                    </div>
 				                </li>
@@ -1199,7 +1298,8 @@
 				                        <div class="text">В корзину</div>
 				                    </div>
 				                    <div class="dropup-button add-basket">
-				                        <b class="img img-bask"></b>
+				                        <b class="img img-bask">
+				                        </b>
 				                    </div>
 				                </li>
 				            </ul>
@@ -1225,7 +1325,9 @@
 				        </div>
 				    </div>
 				</div>
-				<div class="product">
+				</div>
+				<div class="product-block">
+				   <div class="product">
 				    <div class="product-top">
 				        <a href="" class="openProductModal">
 				            <div class="white"></div>
@@ -1251,7 +1353,7 @@
 				                        <div class="text">В закладки</div>
 				                    </div>
 				                    <div class="dropup-button add-favorites">
-				                        <b class="img img-fav"></b>
+				                        <b class="img img-fav "></b>
 				                        <b class="in"></b>
 				                    </div>
 				                </li>
@@ -1260,7 +1362,12 @@
 				                        <div class="text">Сравнить</div>
 				                    </div>
 				                    <div class="dropup-button add-compare">
-				                        <b class="img img-comp"></b>
+				                        <b class="img img-comp">
+				                            <svg width="24px" height="13px">
+				                               <use xlink:href="#product-compare" width="24px" height="22px">
+				                              </use>
+				                            </svg>
+				                        </b>
 				                        <div class="in"></div>
 				                    </div>
 				                </li>
@@ -1269,7 +1376,8 @@
 				                        <div class="text">В корзину</div>
 				                    </div>
 				                    <div class="dropup-button add-basket">
-				                        <b class="img img-bask"></b>
+				                        <b class="img img-bask">
+				                        </b>
 				                    </div>
 				                </li>
 				            </ul>
@@ -1295,7 +1403,9 @@
 				        </div>
 				    </div>
 				</div>
-				<div class="product">
+				</div>
+				<div class="product-block">
+				   <div class="product">
 				    <div class="product-top">
 				        <a href="" class="openProductModal">
 				            <div class="white"></div>
@@ -1321,7 +1431,7 @@
 				                        <div class="text">В закладки</div>
 				                    </div>
 				                    <div class="dropup-button add-favorites">
-				                        <b class="img img-fav"></b>
+				                        <b class="img img-fav "></b>
 				                        <b class="in"></b>
 				                    </div>
 				                </li>
@@ -1330,7 +1440,12 @@
 				                        <div class="text">Сравнить</div>
 				                    </div>
 				                    <div class="dropup-button add-compare">
-				                        <b class="img img-comp"></b>
+				                        <b class="img img-comp">
+				                            <svg width="24px" height="13px">
+				                               <use xlink:href="#product-compare" width="24px" height="22px">
+				                              </use>
+				                            </svg>
+				                        </b>
 				                        <div class="in"></div>
 				                    </div>
 				                </li>
@@ -1339,7 +1454,8 @@
 				                        <div class="text">В корзину</div>
 				                    </div>
 				                    <div class="dropup-button add-basket">
-				                        <b class="img img-bask"></b>
+				                        <b class="img img-bask">
+				                        </b>
 				                    </div>
 				                </li>
 				            </ul>
@@ -1365,7 +1481,9 @@
 				        </div>
 				    </div>
 				</div>
-				<div class="product">
+				</div>
+				<div class="product-block">
+				   <div class="product">
 				    <div class="product-top">
 				        <a href="" class="openProductModal">
 				            <div class="white"></div>
@@ -1391,7 +1509,7 @@
 				                        <div class="text">В закладки</div>
 				                    </div>
 				                    <div class="dropup-button add-favorites">
-				                        <b class="img img-fav"></b>
+				                        <b class="img img-fav "></b>
 				                        <b class="in"></b>
 				                    </div>
 				                </li>
@@ -1400,7 +1518,12 @@
 				                        <div class="text">Сравнить</div>
 				                    </div>
 				                    <div class="dropup-button add-compare">
-				                        <b class="img img-comp"></b>
+				                        <b class="img img-comp">
+				                            <svg width="24px" height="13px">
+				                               <use xlink:href="#product-compare" width="24px" height="22px">
+				                              </use>
+				                            </svg>
+				                        </b>
 				                        <div class="in"></div>
 				                    </div>
 				                </li>
@@ -1409,7 +1532,8 @@
 				                        <div class="text">В корзину</div>
 				                    </div>
 				                    <div class="dropup-button add-basket">
-				                        <b class="img img-bask"></b>
+				                        <b class="img img-bask">
+				                        </b>
 				                    </div>
 				                </li>
 				            </ul>
@@ -1435,7 +1559,9 @@
 				        </div>
 				    </div>
 				</div>
-				<div class="product">
+				</div>
+				<div class="product-block">
+				   <div class="product">
 				    <div class="product-top">
 				        <a href="" class="openProductModal">
 				            <div class="white"></div>
@@ -1461,7 +1587,7 @@
 				                        <div class="text">В закладки</div>
 				                    </div>
 				                    <div class="dropup-button add-favorites">
-				                        <b class="img img-fav"></b>
+				                        <b class="img img-fav "></b>
 				                        <b class="in"></b>
 				                    </div>
 				                </li>
@@ -1470,7 +1596,12 @@
 				                        <div class="text">Сравнить</div>
 				                    </div>
 				                    <div class="dropup-button add-compare">
-				                        <b class="img img-comp"></b>
+				                        <b class="img img-comp">
+				                            <svg width="24px" height="13px">
+				                               <use xlink:href="#product-compare" width="24px" height="22px">
+				                              </use>
+				                            </svg>
+				                        </b>
 				                        <div class="in"></div>
 				                    </div>
 				                </li>
@@ -1479,7 +1610,8 @@
 				                        <div class="text">В корзину</div>
 				                    </div>
 				                    <div class="dropup-button add-basket">
-				                        <b class="img img-bask"></b>
+				                        <b class="img img-bask">
+				                        </b>
 				                    </div>
 				                </li>
 				            </ul>
@@ -1505,7 +1637,9 @@
 				        </div>
 				    </div>
 				</div>
-				<div class="product">
+				</div>
+				<div class="product-block">
+				   <div class="product">
 				    <div class="product-top">
 				        <a href="" class="openProductModal">
 				            <div class="white"></div>
@@ -1531,7 +1665,7 @@
 				                        <div class="text">В закладки</div>
 				                    </div>
 				                    <div class="dropup-button add-favorites">
-				                        <b class="img img-fav"></b>
+				                        <b class="img img-fav "></b>
 				                        <b class="in"></b>
 				                    </div>
 				                </li>
@@ -1540,7 +1674,12 @@
 				                        <div class="text">Сравнить</div>
 				                    </div>
 				                    <div class="dropup-button add-compare">
-				                        <b class="img img-comp"></b>
+				                        <b class="img img-comp">
+				                            <svg width="24px" height="13px">
+				                               <use xlink:href="#product-compare" width="24px" height="22px">
+				                              </use>
+				                            </svg>
+				                        </b>
 				                        <div class="in"></div>
 				                    </div>
 				                </li>
@@ -1549,7 +1688,8 @@
 				                        <div class="text">В корзину</div>
 				                    </div>
 				                    <div class="dropup-button add-basket">
-				                        <b class="img img-bask"></b>
+				                        <b class="img img-bask">
+				                        </b>
 				                    </div>
 				                </li>
 				            </ul>
@@ -1575,7 +1715,9 @@
 				        </div>
 				    </div>
 				</div>
-				<div class="product">
+				</div>
+				<div class="product-block">
+				   <div class="product">
 				    <div class="product-top">
 				        <a href="" class="openProductModal">
 				            <div class="white"></div>
@@ -1601,7 +1743,7 @@
 				                        <div class="text">В закладки</div>
 				                    </div>
 				                    <div class="dropup-button add-favorites">
-				                        <b class="img img-fav"></b>
+				                        <b class="img img-fav "></b>
 				                        <b class="in"></b>
 				                    </div>
 				                </li>
@@ -1610,7 +1752,12 @@
 				                        <div class="text">Сравнить</div>
 				                    </div>
 				                    <div class="dropup-button add-compare">
-				                        <b class="img img-comp"></b>
+				                        <b class="img img-comp">
+				                            <svg width="24px" height="13px">
+				                               <use xlink:href="#product-compare" width="24px" height="22px">
+				                              </use>
+				                            </svg>
+				                        </b>
 				                        <div class="in"></div>
 				                    </div>
 				                </li>
@@ -1619,7 +1766,8 @@
 				                        <div class="text">В корзину</div>
 				                    </div>
 				                    <div class="dropup-button add-basket">
-				                        <b class="img img-bask"></b>
+				                        <b class="img img-bask">
+				                        </b>
 				                    </div>
 				                </li>
 				            </ul>
@@ -1645,7 +1793,9 @@
 				        </div>
 				    </div>
 				</div>
-				<div class="product">
+				</div>
+				<div class="product-block">
+				   <div class="product">
 				    <div class="product-top">
 				        <a href="" class="openProductModal">
 				            <div class="white"></div>
@@ -1671,7 +1821,7 @@
 				                        <div class="text">В закладки</div>
 				                    </div>
 				                    <div class="dropup-button add-favorites">
-				                        <b class="img img-fav"></b>
+				                        <b class="img img-fav "></b>
 				                        <b class="in"></b>
 				                    </div>
 				                </li>
@@ -1680,7 +1830,12 @@
 				                        <div class="text">Сравнить</div>
 				                    </div>
 				                    <div class="dropup-button add-compare">
-				                        <b class="img img-comp"></b>
+				                        <b class="img img-comp">
+				                            <svg width="24px" height="13px">
+				                               <use xlink:href="#product-compare" width="24px" height="22px">
+				                              </use>
+				                            </svg>
+				                        </b>
 				                        <div class="in"></div>
 				                    </div>
 				                </li>
@@ -1689,7 +1844,8 @@
 				                        <div class="text">В корзину</div>
 				                    </div>
 				                    <div class="dropup-button add-basket">
-				                        <b class="img img-bask"></b>
+				                        <b class="img img-bask">
+				                        </b>
 				                    </div>
 				                </li>
 				            </ul>
@@ -1715,7 +1871,9 @@
 				        </div>
 				    </div>
 				</div>
-				<div class="product">
+				</div>
+				<div class="product-block">
+				   <div class="product">
 				    <div class="product-top">
 				        <a href="" class="openProductModal">
 				            <div class="white"></div>
@@ -1741,7 +1899,7 @@
 				                        <div class="text">В закладки</div>
 				                    </div>
 				                    <div class="dropup-button add-favorites">
-				                        <b class="img img-fav"></b>
+				                        <b class="img img-fav "></b>
 				                        <b class="in"></b>
 				                    </div>
 				                </li>
@@ -1750,7 +1908,12 @@
 				                        <div class="text">Сравнить</div>
 				                    </div>
 				                    <div class="dropup-button add-compare">
-				                        <b class="img img-comp"></b>
+				                        <b class="img img-comp">
+				                            <svg width="24px" height="13px">
+				                               <use xlink:href="#product-compare" width="24px" height="22px">
+				                              </use>
+				                            </svg>
+				                        </b>
 				                        <div class="in"></div>
 				                    </div>
 				                </li>
@@ -1759,7 +1922,8 @@
 				                        <div class="text">В корзину</div>
 				                    </div>
 				                    <div class="dropup-button add-basket">
-				                        <b class="img img-bask"></b>
+				                        <b class="img img-bask">
+				                        </b>
 				                    </div>
 				                </li>
 				            </ul>
@@ -1784,6 +1948,7 @@
 				            <p class="price-n">122 850 <i class="fa fa-rub"></i></p>
 				        </div>
 				    </div>
+				</div>
 				</div>
 				<!-- end product -->
 				</div>
@@ -1809,8 +1974,8 @@
 						<p class="text">Новинки</p>
 					</div>
 					<div class="product-nav">
-						<div class="nav-button left" id="new-cat-l"></div>
-						<div class="nav-button right" id="new-cat-r"></div>
+						<div class="nav-button left waves-effect" id="new-cat-l"></div>
+						<div class="nav-button right waves-effect" id="new-cat-r"></div>
 					</div>
 					<div class="categories-all">
 						<div class="all-top dropdown-button" data-activates='all-top2'>
@@ -1828,7 +1993,8 @@
 				</div>
 				<div class="product-slider" id="newProd">
 				<!-- product -->
-				<div class="product">
+				<div class="product-block">
+				   <div class="product">
 				    <div class="product-top">
 				        <a href="" class="openProductModal">
 				            <div class="white"></div>
@@ -1854,7 +2020,7 @@
 				                        <div class="text">В закладки</div>
 				                    </div>
 				                    <div class="dropup-button add-favorites">
-				                        <b class="img img-fav"></b>
+				                        <b class="img img-fav "></b>
 				                        <b class="in"></b>
 				                    </div>
 				                </li>
@@ -1863,7 +2029,12 @@
 				                        <div class="text">Сравнить</div>
 				                    </div>
 				                    <div class="dropup-button add-compare">
-				                        <b class="img img-comp"></b>
+				                        <b class="img img-comp">
+				                            <svg width="24px" height="13px">
+				                               <use xlink:href="#product-compare" width="24px" height="22px">
+				                              </use>
+				                            </svg>
+				                        </b>
 				                        <div class="in"></div>
 				                    </div>
 				                </li>
@@ -1872,7 +2043,8 @@
 				                        <div class="text">В корзину</div>
 				                    </div>
 				                    <div class="dropup-button add-basket">
-				                        <b class="img img-bask"></b>
+				                        <b class="img img-bask">
+				                        </b>
 				                    </div>
 				                </li>
 				            </ul>
@@ -1898,7 +2070,9 @@
 				        </div>
 				    </div>
 				</div>
-				<div class="product">
+				</div>
+				<div class="product-block">
+				   <div class="product">
 				    <div class="product-top">
 				        <a href="" class="openProductModal">
 				            <div class="white"></div>
@@ -1924,7 +2098,7 @@
 				                        <div class="text">В закладки</div>
 				                    </div>
 				                    <div class="dropup-button add-favorites">
-				                        <b class="img img-fav"></b>
+				                        <b class="img img-fav "></b>
 				                        <b class="in"></b>
 				                    </div>
 				                </li>
@@ -1933,7 +2107,12 @@
 				                        <div class="text">Сравнить</div>
 				                    </div>
 				                    <div class="dropup-button add-compare">
-				                        <b class="img img-comp"></b>
+				                        <b class="img img-comp">
+				                            <svg width="24px" height="13px">
+				                               <use xlink:href="#product-compare" width="24px" height="22px">
+				                              </use>
+				                            </svg>
+				                        </b>
 				                        <div class="in"></div>
 				                    </div>
 				                </li>
@@ -1942,7 +2121,8 @@
 				                        <div class="text">В корзину</div>
 				                    </div>
 				                    <div class="dropup-button add-basket">
-				                        <b class="img img-bask"></b>
+				                        <b class="img img-bask">
+				                        </b>
 				                    </div>
 				                </li>
 				            </ul>
@@ -1968,7 +2148,9 @@
 				        </div>
 				    </div>
 				</div>
-				<div class="product">
+				</div>
+				<div class="product-block">
+				   <div class="product">
 				    <div class="product-top">
 				        <a href="" class="openProductModal">
 				            <div class="white"></div>
@@ -1994,7 +2176,7 @@
 				                        <div class="text">В закладки</div>
 				                    </div>
 				                    <div class="dropup-button add-favorites">
-				                        <b class="img img-fav"></b>
+				                        <b class="img img-fav "></b>
 				                        <b class="in"></b>
 				                    </div>
 				                </li>
@@ -2003,7 +2185,12 @@
 				                        <div class="text">Сравнить</div>
 				                    </div>
 				                    <div class="dropup-button add-compare">
-				                        <b class="img img-comp"></b>
+				                        <b class="img img-comp">
+				                            <svg width="24px" height="13px">
+				                               <use xlink:href="#product-compare" width="24px" height="22px">
+				                              </use>
+				                            </svg>
+				                        </b>
 				                        <div class="in"></div>
 				                    </div>
 				                </li>
@@ -2012,7 +2199,8 @@
 				                        <div class="text">В корзину</div>
 				                    </div>
 				                    <div class="dropup-button add-basket">
-				                        <b class="img img-bask"></b>
+				                        <b class="img img-bask">
+				                        </b>
 				                    </div>
 				                </li>
 				            </ul>
@@ -2038,7 +2226,9 @@
 				        </div>
 				    </div>
 				</div>
-				<div class="product">
+				</div>
+				<div class="product-block">
+				   <div class="product">
 				    <div class="product-top">
 				        <a href="" class="openProductModal">
 				            <div class="white"></div>
@@ -2064,7 +2254,7 @@
 				                        <div class="text">В закладки</div>
 				                    </div>
 				                    <div class="dropup-button add-favorites">
-				                        <b class="img img-fav"></b>
+				                        <b class="img img-fav "></b>
 				                        <b class="in"></b>
 				                    </div>
 				                </li>
@@ -2073,7 +2263,12 @@
 				                        <div class="text">Сравнить</div>
 				                    </div>
 				                    <div class="dropup-button add-compare">
-				                        <b class="img img-comp"></b>
+				                        <b class="img img-comp">
+				                            <svg width="24px" height="13px">
+				                               <use xlink:href="#product-compare" width="24px" height="22px">
+				                              </use>
+				                            </svg>
+				                        </b>
 				                        <div class="in"></div>
 				                    </div>
 				                </li>
@@ -2082,7 +2277,8 @@
 				                        <div class="text">В корзину</div>
 				                    </div>
 				                    <div class="dropup-button add-basket">
-				                        <b class="img img-bask"></b>
+				                        <b class="img img-bask">
+				                        </b>
 				                    </div>
 				                </li>
 				            </ul>
@@ -2108,7 +2304,9 @@
 				        </div>
 				    </div>
 				</div>
-				<div class="product">
+				</div>
+				<div class="product-block">
+				   <div class="product">
 				    <div class="product-top">
 				        <a href="" class="openProductModal">
 				            <div class="white"></div>
@@ -2134,7 +2332,7 @@
 				                        <div class="text">В закладки</div>
 				                    </div>
 				                    <div class="dropup-button add-favorites">
-				                        <b class="img img-fav"></b>
+				                        <b class="img img-fav "></b>
 				                        <b class="in"></b>
 				                    </div>
 				                </li>
@@ -2143,7 +2341,12 @@
 				                        <div class="text">Сравнить</div>
 				                    </div>
 				                    <div class="dropup-button add-compare">
-				                        <b class="img img-comp"></b>
+				                        <b class="img img-comp">
+				                            <svg width="24px" height="13px">
+				                               <use xlink:href="#product-compare" width="24px" height="22px">
+				                              </use>
+				                            </svg>
+				                        </b>
 				                        <div class="in"></div>
 				                    </div>
 				                </li>
@@ -2152,7 +2355,8 @@
 				                        <div class="text">В корзину</div>
 				                    </div>
 				                    <div class="dropup-button add-basket">
-				                        <b class="img img-bask"></b>
+				                        <b class="img img-bask">
+				                        </b>
 				                    </div>
 				                </li>
 				            </ul>
@@ -2178,7 +2382,9 @@
 				        </div>
 				    </div>
 				</div>
-				<div class="product">
+				</div>
+				<div class="product-block">
+				   <div class="product">
 				    <div class="product-top">
 				        <a href="" class="openProductModal">
 				            <div class="white"></div>
@@ -2204,7 +2410,7 @@
 				                        <div class="text">В закладки</div>
 				                    </div>
 				                    <div class="dropup-button add-favorites">
-				                        <b class="img img-fav"></b>
+				                        <b class="img img-fav "></b>
 				                        <b class="in"></b>
 				                    </div>
 				                </li>
@@ -2213,7 +2419,12 @@
 				                        <div class="text">Сравнить</div>
 				                    </div>
 				                    <div class="dropup-button add-compare">
-				                        <b class="img img-comp"></b>
+				                        <b class="img img-comp">
+				                            <svg width="24px" height="13px">
+				                               <use xlink:href="#product-compare" width="24px" height="22px">
+				                              </use>
+				                            </svg>
+				                        </b>
 				                        <div class="in"></div>
 				                    </div>
 				                </li>
@@ -2222,7 +2433,8 @@
 				                        <div class="text">В корзину</div>
 				                    </div>
 				                    <div class="dropup-button add-basket">
-				                        <b class="img img-bask"></b>
+				                        <b class="img img-bask">
+				                        </b>
 				                    </div>
 				                </li>
 				            </ul>
@@ -2248,7 +2460,9 @@
 				        </div>
 				    </div>
 				</div>
-				<div class="product">
+				</div>
+				<div class="product-block">
+				   <div class="product">
 				    <div class="product-top">
 				        <a href="" class="openProductModal">
 				            <div class="white"></div>
@@ -2274,7 +2488,7 @@
 				                        <div class="text">В закладки</div>
 				                    </div>
 				                    <div class="dropup-button add-favorites">
-				                        <b class="img img-fav"></b>
+				                        <b class="img img-fav "></b>
 				                        <b class="in"></b>
 				                    </div>
 				                </li>
@@ -2283,7 +2497,12 @@
 				                        <div class="text">Сравнить</div>
 				                    </div>
 				                    <div class="dropup-button add-compare">
-				                        <b class="img img-comp"></b>
+				                        <b class="img img-comp">
+				                            <svg width="24px" height="13px">
+				                               <use xlink:href="#product-compare" width="24px" height="22px">
+				                              </use>
+				                            </svg>
+				                        </b>
 				                        <div class="in"></div>
 				                    </div>
 				                </li>
@@ -2292,7 +2511,8 @@
 				                        <div class="text">В корзину</div>
 				                    </div>
 				                    <div class="dropup-button add-basket">
-				                        <b class="img img-bask"></b>
+				                        <b class="img img-bask">
+				                        </b>
 				                    </div>
 				                </li>
 				            </ul>
@@ -2318,7 +2538,9 @@
 				        </div>
 				    </div>
 				</div>
-				<div class="product">
+				</div>
+				<div class="product-block">
+				   <div class="product">
 				    <div class="product-top">
 				        <a href="" class="openProductModal">
 				            <div class="white"></div>
@@ -2344,7 +2566,7 @@
 				                        <div class="text">В закладки</div>
 				                    </div>
 				                    <div class="dropup-button add-favorites">
-				                        <b class="img img-fav"></b>
+				                        <b class="img img-fav "></b>
 				                        <b class="in"></b>
 				                    </div>
 				                </li>
@@ -2353,7 +2575,12 @@
 				                        <div class="text">Сравнить</div>
 				                    </div>
 				                    <div class="dropup-button add-compare">
-				                        <b class="img img-comp"></b>
+				                        <b class="img img-comp">
+				                            <svg width="24px" height="13px">
+				                               <use xlink:href="#product-compare" width="24px" height="22px">
+				                              </use>
+				                            </svg>
+				                        </b>
 				                        <div class="in"></div>
 				                    </div>
 				                </li>
@@ -2362,7 +2589,8 @@
 				                        <div class="text">В корзину</div>
 				                    </div>
 				                    <div class="dropup-button add-basket">
-				                        <b class="img img-bask"></b>
+				                        <b class="img img-bask">
+				                        </b>
 				                    </div>
 				                </li>
 				            </ul>
@@ -2388,7 +2616,9 @@
 				        </div>
 				    </div>
 				</div>
-				<div class="product">
+				</div>
+				<div class="product-block">
+				   <div class="product">
 				    <div class="product-top">
 				        <a href="" class="openProductModal">
 				            <div class="white"></div>
@@ -2414,7 +2644,7 @@
 				                        <div class="text">В закладки</div>
 				                    </div>
 				                    <div class="dropup-button add-favorites">
-				                        <b class="img img-fav"></b>
+				                        <b class="img img-fav "></b>
 				                        <b class="in"></b>
 				                    </div>
 				                </li>
@@ -2423,7 +2653,12 @@
 				                        <div class="text">Сравнить</div>
 				                    </div>
 				                    <div class="dropup-button add-compare">
-				                        <b class="img img-comp"></b>
+				                        <b class="img img-comp">
+				                            <svg width="24px" height="13px">
+				                               <use xlink:href="#product-compare" width="24px" height="22px">
+				                              </use>
+				                            </svg>
+				                        </b>
 				                        <div class="in"></div>
 				                    </div>
 				                </li>
@@ -2432,7 +2667,8 @@
 				                        <div class="text">В корзину</div>
 				                    </div>
 				                    <div class="dropup-button add-basket">
-				                        <b class="img img-bask"></b>
+				                        <b class="img img-bask">
+				                        </b>
 				                    </div>
 				                </li>
 				            </ul>
@@ -2458,7 +2694,9 @@
 				        </div>
 				    </div>
 				</div>
-				<div class="product">
+				</div>
+				<div class="product-block">
+				   <div class="product">
 				    <div class="product-top">
 				        <a href="" class="openProductModal">
 				            <div class="white"></div>
@@ -2484,7 +2722,7 @@
 				                        <div class="text">В закладки</div>
 				                    </div>
 				                    <div class="dropup-button add-favorites">
-				                        <b class="img img-fav"></b>
+				                        <b class="img img-fav "></b>
 				                        <b class="in"></b>
 				                    </div>
 				                </li>
@@ -2493,7 +2731,12 @@
 				                        <div class="text">Сравнить</div>
 				                    </div>
 				                    <div class="dropup-button add-compare">
-				                        <b class="img img-comp"></b>
+				                        <b class="img img-comp">
+				                            <svg width="24px" height="13px">
+				                               <use xlink:href="#product-compare" width="24px" height="22px">
+				                              </use>
+				                            </svg>
+				                        </b>
 				                        <div class="in"></div>
 				                    </div>
 				                </li>
@@ -2502,7 +2745,8 @@
 				                        <div class="text">В корзину</div>
 				                    </div>
 				                    <div class="dropup-button add-basket">
-				                        <b class="img img-bask"></b>
+				                        <b class="img img-bask">
+				                        </b>
 				                    </div>
 				                </li>
 				            </ul>
@@ -2528,7 +2772,9 @@
 				        </div>
 				    </div>
 				</div>
-				<div class="product">
+				</div>
+				<div class="product-block">
+				   <div class="product">
 				    <div class="product-top">
 				        <a href="" class="openProductModal">
 				            <div class="white"></div>
@@ -2554,7 +2800,7 @@
 				                        <div class="text">В закладки</div>
 				                    </div>
 				                    <div class="dropup-button add-favorites">
-				                        <b class="img img-fav"></b>
+				                        <b class="img img-fav "></b>
 				                        <b class="in"></b>
 				                    </div>
 				                </li>
@@ -2563,7 +2809,12 @@
 				                        <div class="text">Сравнить</div>
 				                    </div>
 				                    <div class="dropup-button add-compare">
-				                        <b class="img img-comp"></b>
+				                        <b class="img img-comp">
+				                            <svg width="24px" height="13px">
+				                               <use xlink:href="#product-compare" width="24px" height="22px">
+				                              </use>
+				                            </svg>
+				                        </b>
 				                        <div class="in"></div>
 				                    </div>
 				                </li>
@@ -2572,7 +2823,8 @@
 				                        <div class="text">В корзину</div>
 				                    </div>
 				                    <div class="dropup-button add-basket">
-				                        <b class="img img-bask"></b>
+				                        <b class="img img-bask">
+				                        </b>
 				                    </div>
 				                </li>
 				            </ul>
@@ -2598,7 +2850,9 @@
 				        </div>
 				    </div>
 				</div>
-				<div class="product">
+				</div>
+				<div class="product-block">
+				   <div class="product">
 				    <div class="product-top">
 				        <a href="" class="openProductModal">
 				            <div class="white"></div>
@@ -2624,7 +2878,7 @@
 				                        <div class="text">В закладки</div>
 				                    </div>
 				                    <div class="dropup-button add-favorites">
-				                        <b class="img img-fav"></b>
+				                        <b class="img img-fav "></b>
 				                        <b class="in"></b>
 				                    </div>
 				                </li>
@@ -2633,7 +2887,12 @@
 				                        <div class="text">Сравнить</div>
 				                    </div>
 				                    <div class="dropup-button add-compare">
-				                        <b class="img img-comp"></b>
+				                        <b class="img img-comp">
+				                            <svg width="24px" height="13px">
+				                               <use xlink:href="#product-compare" width="24px" height="22px">
+				                              </use>
+				                            </svg>
+				                        </b>
 				                        <div class="in"></div>
 				                    </div>
 				                </li>
@@ -2642,7 +2901,8 @@
 				                        <div class="text">В корзину</div>
 				                    </div>
 				                    <div class="dropup-button add-basket">
-				                        <b class="img img-bask"></b>
+				                        <b class="img img-bask">
+				                        </b>
 				                    </div>
 				                </li>
 				            </ul>
@@ -2667,6 +2927,7 @@
 				            <p class="price-n">122 850 <i class="fa fa-rub"></i></p>
 				        </div>
 				    </div>
+				</div>
 				</div>
 				<!-- end product -->
 				</div>
@@ -2676,17 +2937,77 @@
 	</div>
 </div>
 <!-- footer -->
+<div class="subscribe">
+  <div class="container">
+    <div class="subscribe-text">
+      <p class="text-big">Подпишитесь на новые поступления, акции и скидки</p>
+      <p class="text-small">Мы не спамим! Стараемся отправлять только самое интересное.</p>
+    </div>
+    <div class="subscribe-form">
+      <form action="" class="form">
+        <input type="text" placeholder="Введите E-mail" class="input">
+        <button class="button waves-effect waves-light">Подписаться</button>
+      </form>
+    </div>
+  </div>
+</div>
 <div class="footer">
   <div class="container">
-    <div class="row">
-      <div class="col offset-m2 m10">
-      <div class="right">
         <div class="footer-table">
           <div class="footer-logo table-cell">
             <a href="" class="logo-link">
               <div class="img agelia"></div>
             </a>
+            <div class="socials-list">
+              <div class="item-social">
+                <a href="">
+                  <div class="img vk"></div>
+                </a>
+              </div>
+              <div class="item-social">
+                <a href="">
+                  <div class="img od"></div>
+                </a>
+              </div>
+              <div class="item-social">
+                <a href="">
+                  <div class="img fb"></div>
+                </a>
+              </div>
+              <div class="item-social">
+                <a href="">
+                  <div class="img gp"></div>
+                </a>
+              </div>
+              <div class="item-social">
+                <a href="">
+                  <div class="img in"></div>
+                </a>
+              </div>
+            </div>
+            <div class="copyright">
+              <p class="copyright-text">
+                Интернет-магазин детских товаров.
+                <br>              
+                Все права защищены.
+                <br>©Agelia, 2015</p>
+            </div>
           </div>
+                    <!--  -->
+          <div class="footer-menu">
+            <div class="menu-title">
+              <p class="title-tex">Интернет-магазин</p>
+            </div>
+            <ul class="menu-list">
+              <li class="list-item"><a href="/" class="item-link">Бонусная программа</a></li>
+              <li class="list-item"><a href="" class="item-link">Доставка</a></li>
+              <li class="list-item"><a href="" class="item-link">Оплата</a></li>
+              <li class="list-item"><a href="" class="item-link">Сборка</a></li>
+              <li class="list-item"><a href="" class="item-link">Примерка</a></li>
+              <li class="list-item"><a href="" class="item-link">Возврат</a></li>
+            </ul>
+          </div>
+          <!--  -->
           <!--  -->
           <div class="footer-menu">
             <div class="menu-title">
@@ -2702,34 +3023,7 @@
             </ul>
           </div>
           <!--  -->
-          <!--  -->
-          <div class="footer-menu">
-            <div class="menu-title">
-              <p class="title-tex">Интернет-магазин</p>
-            </div>
-            <ul class="menu-list">
-              <li class="list-item"><a href="/" class="item-link">Каталог</a></li>
-              <li class="list-item"><a href="" class="item-link">Доставка</a></li>
-              <li class="list-item"><a href="" class="item-link">Оплата</a></li>
-              <li class="list-item"><a href="" class="item-link">Сборка</a></li>
-              <li class="list-item"><a href="" class="item-link">Примерка</a></li>
-              <li class="list-item"><a href="" class="item-link">Возврат</a></li>
-            </ul>
-          </div>
-          <!--  -->
-          <!--  -->
-          <div class="footer-menu">
-            <div class="menu-title">
-              <p class="title-tex">Агелия Бонус</p>
-            </div>
-            <ul class="menu-list">
-              <li class="list-item"><a href="/" class="item-link">Как стать участником?</a></li>
-              <li class="list-item"><a href="" class="item-link">Как накопить?</a></li>
-              <li class="list-item"><a href="" class="item-link">Как потратить?</a></li>
-              <li class="list-item"><a href="" class="item-link">Правила</a></li>
-            </ul>
-          </div>
-          <!--  -->
+
           <!--  -->
           <div class="footer-menu">
             <div class="menu-title">
@@ -2737,58 +3031,81 @@
             </div>
             <ul class="menu-list">
               <li class="list-item"><a href="/" class="item-link">Новости</a></li>
-              <li class="list-item"><a href="" class="item-link">Документы</a></li>
+              <li class="list-item"><a href="" class="item-link">Партнерство</a></li>
               <li class="list-item"><a href="" class="item-link">Вакансии</a></li>
-              <li class="list-item"><a href="" class="item-link">Сотрудничество</a></li>
               <li class="list-item"><a href="" class="item-link">Контакты</a></li>
             </ul>
           </div>
           <!--  -->
+          <!--  -->
+          <div class="footer-menu">
+            <div class="menu-title">
+              <p class="title-tex">Обратная связь</p>
+            </div>
+            <ul class="menu-list">
+              <li class="list-item">
+                <p class="item-link">
+                <span class="link-title">Телефон</span>
+               <a href="tel: +74953453040" class="text">+7 (495) 345-30-40</a>
+                </p>
+              </li>
+              <li class="list-item">
+                <p class="item-link">
+                <span class="link-title">Email</span>
+                  <a href="mailto:info@agelia.ru" class="text">info@agelia.ru</a>
+                </p>
+              </li>
+              <li class="list-item">
+                <p class="item-link">
+                  <span class="link-title">Адрес</span>
+                  <span class="text">г. Москва, Походный пр-д, д. 4, корп. 2, стр. 21 </span>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <!--  -->
         </div>
-        <div class="socials">
-        	<div class="copyright">
-        		<p class="copyright-text">
-        			2015 © Agelia Kids. Все права защищены.
-        		</p>
-        	</div>
-        	<div class="socials-list">
-        		<div class="item-social">
-        			<a href="">
-        				<div class="img vk"></div>
-        			</a>
-        		</div>
-        		<div class="item-social">
-        			<a href="">
-        				<div class="img od"></div>			
-        			</a>
-        		</div>
-        		<div class="item-social">
-        			<a href="">
-        				<div class="img fb"></div>
-        			</a>
-        		</div>
-        		<div class="item-social">
-        			<a href="">
-        				<div class="img gp"></div>
-        			</a>
-        		</div>
-        		<div class="item-social">
-        			<a href="">
-        				<div class="img in"></div>
-        			</a>
-        		</div>
-        		<div class="item-social">
-        			<a href="">
-        				<div class="img hz"></div>		
-        			</a>
-        		</div>
-        	</div>
-        	<div class="clearfix"></div>
-        </div>
-      </div>
+        <!-- <div class="socials">
+ 	<div class="copyright">
+ 		<p class="copyright-text">
+ 			2015 © Agelia Kids. Все права защищены.
+ 		</p>
+ 	</div>
+ 	<div class="socials-list">
+ 		<div class="item-social">
+ 			<a href="">
+ 				<div class="img vk"></div>
+ 			</a>
+ 		</div>
+ 		<div class="item-social">
+ 			<a href="">
+ 				<div class="img od"></div>			
+ 			</a>
+ 		</div>
+ 		<div class="item-social">
+ 			<a href="">
+ 				<div class="img fb"></div>
+ 			</a>
+ 		</div>
+ 		<div class="item-social">
+ 			<a href="">
+ 				<div class="img gp"></div>
+ 			</a>
+ 		</div>
+ 		<div class="item-social">
+ 			<a href="">
+ 				<div class="img in"></div>
+ 			</a>
+ 		</div>
+ 		<div class="item-social">
+ 			<a href="">
+ 				<div class="img hz"></div>		
+ 			</a>
+ 		</div>
+ 	</div>
+ 	<div class="clearfix"></div>
+ </div> -->
       <div class="clearfix"></div>
-      </div>
-    </div>
   </div>
 </div>
 	  <!-- Modal Cities -->
