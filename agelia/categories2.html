@@ -26,7 +26,12 @@
 <div class="header header__white">
     <div class="container">
         <div class="row">
-            <div class="col m2">
+            <!-- <div class="col m2"> -->
+            <div class="menu-open">
+                <a href="" class="open-button">
+                    <b class="img"></b>
+                </a>
+            </div>
                 <div class="header-logo">
                     <a href="/" class="logo-link">
                         <div class="logo-img">
@@ -34,14 +39,18 @@
                         </div>
                     </a>
                 </div>
-            </div>
-            <div class="col m10">
+            <!-- </div> -->
+            <!-- <div class="col m10"> -->
                 <div class="right">
             <!-- search -->
+            <div class="header-search__button">
+                <a href="#" class="button-link" data-activates="headerSearch"> <b class="icon icon-search"></b>
+                </a>
+            </div>
                 <div class="header-serch" id="headerSearch">
                     <form action="" class="form">
                         <div class="form-block">
-                            <b class="icon icon-search"></b>
+                            <b class="icon icon-search closeSearchInputMobile"></b>
                             <input type="search" id="inputSearch" data-href="searchDropdown" placeholder="Поиск">
                         </div>
                     </form>
@@ -518,7 +527,7 @@
                 <!-- end -->
                 <div class="clearfix"></div>
             </div>
-            </div>
+            <!-- </div> -->
             <div class="clearfix"></div>
         </div>
     </div>
@@ -526,7 +535,7 @@
 <div class="container">
 	<div class="row">
 	<!-- menu-left -->
-		<div class="col ">
+		<!-- <div class="col "> -->
 		<div class="menu_left">
 		<!--  -->
 			<div class="menu-user">
@@ -566,8 +575,8 @@
 		<!-- end user -->
 			<!-- nav -->
 			<div class="menu_nav">
-				<div class="nav-item">
-					<a href="/" class="item-link">Для мам<b class="img mom">
+				<div class="nav-item ">
+					<a href="/" class="item-link dropdown-item">Для мам<b class="img mom">
 						<!-- <svg  width="17px" height="20px">
 							<use xlink:href="#mom"  width="17px" height="20px">
 							</use>
@@ -579,6 +588,7 @@
 							<p class="title-text">
 								Для мам
 							</p>
+							<div class="dropdown-close"></div>
 						</div>
 						<div class="dropdown-lists">
 							<!--  -->
@@ -726,7 +736,7 @@
 					<!-- end drop -->
 				</div>
 				<div class="nav-item">
-					<a href="" class="item-link">Питание и кормление<b class="img eat">
+					<a href="" class="item-link dropdown-item">Питание и кормление<b class="img eat">
 							<!-- <svg width="20px" height="20px">
 							<use xlink:href="#eat" width="20px" height="20px">
 											</svg> -->
@@ -737,6 +747,7 @@
 							<p class="title-text">
 								Питание и кормление
 							</p>
+							<div class="dropdown-close"></div>
 						</div>
 						<div class="dropdown-lists">
 							<!--  -->
@@ -905,11 +916,11 @@
 			</div>
 			<!-- end small nav -->
 			</div>
-		</div>
+		<!-- </div> -->
 		<!-- end menu-left -->
 		<!-- content -->
 		<!-- products -->
-		<div class="col">
+		<div class="col  main-container">
 			<div class="banner">
 				<div class="banner-img">
 					<img src="img/banner.png" alt="" class="img">
@@ -918,6 +929,7 @@
 					<p class="text">Питание и кормление <span>›</span> Пюре</p>
 				</div>
 			</div>
+			<div class="sort-container">
 			<div class="categories-sort">
 				<div class="sort">
 					<div class="sort-title">
@@ -951,7 +963,15 @@
 				</div>
 				<div class="clearfix"></div>
 			</div>
-			<div class="categories-content">
+				<div class="sort-filter">
+				<a href=".menu-right" class="filter-button waves-effect waves-light">
+					Фильтр 
+				</a>
+			</div>
+			<div class="clearfix"></div>
+			</div>
+			<div class="products-main">
+			<div class="categories-content content-sq">
 			<div class="row">
 				<div class="categories-product">
 					<div class="product-block">
@@ -1674,6 +1694,8 @@
 					</div>
 				</div>
 			<div class="clearfix"></div>
+			</div>
+				<div class="clearfix"></div>
 			<div class="load">
 				<div class="load-text">Загрузка...</div>
 			</div>
@@ -1703,322 +1725,148 @@
 					<p class="pages-text">Показаны 2-5 из 45 страниц</p>
 				</div>
 			</div>		
-			</div>
 			<!-- right sidebar -->
 			<!-- end right sidebar -->
 				<div class="clearfix"></div>
 			</div>
 			<!-- <div class="col"> -->
-				<div class="menu-right">
-					<div class="child-button">		
-						<a href="/" class="button-link waves-effect waves-light">
-							Добавить ребенка
-						</a>
-					</div>
-					<div class="filter-block categoriesf-section">
-						<ul class="accardion not-accardion">
-						    <li>
-						    	<div class="collapsible-header">
-							    	<div class="header-title">
-							    		<p class="title-text">
-							    			Пюре
-							    		</p>
-							    	</div>
-						    	</div>
-					     		 <div class="collapsible-body">
-					     			<div class="brand-item">
-					     				<div class="brand-checkbox">
-										  <input type="checkbox" class="filled-in" id="brand1" />
-									      <label for="brand1"></label>
-										</div>	
-										<div class="brand-name">
-											<p class="name-text">
-												Фруктовые
-											</p>
-										</div>
-										<div class="brand-count">
-											240
-										</div>
-					     			</div>
-					     			<div class="brand-item">
-					     				<div class="brand-checkbox">
-										  <input type="checkbox" class="filled-in" id="brand2" />
-									      <label for="brand2"></label>
-										</div>	
-										<div class="brand-name">
-											<p class="name-text">
-												Овощные
-											</p>
-										</div>
-										<div class="brand-count">
-											70
-										</div>
-					     			</div>
-					     			<div class="brand-item">
-					     				<div class="brand-checkbox">
-										  <input type="checkbox" class="filled-in" id="brand3" />
-									      <label for="brand3"></label>
-										</div>	
-										<div class="brand-name">
-											<p class="name-text">
-												Фруктово-йогуртные
-											</p>
-										</div>
-										<div class="brand-count">
-											2460
-										</div>
-					     			</div>
-					     			<div class="brand-item">
-					     				<div class="brand-checkbox">
-										  <input type="checkbox" class="filled-in" id="brand4" />
-									      <label for="brand4"></label>
-										</div>	
-										<div class="brand-name">
-											<p class="name-text">
-												Овощные с мясом
-											</p>
-										</div>
-										<div class="brand-count">
-											42
-										</div>
-					     			</div>
-					     			<div class="brand-item">
-					     				<div class="brand-checkbox">
-										  <input type="checkbox" class="filled-in" id="brand5" />
-									      <label for="brand5"></label>
-										</div>	
-										<div class="brand-name">
-											<p class="name-text">
-												Мясные
-											</p>
-										</div>
-										<div class="brand-count">
-											5
-										</div>
-					     			</div>
-					     			<div class="brand-item">
-					     				<div class="brand-checkbox">
-										  <input type="checkbox" class="filled-in" id="brand5" />
-									      <label for="brand5"></label>
-										</div>	
-										<div class="brand-name">
-											<p class="name-text">
-												Фруктово-овощные
-											</p>
-										</div>
-										<div class="brand-count">
-											5
-										</div>
-					     			</div>
-					     		 </div>
-						    </li>
-						</ul>
-					</div>
-					<div class="filter-block">
-						<ul class="accardion" >
-						    <li>
-						    	<div class="collapsible-header">
-							    	<div class="header-title">
-							    		<p class="title-text">
-							    			Цена, руб
-							    		</p>
-							    	</div>
-						    		<div class="range-reset reset-content">
-						    			<p class="reset-text">Сбросить</p>
-						    		</div>
-									<div class="img toggle-accardion"></div>
-						    	</div>
-					     		 <div class="collapsible-body">
-					     			<div class="price-range">
-					     			<div class="range-output">
-					     				<input class="range-min js-input">
-					     				<div class="range-sep">-</div>
-					     				<input class="range-max js-input-to">
-					     			</div>
-					     				<div class="range">
-					     					<input type="range" class="js-range-slider">
-					     				</div>
-					     			</div>
-					     			<div class="range-button waves-effect waves-light">
-					     				<p class="button-text">Применить</p>
-					     			</div>
-					     		 </div>
-						    </li>
-						</ul>
-					</div>
-					<div class="filter-block brand-section">
-						<ul class="accardion" >
-						    <li>
-						    	<div class="collapsible-header">
-							    	<div class="header-title">
-							    		<p class="title-text">
-							    			Бренд
-							    		</p>
-							    	</div>
-						    		<div class="brand-reset reset-content">
-						    			<p class="reset-text">Сбросить</p>
-						    		</div>
-									<div class="img toggle-accardion"></div>
-						    	</div>
-					     		 <div class="collapsible-body">
-					     			<div class="brand-item">
-					     				<div class="brand-checkbox">
-										  <input type="checkbox" class="filled-in" id="brand1" />
-									      <label for="brand1"></label>
-										</div>	
-										<div class="brand-name">
-											<p class="name-text">
-												Asus
-											</p>
-										</div>
-										<div class="brand-count">
-											240
-										</div>
-					     			</div>
-					     			<div class="brand-item">
-					     				<div class="brand-checkbox">
-										  <input type="checkbox" class="filled-in" id="brand2" />
-									      <label for="brand2"></label>
-										</div>	
-										<div class="brand-name">
-											<p class="name-text">
-												Acer
-											</p>
-										</div>
-										<div class="brand-count">
-											70
-										</div>
-					     			</div>
-					     			<div class="brand-item">
-					     				<div class="brand-checkbox">
-										  <input type="checkbox" class="filled-in" id="brand3" />
-									      <label for="brand3"></label>
-										</div>	
-										<div class="brand-name">
-											<p class="name-text">
-												Apple
-											</p>
-										</div>
-										<div class="brand-count">
-											2460
-										</div>
-					     			</div>
-					     			<div class="brand-item">
-					     				<div class="brand-checkbox">
-										  <input type="checkbox" class="filled-in" id="brand4" />
-									      <label for="brand4"></label>
-										</div>	
-										<div class="brand-name">
-											<p class="name-text">
-												Dell
-											</p>
-										</div>
-										<div class="brand-count">
-											42
-										</div>
-					     			</div>
-					     			<div class="brand-item">
-					     				<div class="brand-checkbox">
-										  <input type="checkbox" class="filled-in" id="brand5" />
-									      <label for="brand5"></label>
-										</div>	
-										<div class="brand-name">
-											<p class="name-text">
-												HP
-											</p>
-										</div>
-										<div class="brand-count">
-											5
-										</div>
-					     			</div>
-					     			<div class="brand-all">
-					     				<a href="/" class="all-see">Показать все</a>
-					     			</div>
-					     		 </div>
-						    </li>
-						</ul>
-					</div>
-					<div class="filter-block color-section">
-						<ul class="accardion">
-						    <li>
-						    	<div class="collapsible-header">
-							    	<div class="header-title">
-							    		<p class="title-text">
-							    			Цвет
-							    		</p>
-							    	</div>
-						    		<div class="color-reset reset-content">
-						    			<p class="reset-text">Сбросить</p>
-						    		</div>
-									<div class="img toggle-accardion"></div>
-						    	</div>
-					     		 <div class="collapsible-body">
-									<div class="color-checkbox">
-										<input type="checkbox" class="filled-in" id="color1" />
-								      <label for="color1">
-								      	<div class="color light-blue"></div>
-								      </label>
-									</div>
-									<div class="color-checkbox">
-										<input type="checkbox" class="filled-in" id="color2" />
-								      <label for="color2">
-								      	<div class="color blue"></div>
-								      </label>
-									</div>
-									<div class="color-checkbox">
-										<input type="checkbox" class="filled-in" id="color3" />
-								      <label for="color3">
-								      	<div class="color orange"></div>
-								      </label>
-									</div>
-									<div class="color-checkbox">
-										<input type="checkbox" class="filled-in" id="color4" />
-								      <label for="color4">
-								      	<div class="color red" ></div>
-								      </label>
-									</div>
-									<div class="color-checkbox">
-										<input type="checkbox" class="filled-in" id="color5" />
-								      <label for="color5">
-								      	<div class="color yellow"></div>
-								      </label>
-									</div>
-									<div class="color-checkbox">
-										<input type="checkbox" class="filled-in" id="color6" />
-								      <label for="color6">
-								      	<div class="color light-green"></div>
-								      </label>
-									</div>
-									<div class="color-checkbox">
-										<input type="checkbox" class="filled-in" id="color7" />
-								      <label for="color7">
-								      	<div class="color green"></div>
-								      </label>
-									</div>
-									<div class="color-checkbox">
-										<input type="checkbox" class="filled-in" id="color8" />
-								      <label for="color8">
-								      	<div class="color light-teal"></div>
-								      </label>
-									</div>
-									<div class="color-checkbox">
-										<input type="checkbox" class="filled-in" id="color9" />
-								      <label for="color9">
-								      	<div class="color teal"></div>
-								      </label>
-									</div>
-									<div class="color-checkbox">
-										<input type="checkbox" class="filled-in" id="color10" />
-								      <label for="color10">
-								      	<div class="color purple"></div>
-								      </label>
-									</div>
-					     		 </div>
-						    </li>
-						</ul>
-					</div>
-				</div>
-			<!-- </div> -->
+			   <div class="menu-right animatedMenuRight">
+		        <div class="filter-block favorites-section">
+        		    <ul class="accardion not-accardion">
+        		        <li>
+        		            <div class="collapsible-header">
+        		                <div class="header-title">
+        		                    <p class="title-text">
+        		                        Показать
+        		                    </p>
+        		                </div>
+        		                <div class="favorites-reset reset-content">
+        		                    <p class="reset-text">Сбросить</p>
+        		                </div>
+        		            </div>
+        		            <div class="collapsible-body">
+        		               <div class="favorites-a">
+        		                <div class="brand-item">
+        		                    <div class="brand-checkbox">
+        		                        <input type="checkbox" class="filled-in" id="brand1" />
+        		                        <label for="brand1"></label>
+        		                    </div>	
+        		                    <div class="brand-name">
+        		                        <p class="name-text">
+        		                            Фруктовые
+        		                        </p>
+        		                    </div>
+        		                    <div class="brand-count">
+        		                        240
+        		                    </div>
+        		                </div>
+        		                <div class="brand-item">
+        		                    <div class="brand-checkbox">
+        		                        <input type="checkbox" class="filled-in" id="brand2" />
+        		                        <label for="brand2"></label>
+        		                    </div>	
+        		                    <div class="brand-name">
+        		                        <p class="name-text">
+        		                            Овощные
+        		                        </p>
+        		                    </div>
+        		                    <div class="brand-count">
+        		                        70
+        		                    </div>
+        		                </div>
+        		                <div class="brand-item">
+        		                    <div class="brand-checkbox">
+        		                        <input type="checkbox" class="filled-in" id="brand3" />
+        		                        <label for="brand3"></label>
+        		                    </div>	
+        		                    <div class="brand-name">
+        		                        <p class="name-text">
+        		                            Фруктово-йогуртные
+        		                        </p>
+        		                    </div>
+        		                    <div class="brand-count">
+        		                        2460
+        		                    </div>
+        		                </div>
+        		                <div class="brand-item">
+        		                    <div class="brand-checkbox">
+        		                        <input type="checkbox" class="filled-in" id="brand4" />
+        		                        <label for="brand4"></label>
+        		                    </div>	
+        		                    <div class="brand-name">
+        		                        <p class="name-text">
+        		                            Овощные с мясом
+        		                        </p>
+        		                    </div>
+        		                    <div class="brand-count">
+        		                        42
+        		                    </div>
+        		                </div>
+        		                
+        		                <div class="brand-item">
+        		                    <div class="brand-checkbox">
+        		                        <input type="checkbox" class="filled-in" id="brand5" />
+        		                        <label for="brand5"></label>
+        		                    </div>	
+        		                    <div class="brand-name">
+        		                        <p class="name-text">
+        		                            Мясные
+        		                        </p>
+        		                    </div>
+        		                    <div class="brand-count">
+        		                        5
+        		                    </div>
+        		                </div>
+        		                <div class="brand-item">
+        		                    <div class="brand-checkbox">
+        		                        <input type="checkbox" class="filled-in" id="brand5" />
+        		                        <label for="brand5"></label>
+        		                    </div>	
+        		                    <div class="brand-name">
+        		                        <p class="name-text">
+        		                            Фруктово-овощные
+        		                        </p>
+        		                    </div>
+        		                    <div class="brand-count">
+        		                        5
+        		                    </div>
+        		                </div>
+        		                <div class="brand-item">
+        		                    <div class="brand-checkbox">
+        		                        <input type="checkbox" class="filled-in" id="brand5" />
+        		                        <label for="brand5"></label>
+        		                    </div>	
+        		                    <div class="brand-name">
+        		                        <p class="name-text">
+        		                            Фруктово-овощные
+        		                        </p>
+        		                    </div>
+        		                    <div class="brand-count">
+        		                        5
+        		                    </div>
+        		                </div>
+        		                <div class="brand-item">
+        		                    <div class="brand-checkbox">
+        		                        <input type="checkbox" class="filled-in" id="brand5" />
+        		                        <label for="brand5"></label>
+        		                    </div>	
+        		                    <div class="brand-name">
+        		                        <p class="name-text">
+        		                            Фруктово-овощные
+        		                        </p>
+        		                    </div>
+        		                    <div class="brand-count">
+        		                        5
+        		                    </div>
+        		                </div>    
+        		               </div>
+        		<!--              -->
+        		            </div>
+        		        </li>
+        		    </ul>
+        		</div>
+		    </div>
+		    </div>
 		</div>
 		<!-- end products -->
 		<!-- content -->
@@ -2430,7 +2278,7 @@
 		      	</div>
 		      	<!-- end top -->
 		      	<div class="card-main">
-		      	<div class="left_block">
+		      	<div class="left_block" id="cardLeftBlock">
 		      	<!-- slider -->
 		      		<div class="card-slider">
 		      			<div class="slider-top">
@@ -2623,7 +2471,7 @@
 		      							<div class="star"></div>
 		      						</div>
 		      						<div class="review-text">
-		      							<p class="text">Коляску используем уже 8 месяцев. За все время эксплуатации она ни разу не сломалась, от нее ничего нигде не отвалилось. Ход плавный, ребенка в ней не трясет. Через 8 мес появилась амортизация небольшая) качество окраски ткани на высоте, за множество стирок ... Читать полностью</p>
+		      							<p class="text">Коляску используем уже 8 месяцев. За все время эксплуатации она ни разу не сломалась, от нее ничего нигде не отвалилось. Ход плавный, ребенка в ней не трясет. Через 8 мес появилась амортизация небольшая) качество окраски ткани на высоте, за множество стирок ... <a href="read-full">Читать полностью</a></p>
 		      						</div>
 		      					</div>
 		      				</div>
@@ -2647,7 +2495,7 @@
 		      							<div class="star"></div>
 		      						</div>
 		      						<div class="review-text">
-		      							<p class="text">Коляску используем уже 8 месяцев. За все время эксплуатации она ни разу не сломалась, от нее ничего нигде не отвалилось. Ход плавный, ребенка в ней не трясет. Через 8 мес появилась амортизация небольшая) качество окраски ткани на высоте, за множество стирок ... Читать полностью</p>
+		      							<p class="text">Коляску используем уже 8 месяцев. За все время эксплуатации она ни разу не сломалась, от нее ничего нигде не отвалилось. Ход плавный, ребенка в ней не трясет. Через 8 мес появилась амортизация небольшая) качество окраски ткани на высоте, за множество стирок ... <a href="read-full">Читать полностью</a></p>
 		      						</div>
 		      					</div>
 		      				</div>
