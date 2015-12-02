@@ -1,0 +1,1687 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="ru"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Order</title>
+    <meta name="description" content="">
+   <link rel="stylesheet" href="css/plugins.css">
+
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body >
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+<symbol id="product-compare" viewBox="0 0 24 24">
+    <path d="M7,11l-4,4l4,4v-3h7v-2H7V11z M21,9l-4-4v3h-7v2h7v3L21,9z"></path>
+</symbol>
+<symbol id="go" viewBox="0 0 24 24">
+    <path d="M20,11H7.8l5.6-5.6L12,4l-8,8l8,8l1.4-1.4L7.8,13H20V11z"></path>
+</symbol>
+</svg>
+<div class="header header__white">
+    <div class="container max-width">
+        <div class="row">
+            <!-- <div class="col m2"> -->
+            <div class="menu-open hidden">
+                <a href="" class="open-button">
+                    <b class="img"></b>
+                </a>
+            </div>
+                <div class="header-logo">
+                    <a href="/" class="logo-link">
+                        <div class="logo-img">
+                            <div class="img"></div>
+                        </div>
+                    </a>
+                </div>
+            <!-- </div> -->
+            <!-- <div class="col m10"> -->
+                <div class="right hidden">
+            <!-- search -->
+            <div class="header-search__button">
+                <a href="#" class="button-link" data-activates="headerSearch"> <b class="icon icon-search"></b>
+                </a>
+            </div>
+                <div class="header-serch" id="headerSearch">
+                    <form action="" class="form">
+                        <div class="form-block">
+                            <b class="icon icon-search closeSearchInputMobile"></b>
+                            <input type="search" id="inputSearch" data-href="searchDropdown" placeholder="Поиск">
+                        </div>
+                    </form>
+                    <div class="search-dropdown" id="searchDropdown">
+                        <div class="dropdown-pages">
+                            <div class="search-page">
+                                <a href="/" class="page-link">
+                                    <b class="icon icon-pages"></b>
+                                    <span class="link-text">Подгузники</span>
+                                </a>
+                            </div>
+                            <div class="search-page">
+                                <a href="/" class="page-link">
+                                    <b class="icon icon-pages"></b>
+                                    <span class="link-text">Уход и гигиена</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="dropdown-products">
+                        <!--  -->
+                            <div class="search-product">
+                                <a href="/" class="product-link">
+                                    <div class="product-img">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="info-title">
+                                            <p class="title-text">Подгузники MERRIES для новорожденных 0-5кг, 24 шт р.NB</p>
+                                        </div>
+                                        <div class="info-bottom">
+                                            <div class="info-stars">
+                                                <div class="star star-active"></div>
+                                                <div class="star star-active"></div>
+                                                <div class="star star-active"></div>
+                                                <div class="star star-dis"></div>
+                                                <div class="star star-dis"></div>
+                                            </div>
+                                            <div class="info-price">
+                                                <p class="price-grand">120 600 <i class="fa fa-rub"></i></p>
+                                                <p class="price-new">120 200 <i class="fa fa-rub"></i></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--  -->
+                            <!--  -->
+                            <div class="search-product">
+                                <a href="/" class="product-link">
+                                    <div class="product-img">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="info-title">
+                                            <p class="title-text">Подгузники MERRIES маленькая пачка 9-14 кг, 18 шт. р.L</p>
+                                        </div>
+                                        <div class="info-bottom">
+                                            <div class="info-stars">
+                                                <div class="star star-active"></div>
+                                                <div class="star star-active"></div>
+                                                <div class="star star-active"></div>
+                                                <div class="star star-dis"></div>
+                                                <div class="star star-dis"></div>
+                                            </div>
+                                            <div class="info-price">
+                                                <p class="price-grand">120 600 <i class="fa fa-rub"></i></p>
+                                                <p class="price-new">120 200 <i class="fa fa-rub"></i></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--  -->
+                        </div>
+                    </div>
+                </div>
+                <!-- end serch -->
+                <!-- cities -->
+                <div class="header-city">
+                    <div class="city-text modal-trigger" id="headerCity" data-target="modalCities"> 
+                        <p class="text">Москва</p>
+                        <b class="icon icon-dropdown"></b>
+                    </div>
+                </div>
+                <!-- end cities -->
+                <div class="header-favorites">
+                    <div class="favorites-button">
+                        <a href="#" class="button-link button-dropdown" data-activates='favoritesDropdown' >
+                            <div class="button-count">
+                                <span>2</span>
+                            </div>
+                            <b class="icon icon-heart"></b>
+                        </a>
+                    </div>
+                    <div class="dropdown" id='favoritesDropdown'>
+                        <div class="dropdown-title">
+                            <p class="title-text">Закладки</p>
+                            <b class="closeDropdown"></b>
+                        </div>
+                        <div class="dropdown-product">
+                        <!--  -->
+                            <div class="product-block">
+                                <div class="product-img">
+                                    <img src="" alt="" class="img">
+                                </div>
+                                <div class="product-info">
+                                    <div class="info-title">
+                                        <p class="info-text">Коляска SMILE LINE комбинированная "Serenade" 3 в 1</p>
+                                        <div class="info-buy">
+                                            <b class="icon icon-buy"></b>
+                                        </div>
+                                    </div>
+                                    <div class="info-bottom">
+                                        <div class="info-stars">
+                                            <div class="star star-active"></div>
+                                            <div class="star star-active"></div>
+                                            <div class="star star-active"></div>
+                                            <div class="star star-dis"></div>
+                                            <div class="star star-dis"></div>
+                                        </div>
+                                        <div class="info-price">
+                                            <p class="price-grand">120 600 <i class="fa fa-rub"></i></p>
+                                            <p class="price-new">120 200 <i class="fa fa-rub"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!--  -->
+                        <!--  -->
+                            <div class="product-block">
+                                <div class="product-img">
+                                    <img src="" alt="" class="img">
+                                </div>
+                                <div class="product-info">
+                                    <div class="info-title">
+                                        <p class="info-text">Коляска SMILE LINE комбинированная "Serenade" 3 в 1</p>
+                                        <div class="info-buy">
+                                            <b class="icon icon-buy"></b>
+                                        </div>
+                                    </div>
+                                    <div class="info-bottom">
+                                        <div class="info-stars">
+                                            <div class="star star-active"></div>
+                                            <div class="star star-active"></div>
+                                            <div class="star star-active"></div>
+                                            <div class="star star-dis"></div>
+                                            <div class="star star-dis"></div>
+                                        </div>
+                                        <div class="info-price">
+                                            <p class="price-new">12 000 <i class="fa fa-rub"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!--  -->
+                        <!--  -->
+                            <div class="product-block">
+                                <div class="product-img">
+                                    <img src="" alt="" class="img">
+                                </div>
+                                <div class="product-info">
+                                    <div class="info-title">
+                                        <p class="info-text">Коляска SMILE LINE комбинированная "Serenade" 3 в 1</p>
+                                        <div class="info-buy">
+                                            <b class="icon icon-buy"></b>
+                                        </div>
+                                    </div>
+                                    <div class="info-bottom">
+                                        <div class="info-stars">
+                                            <div class="star star-active"></div>
+                                            <div class="star star-active"></div>
+                                            <div class="star star-active"></div>
+                                            <div class="star star-dis"></div>
+                                            <div class="star star-dis"></div>
+                                        </div>
+                                        <div class="info-price">
+                                            <p class="price-new">25 000 <i class="fa fa-rub"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!--  -->
+                        <!-- dropdown bottom -->
+                        <div class="dropdown-footer">
+                            <a href="/" class="dropdown-button button-clear waves-effect waves-light">Очистить все</a>
+                            <a href="/" class="dropdown-button button-infav waves-effect waves-light">В закладки</a>
+                        </div>
+                        <!-- end -->
+                        </div>
+                    </div>
+                </div>
+                <!-- end favorites -->
+                <!-- compare -->
+                <div class="header-compare">
+                    <div class="compare-button">
+                        <a href="#" class="button-link button-dropdown" data-activates='compareDropdown' >
+                            <div class="button-count">
+                                <span>2</span>
+                            </div>
+                            <b class="icon icon-compare"></b>
+                        </a>
+                    </div>
+                    <div class="dropdown" id='compareDropdown'>
+                        <div class="dropdown-title">
+                            <p class="title-text">Сравнить</p>
+                            <b class="closeDropdown"></b>
+                        </div>
+                        <div class="dropdown-product">
+                        <!--  -->
+                            <div class="product-block">
+                                <div class="product-img">
+                                    <img src="" alt="" class="img">
+                                </div>
+                                <div class="product-info">
+                                    <div class="info-title">
+                                        <p class="info-text">Коляска SMILE LINE комбинированная "Serenade" 3 в 1</p>
+                                        <div class="info-remove">
+                                            <b class="icon icon-remove"></b>
+                                        </div>
+                                    </div>
+                                    <div class="info-bottom">
+                                        <div class="info-stars">
+                                            <div class="star star-active"></div>
+                                            <div class="star star-active"></div>
+                                            <div class="star star-active"></div>
+                                            <div class="star star-dis"></div>
+                                            <div class="star star-dis"></div>
+                                        </div>
+                                        <div class="info-price">
+                                            <p class="price-grand">120 600 <i class="fa fa-rub"></i></p>
+                                            <p class="price-new">120 200 <i class="fa fa-rub"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!--  -->
+                        <!--  -->
+                            <div class="product-block">
+                                <div class="product-img">
+                                    <img src="" alt="" class="img">
+                                </div>
+                                <div class="product-info">
+                                    <div class="info-title">
+                                        <p class="info-text">Коляска SMILE LINE комбинированная "Serenade" 3 в 1</p>
+                                        <div class="info-remove">
+                                            <b class="icon icon-remove"></b>
+                                        </div>
+                                    </div>
+                                    <div class="info-bottom">
+                                        <div class="info-stars">
+                                            <div class="star star-active"></div>
+                                            <div class="star star-active"></div>
+                                            <div class="star star-active"></div>
+                                            <div class="star star-dis"></div>
+                                            <div class="star star-dis"></div>
+                                        </div>
+                                        <div class="info-price">
+                                            <p class="price-new">12 000 <i class="fa fa-rub"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!--  -->
+                        <!--  -->
+                            <div class="product-block">
+                                <div class="product-img">
+                                    <img src="" alt="" class="img">
+                                </div>
+                                <div class="product-info">
+                                    <div class="info-title">
+                                        <p class="info-text">Коляска SMILE LINE комбинированная "Serenade" 3 в 1</p>
+                                        <div class="info-remove">
+                                            <b class="icon icon-remove"></b>
+                                        </div>
+                                    </div>
+                                    <div class="info-bottom">
+                                        <div class="info-stars">
+                                            <div class="star star-active"></div>
+                                            <div class="star star-active"></div>
+                                            <div class="star star-active"></div>
+                                            <div class="star star-dis"></div>
+                                            <div class="star star-dis"></div>
+                                        </div>
+                                        <div class="info-price">
+                                            <p class="price-new">25 000 <i class="fa fa-rub"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!--  -->
+                        <!-- dropdown bottom -->
+                        <div class="dropdown-footer">
+                            <a href="/" class="dropdown-button button-clear waves-effect waves-light">Очистить все</a>
+                            <a href="/" class="dropdown-button button-infav waves-effect waves-light">Сравнить</a>
+                        </div>
+                        <!-- end -->
+                        </div>
+                    </div>
+                </div>
+                <!-- end compare -->
+                <!-- basket -->
+                <div class="header-basket">
+                      <div class="basket-button">
+                        <a href="#" class="button-link button-dropdown" data-activates='basketDropdown' >
+                            <b class="icon icon-basket"></b>
+                            <span class="basket-summ"> 999 999 <i class="fa fa-rub"></i></span>
+                            <span class="basket-count">(99)</span>
+                        </a>
+                    </div>
+                    <div class="dropdown" id='basketDropdown'>
+                        <div class="dropdown-title">
+                            <p class="title-text">Корзина</p>
+                            <b class="closeDropdown"></b>
+                        </div>
+                        <div class="dropdown-product">
+                        <!--  -->
+                            <div class="product-block">
+                                <div class="product-img">
+                                    <img src="" alt="" class="img">
+                                </div>
+                                <div class="product-info">
+                                    <div class="info-title">
+                                        <p class="info-text">Коляска SMILE LINE комбинированная "Serenade" 3 в 1</p>
+                                        <div class="info-remove">
+                                            <b class="icon icon-remove"></b>
+                                        </div>
+                                    </div>
+                                    <div class="info-bottom">
+                                        <div class="info-stars">
+                                            <div class="star star-active"></div>
+                                            <div class="star star-active"></div>
+                                            <div class="star star-active"></div>
+                                            <div class="star star-dis"></div>
+                                            <div class="star star-dis"></div>
+                                        </div>
+                                        <div class="info-price">
+                                            <p class="price-grand">120 600 <i class="fa fa-rub"></i></p>
+                                            <p class="price-new">120 200 <i class="fa fa-rub"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!--  -->
+                        <!--  -->
+                            <div class="product-block">
+                                <div class="product-img">
+                                    <img src="" alt="" class="img">
+                                </div>
+                                <div class="product-info">
+                                    <div class="info-title">
+                                        <p class="info-text">Коляска SMILE LINE комбинированная "Serenade" 3 в 1</p>
+                                        <div class="info-remove">
+                                            <b class="icon icon-remove"></b>
+                                        </div>
+                                    </div>
+                                    <div class="info-bottom">
+                                        <div class="info-stars">
+                                            <div class="star star-active"></div>
+                                            <div class="star star-active"></div>
+                                            <div class="star star-active"></div>
+                                            <div class="star star-dis"></div>
+                                            <div class="star star-dis"></div>
+                                        </div>
+                                        <div class="info-price">
+                                            <p class="price-new">12 000 <i class="fa fa-rub"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!--  -->
+                        <!--  -->
+                            <div class="product-block">
+                                <div class="product-img">
+                                    <img src="" alt="" class="img">
+                                </div>
+                                <div class="product-info">
+                                    <div class="info-title">
+                                        <p class="info-text">Коляска SMILE LINE комбинированная "Serenade" 3 в 1</p>
+                                        <div class="info-remove">
+                                            <b class="icon icon-remove"></b>
+                                        </div>
+                                    </div>
+                                    <div class="info-bottom">
+                                        <div class="info-stars">
+                                            <div class="star star-active"></div>
+                                            <div class="star star-active"></div>
+                                            <div class="star star-active"></div>
+                                            <div class="star star-dis"></div>
+                                            <div class="star star-dis"></div>
+                                        </div>
+                                        <div class="info-price">
+                                            <p class="price-new">25 000 <i class="fa fa-rub"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!--  -->
+                        <!-- summ -->
+                        <div class="dropdown-summ">
+                            <div class="summ-text">
+                                <p class="text">Всего: </p>
+                            </div>
+                            <div class="summ-cost">
+                                <p class="cost-text">125 200 <i class="fa fa-rub"></i></p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <!-- end summ -->
+                        <!-- dropdown bottom -->
+                        <div class="dropdown-footer">
+                            <a href="/" class="dropdown-button button-buy waves-effect waves-light">Оформить заказ</a>
+                            <a href="/" class="dropdown-button button-infav waves-effect waves-light">В корзину</a>
+                        </div>
+                        <!-- end -->
+                        </div>
+                    </div>
+                </div>
+                <!-- end basket -->
+                <div class="header-contacts">
+                   <div class="contacts-button">
+                        <a href="#" class="button-link button-dropdown" data-activates='contactsDropdown' >
+                            <b class="icon icon-tell"></b>
+                        </a>
+                    </div>
+                    <div class="dropdown" id='contactsDropdown'>
+                        <div class="dropdown-title">
+                            <p class="title-text">Контакты</p>
+                            <b class="closeDropdown"></b>
+                        </div>
+                        <div class="dropdown-contacts">
+                            <div class="contact">
+                                <div class="contact-info">
+                                    <p class="info-text">Телефон</p>
+                                </div>
+                                <div class="contact-text">
+                                    <p class="text">+7 (495) 345-30-40</p>
+                                </div>
+                                <div class="contact-img">
+                                    <div class="img tell"></div>
+                                </div>
+                            </div>
+                            <div class="contact">
+                                <div class="contact-info">
+                                    <p class="info-text">Email</p>
+                                </div>
+                                <div class="contact-text">
+                                    <p class="text">info@agelia.ru</p>
+                                </div>
+                                <div class="contact-img">
+                                    <div class="img email"></div>
+                                </div>
+                            </div>
+                            <div class="contact">
+                                <div class="contact-info">
+                                    <p class="info-text">Адрес</p>
+                                </div>
+                                <div class="contact-text">
+                                    <p class="text">г. Москва, Походный пр-д, <br> д. 4, корп. 2, стр. 2 </p>
+                                </div>
+                                <div class="contact-img">
+                                    <div class="img place"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- dropdown bottom -->
+                        <div class="dropdown-footer">
+                            <a href="/" class="dropdown-button button-call waves-effect waves-light">Позвоните мне</a>
+                            <a href="/" class="dropdown-button button-infav waves-effect waves-light">В контакты</a>
+                        </div>
+                        <!-- end -->
+                    </div>
+                    <!-- end -->
+                </div>
+                <!-- end -->
+                <div class="clearfix"></div>
+            </div>
+            <!-- </div> -->
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="hidden">
+			<!-- <div class="col "> -->
+			<div class="menu_left">
+			<!--  -->
+				<div class="menu-user">
+					<div class="user-top">
+						<div class="user-avatar">
+							<div class="avatar-img">
+								<img src="" alt="" class="img">	
+							</div>
+						</div>
+						<div class="user-login">
+							<a class="login modal-trigger" data-target="loginModal">Вход</a>
+							<a data-target="regModal" class="register modal-trigger regModalButton">Регистрация</a>
+						</div>
+						<!-- <div class="user-info">
+							<p class="user-name">Василий</p>
+							<p class="user-points">290 Баллов</p>
+						</div> -->
+
+						<div class="toggle-dropdown" data-id="user-menu">
+							<div class="img"></div>
+						</div>
+					</div>
+					<div class="dropdown" id="user-menu">
+						<ul class="menu-list">
+							<div id="userHover"></div>
+							<li class="list-item"><a href="/" class="item-link">Моя Агелия</a></li>
+							<li class="list-item active"><a href="/" class="item-link">Мои Заказы</a></li>
+							<li class="list-item"><a href="/" class="item-link">Мои Баллы</a></li>
+							<li class="list-item"><a href="/" class="item-link">Мои Дети</a></li>
+							<li class="list-item"><a href="/" class="item-link">Мои Друзья</a></li>
+							<li class="list-item"><a href="/" class="item-link">Мои Новости</a></li>
+							<li class="list-item"><a href="/" class="item-link">Мои Настройки</a></li>
+							<li class="list-item"><a href="/" class="item-link">Выйти</a></li>
+						</ul>
+					</div>
+				</div>
+			<!-- end user -->
+				<!-- nav -->
+				<div class="menu_nav">
+					<div class="nav-item ">
+						<a href="/" class="item-link dropdown-item">Для мам<b class="img mom">
+							<!-- <svg  width="17px" height="20px">
+								<use xlink:href="#mom"  width="17px" height="20px">
+								</use>
+							</svg> -->
+						</b></a>
+						<!-- drop -->
+						<div class="dropdown">
+							<div class="dropdown-title">
+								<p class="title-text">
+									Для мам
+								</p>
+								<div class="dropdown-close"></div>
+							</div>
+							<div class="dropdown-lists">
+								<!--  -->
+								<div class="float_block">
+									<div class="category-block">
+										<div class="category-name">
+											<p class="name-text">Категория</p>
+										</div>
+										<ul class="category-list">
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+										</ul>
+									</div>
+									<!--  -->
+									<!--  -->
+									<div class="category-block">
+										<div class="category-name">
+											<p class="name-text">Категория</p>
+										</div>
+										<ul class="category-list">
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+										</ul>
+									</div>
+									<!--  -->
+								</div>
+								<!--  -->
+								<div class="float_block">
+								<!--  -->
+								<div class="category-block">
+									<div class="category-name">
+										<p class="name-text">Категория</p>
+									</div>
+									<ul class="category-list">
+										<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+										<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+										<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+									</ul>
+								</div>
+								<!--  -->
+								<!--  -->
+								<div class="category-block">
+									<div class="category-name">
+										<p class="name-text">Категория</p>
+									</div>
+									<ul class="category-list">
+										<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+										<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+										<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+										<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+										<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+										<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+									</ul>
+								</div>
+								<!--  -->						
+								<!--  -->
+								<div class="category-block">
+									<div class="category-name">
+										<p class="name-text">Категория</p>
+									</div>
+									<ul class="category-list">
+										<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+									</ul>
+								</div>
+								<!--  -->
+								</div>
+								<!--  -->
+								<div class="float_block">
+									<!--  -->
+									<div class="category-block">
+										<div class="category-name">
+											<p class="name-text">Категория</p>
+										</div>
+										<ul class="category-list">
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+										</ul>
+									</div>
+									<!--  -->
+									<!--  -->
+									<div class="category-block">
+										<div class="category-name">
+											<p class="name-text">Категория</p>
+										</div>
+										<ul class="category-list">
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+										</ul>
+									</div>
+									<!--  -->
+								</div>
+								<!--  -->
+								<!--  -->
+								<div class="float_block">
+									<!--  -->
+									<div class="category-block">
+										<div class="category-name">
+											<p class="name-text">Категория</p>
+										</div>
+										<ul class="category-list">
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+										</ul>
+									</div>
+									<!--  -->
+									<!--  -->
+									<div class="category-block">
+										<div class="category-name">
+											<p class="name-text">Категория</p>
+										</div>
+										<ul class="category-list">
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+											<li class="category-item"><a href="/" class="category-link">Подкатегория</a></li>
+										</ul>
+									</div>
+									<!--  -->
+								</div>
+								<!--  -->
+							</div>
+						</div>
+						<!-- end drop -->
+					</div>
+					<div class="nav-item">
+						<a href="" class="item-link dropdown-item">Питание и кормление<b class="img eat">
+								<!-- <svg width="20px" height="20px">
+								<use xlink:href="#eat" width="20px" height="20px">
+												</svg> -->
+						</b></a>
+									<!-- drop -->
+						<div class="dropdown">
+							<div class="dropdown-title">
+								<p class="title-text">
+									Питание и кормление
+								</p>
+								<div class="dropdown-close"></div>
+							</div>
+							<div class="dropdown-lists">
+								<!--  -->
+								<div class="float_block">
+									<div class="category-block">
+										<div class="category-name">
+											<p class="name-text">Пюре</p>
+										</div>
+										<ul class="category-list">
+											<li class="category-item"><a href="/" class="category-link">Пюре фруктовые</a></li>
+											<li class="category-item"><a href="/" class="category-link">Пюре овощные</a></li>
+											<li class="category-item"><a href="/" class="category-link">Пюре фруктово-йогуртные</a></li>
+											<li class="category-item"><a href="/" class="category-link">Пюре овощные с мясом</a></li>
+											<li class="category-item"><a href="/" class="category-link">Пюре мясные</a></li>
+											<li class="category-item"><a href="/" class="category-link">Пюре фруктово-овощные</a></li>
+											<li class="category-item"><a href="/" class="category-link">Десерты</a></li>
+											<li class="category-item"><a href="/" class="category-link">Пюре фруктово-творожные</a></li>
+											<li class="category-item"><a href="/" class="category-link">Пюре фруктово-сливочные</a></li>
+											<li class="category-item"><a href="/" class="category-link">Пюре овощные с рыбой</a></li>
+											<li class="category-item"><a href="/" class="category-link">Фрикадельки с овощами</a></li>
+											<li class="category-item"><a href="/" class="category-link">Фрикадельки</a></li>
+											<li class="category-item"><a href="/" class="category-link">Пюре рыбные</a></li>
+										</ul>
+									</div>
+									<!--  -->
+								</div>
+								<!--  -->
+								<div class="float_block">
+								<!--  -->
+								<div class="category-block">
+									<div class="category-name">
+										<p class="name-text">Кондитерские изделия</p>
+									</div>
+									<ul class="category-list">
+										<li class="category-item"><a href="/" class="category-link">Драже</a></li>
+										<li class="category-item"><a href="/" class="category-link">Мармелад</a></li>
+										<li class="category-item"><a href="/" class="category-link">Батончики Мюсли</a></li>
+										<li class="category-item"><a href="/" class="category-link">Шоколад</a></li>
+										<li class="category-item"><a href="/" class="category-link">Шоколадные яйца</a></li>
+										<li class="category-item"><a href="/" class="category-link">Вафли</a></li>
+										<li class="category-item"><a href="/" class="category-link">Конфеты</a></li>
+										<li class="category-item"><a href="/" class="category-link">Суфле</a></li>
+										<li class="category-item"><a href="/" class="category-link">Гематоген</a></li>
+										<li class="category-item"><a href="/" class="category-link">Жевательные резинки</a></li>
+										<li class="category-item"><a href="/" class="category-link">Зефир</a></li>
+									</ul>
+								</div>
+								<!--  -->
+								</div>
+								<!--  -->
+								<div class="float_block">
+									<!--  -->
+									<div class="category-block">
+										<div class="category-name">
+											<p class="name-text">Напитки</p>
+										</div>
+										<ul class="category-list">
+											<li class="category-item"><a href="/" class="category-link">Соки</a></li>
+											<li class="category-item"><a href="/" class="category-link">Нектары</a></li>
+											<li class="category-item"><a href="/" class="category-link">Чаи</a></li>
+											<li class="category-item"><a href="/" class="category-link">Вода</a></li>
+											<li class="category-item"><a href="/" class="category-link">Компоты</a></li>
+											<li class="category-item"><a href="/" class="category-link">Морсы</a></li>
+											<li class="category-item"><a href="/" class="category-link">Кисели</a></li>
+										</ul>
+									</div>
+									<!--  -->
+									<!--  -->
+									<div class="category-block">
+										<div class="category-name">
+											<p class="name-text">Бакалея</p>
+										</div>
+										<ul class="category-list">
+											<li class="category-item"><a href="/" class="category-link">Печенье</a></li>
+											<li class="category-item"><a href="/" class="category-link">Супы</a></li>
+											<li class="category-item"><a href="/" class="category-link">Макаронные изделия</a></li>
+											<li class="category-item"><a href="/" class="category-link">Масло</a></li>
+										</ul>
+									</div>
+									<!--  -->
+								</div>
+								<!--  -->
+								<!--  -->
+								<div class="float_block">
+									<!--  -->
+									<div class="category-block">
+										<div class="category-name">
+											<p class="name-text">Молочные смеси</p>
+										</div>
+										<ul class="category-list">
+											<li class="category-item"><a href="/" class="category-link">Для нормализации пищеварения</a></li>
+											<li class="category-item"><a href="/" class="category-link">Для маловесных и недоношенных</a></li>
+											<li class="category-item"><a href="/" class="category-link">Для диетического питания</a></li>
+											<li class="category-item"><a href="/" class="category-link">Гипоаллергенные</a></li>
+											<li class="category-item"><a href="/" class="category-link">Молочные смеси</a></li>
+										</ul>
+									</div>
+									<!--  -->
+									<!--  -->
+									<div class="category-block">
+										<div class="category-name">
+											<p class="name-text">Молочная продукция</p>
+										</div>
+										<ul class="category-list">
+											<li class="category-item"><a href="/" class="category-link">Молочные коктейли</a></li>
+											<li class="category-item"><a href="/" class="category-link">Молоко</a></li>
+										</ul>
+									</div>
+									<!--  -->
+									<!--  -->
+									<div class="category-block">
+										<div class="category-name">
+											<p class="name-text">Каши</p>
+										</div>
+										<ul class="category-list">
+											<li class="category-item"><a href="/" class="category-link">Каша молочная</a></li>
+											<li class="category-item"><a href="/" class="category-link">Каша безмолочная</a></li>
+										</ul>
+									</div>
+									<!--  -->
+								</div>
+								<!--  -->
+							</div>
+						</div>
+						<!-- end drop -->
+					</div>
+					<div class="nav-item"><a href="" class="item-link">Подгузники и гигиена<b class="img gig">
+						<!-- <svg width="20px" height="25px">
+								<use xlink:href="#gig" width="20px" height="25px">
+							</svg> -->
+					</b></a></div>
+					<div class="nav-item"><a href="" class="item-link">Одежда и обувь<b class="img clothes">
+						<!-- <svg  width="20px" height="20px">
+								<use xlink:href="#clothes"  width="20px" height="20px">
+							</svg> -->
+					</b></a></div>
+					<div class="nav-item"><a href="" class="item-link">Детская комната<b class="img room">
+						<!-- <svg width="20px" height="16px">
+								<use xlink:href="#room" width="20px" height="16px">
+							</svg> -->
+					</b></a></div>
+					<div class="nav-item"><a href="" class="item-link">Прогулки и поездки<b class="img walk">
+						<!-- <svg  width="18px" height="22px">
+								<use xlink:href="#walk"  width="18px" height="22px">
+							</svg> -->
+					</b></a></div>
+					<div class="nav-item"><a href="" class="item-link">Игрушки<b class="img toys">
+						<!-- <svg  width="20px" height="18px">
+								<use xlink:href="#toys"  width="20px" height="18px">
+							</svg> -->
+					</b></a></div>
+					<div class="nav-item"><a href="" class="item-link">Акции и скидки<b class="img act">
+						<!-- <svg  width="18px" height="18px">
+								<use xlink:href="#action" width="18px" height="18px">
+							</svg> -->
+					</b></a></div>
+					<div id="navHover"></div>
+				</div>
+				<!-- end nav -->
+				<!-- small nav -->
+				<div class="menu_small">
+					<div class="small-item"><a href="" class="item-link">Доставка и оплата</a></div>
+					<div class="small-item"><a href="" class="item-link">О компании</a></div>
+					<div class="small-item"><a href="" class="item-link">Помощь</a></div>
+					<div class="small-item"><a href="" class="item-link">Контакты</a></div>
+				</div>
+				<!-- end small nav -->
+				</div>
+			<!-- </div> -->
+		</div>
+		<!-- content -->
+			<div class="order-content">
+				<div class="order-info">
+				<div class="order-title">
+					<p class="title-text">
+						Ваш заказ
+					</p>
+				</div>
+				<div class="order-products">
+					<div class="products-header">
+						<p class="header-text">Товары в корзине (3)</p>
+						<div class="header-img">
+								<div class="img"></div>
+						</div>
+					</div>
+					<div class="products-body">
+						<div class="product">
+							<div class="product-img">
+								<img src="img/product.jpg" alt="">
+							</div>
+							<div class="product-info">
+								<div class="product-title">
+									<a href="product.html" class="title-text">Коляска SMILE LINE комбинированная "Serenade" 3 в 1</a>
+								</div>
+								<div class="product-har">
+									<div class="har-block">
+										<p class="har-text">Размер: <span>46</span></p>
+									</div>
+									<div class="har-block">
+										<p class="har-text">Цвет: <span>Розовый</span></p>
+									</div>
+								</div>
+								<div class="product-cost">
+									<div class="har-block">
+										<p class="har-text">Колличество: <span>1</span></p>
+									</div>
+									<div class="cost">
+										<p class="cost-text">120 200 <i class="fa fa-rub"></i></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="product">
+							<div class="product-img">
+								<img src="img/product.jpg" alt="">
+							</div>
+							<div class="product-info">
+								<div class="product-title">
+									<a href="product.html" class="title-text">Коляска SMILE LINE комбинированная "Serenade" 3 в 1</a>
+								</div>
+								<div class="product-har">
+									<div class="har-block">
+										<p class="har-text">Размер: <span>46</span></p>
+									</div>
+									<div class="har-block">
+										<p class="har-text">Цвет: <span>Розовый</span></p>
+									</div>
+								</div>
+								<div class="product-cost">
+									<div class="har-block">
+										<p class="har-text">Колличество: <span>1</span></p>
+									</div>
+									<div class="cost">
+										<p class="cost-text">120 200 <i class="fa fa-rub"></i></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="product">
+							<div class="product-img">
+								<img src="img/product.jpg" alt="">
+							</div>
+							<div class="product-info">
+								<div class="product-title">
+									<a href="product.html" class="title-text">Коляска SMILE LINE комбинированная "Serenade" 3 в 1</a>
+								</div>
+								<div class="product-har">
+									<div class="har-block">
+										<p class="har-text">Размер: <span>46</span></p>
+									</div>
+									<div class="har-block">
+										<p class="har-text">Цвет: <span>Розовый</span></p>
+									</div>
+								</div>
+								<div class="product-cost">
+									<div class="har-block">
+										<p class="har-text">Колличество: <span>1</span></p>
+									</div>
+									<div class="cost">
+										<p class="cost-text">120 200 <i class="fa fa-rub"></i></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="order-summ">
+					<p class="summ-text">Сумма</p>
+					<p class="summ-count">320 000 <i class="fa fa-rub"></i></p>
+				</div>
+				<div class="order-summ">
+					<p class="summ-text">Доставка</p>
+					<p class="summ-count delivery">199 <i class="fa fa-rub"></i></p>
+				</div>
+				<div class="order-summ">
+					<p class="summ-text">Скидка</p>
+					<p class="summ-count delivery">-200 <i class="fa fa-rub"></i></p>
+				</div>
+				<div class="order-full">
+					<p class="full-text">
+						Всего к оплате:
+					</p>
+					<p class="full-summ">320 290 <i class="fa fa-rub"></i></p>
+				</div>
+			</div>
+				<!--  -->
+					<div class="order-steps">
+						<div class="step open" id="step-1">
+							<div class="step-header">
+								<div class="header-checkbox">
+									<div class="checkbox"></div>
+								</div>
+								<div class="header-title">
+									<p class="title-text">Шаг 1: Контактная информация</p>
+								</div>
+								<div class="header-img">
+									<div class="img"></div>
+								</div>
+							</div>
+							<div class="step-body">
+								<div class="body-title">
+									<p class="title-text">
+										Заполните поля ниже. Если Вы зарегистрированы, то просто <a class="login modal-trigger" data-target="loginModal">авторизуйтесь</a>.
+									</p>
+								</div>
+								<div class="body-content">
+									<form action="" class="form order-form">
+										<div class="form-step">
+											<div class="step-input input-field">
+												<input type="text" name="nameInput" id="nameInput" class="validate">							
+												<label for="nameInput">Имя</label>
+											</div>
+											<div class="step-input input-field">
+												<input type="text" name="surnameInput" id="surnameInput" class="validate">							
+												<label for="surnameInput">Фамилия</label>
+											</div>
+											</div>
+											<div class="form-step">
+											<div class="step-input input-field">
+												<input type="tel" class="tellInputMask validate" name="tellInput" id="tellInput" class="validate">		
+												<label for="tellInput">Телефон</label>
+											</div>
+											<div class="step-input input-field">
+												<input type="email" name="emailInput" id="emailInput" class="validate">							
+												<label for="emailInput">E-mail</label>
+											</div>
+										</div>
+										<div class="form-title">
+											<p class="title-text">Адрес доставки</p>
+										</div>
+										<div class="form-step">
+											<div class="step-input input-field cityInput">
+												<input type="text" name="cityInput" id="cityInput" class="validate">
+												<label for="cityInput">Город</label>
+											</div>
+											<div class="step-link">
+												<a href="/" class="city-place waves-effect waves-light">
+													Определить меcтоположение
+												</a>
+											</div>
+										</div>
+										<div class="form-step">
+											<div class="step-input full-input input-field">
+												<input type="text" name="streetInput" id="streetInput" class="validate">
+												<label for="streetInput">Улица</label>
+											</div>
+										</div>
+										<div class="form-step">
+											<div class="step-input three-input input-field">
+												<input type="text" name="houseInput" id="houseInput" class="validate">
+												<label for="houseInput">Дом</label>
+											</div>
+											<div class="step-input three-input input-field ok">
+												<input type="text" name="stInput" id="stInput" class="validate">
+												<label for="stInput">Строение</label>
+											</div>
+											<div class="step-input three-input input-field error">
+												<input type="text" name="cpInput" id="cpInput" class="validate">
+												<label for="cpInput">Корпус</label>
+											</div>	
+										</div>
+										<div class="form-step">
+											<div class="checkbox">
+												<input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+										      <label for="filled-in-box">Сохранить эту информацию для более быстрого оформления заказа в следующий раз.</label>
+											</div>
+										</div>
+										<div class="form-step">
+											<div class="back-basket">
+												<a href="basket.html" class="basket-button hasLink waves-effect waves-light">
+													Назад в корзину
+												</a>
+											</div>
+											<div class="next-button">
+												<a href="#step-2" class="button-link waves-effect waves-light">Далее</a>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="step" id="step-2">
+							<div class="step-header">
+								<div class="header-checkbox">
+									<div class="checkbox"></div>
+								</div>
+								<div class="header-title">
+									<p class="title-text">Шаг 2: Способ доставки</p>
+								</div>
+								<div class="header-img">
+									<div class="img"></div>
+								</div>
+							</div>
+							<div class="step-body">
+								<div class="body-title">
+									<p class="title-text">
+										Выберете способ доставки Вашего заказа и желаемую дату и время.
+									</p>
+								</div>
+								<div class="body-content">
+									<form action="" class="form order-form">
+										<div class="form-step step-checkbox">
+											<div class="check-block">
+												<div class="checkb">
+													<input type="radio" name="delivery" id="delivery-1">
+													<label for="delivery-1"></label>
+												</div>
+												<div class="check-info">
+													<p class="info-title">Самовывоз</p>
+													<p class="info-subtitle icon-clock">
+														Дата доставки: <span class="date">Завтра</span>
+													</p>
+												</div>
+												<div class="check-cost">
+													<p class="cost-text free">Бесплатно</p>
+												</div>
+											</div>
+											<!--  -->
+											<div class="check-block toggle">
+												<div class="check-drop">
+													<div class="drop-img">
+														<div class="img calendar"></div>
+													</div>
+													<div class="drop-select date-drop">
+														 <select>
+				                                            <option value="0" selected>Завтра, 12 ноября 2015</option>
+				                                            <option value="1">13 ноября 2015</option>
+				                                            <option value="2">14 ноября 2015</option>
+				                                            <option value="3">15 ноября 2015</option>
+				                                        </select>
+													</div>
+												</div>
+												<div class="check-drop">
+													<div class="drop-img">
+														<div class="img time"></div>
+													</div>
+													<div class="drop-select time-drop">
+														 <select>
+				                                            <option value="0" selected>c 10 до 12 часов</option>
+				                                            <option value="1">c 12 до 14 часов</option>
+				                                            <option value="2">c 14 до 16 часов</option>
+				                                            <option value="3">c 16 до 18 часов</option>
+				                                        </select>
+													</div>
+												</div>
+												<div class="clearfix"></div>
+											</div>
+											<!--  -->
+										</div>
+										<div class="form-step step-checkbox">
+											<div class="check-block">
+												<div class="checkb">
+													<input type="radio" name="delivery" id="delivery-2">
+													<label for="delivery-2"></label>
+												</div>
+												<div class="check-info">
+													<p class="info-title">Курьерская доставка г. Москва</p>
+													<p class="info-subtitle icon-clock">
+														Дата доставки: <span class="date">Завтра, до 12:00</span>
+													</p>
+												</div>
+												<div class="check-cost">
+													<p class="cost-text cost">199 <i class="fa fa-rub"></i></p>
+												</div>
+											</div>
+											<div class="check-block toggle">
+												<div class="check-drop">
+													<div class="drop-img">
+														<div class="img calendar"></div>
+													</div>
+													<div class="drop-select date-drop">
+														 <select>
+				                                            <option value="0" selected>Завтра, 12 ноября 2015</option>
+				                                            <option value="1">13 ноября 2015</option>
+				                                            <option value="2">14 ноября 2015</option>
+				                                            <option value="3">15 ноября 2015</option>
+				                                        </select>
+													</div>
+												</div>
+												<div class="check-drop">
+													<div class="drop-img">
+														<div class="img time"></div>
+													</div>
+													<div class="drop-select time-drop">
+														 <select>
+				                                            <option value="0" selected>c 10 до 12 часов</option>
+				                                            <option value="1">c 12 до 14 часов</option>
+				                                            <option value="2">c 14 до 16 часов</option>
+				                                            <option value="3">c 16 до 18 часов</option>
+				                                        </select>
+													</div>
+												</div>
+												<div class="clearfix"></div>
+											</div>
+										</div>
+										<div class="form-step step-checkbox ">
+											<div class="check-block">
+												<div class="checkb">
+													<input type="radio" name="delivery" id="delivery-3">
+													<label for="delivery-3"></label>
+												</div>
+												<div class="check-info">
+													<p class="info-title">Срочная курьерская доставка г. Москва</p>
+													<p class="info-subtitle icon-clock">
+														Дата доставки: <span class="date">Сегодня, до 20:00</span>
+													</p>
+												</div>
+												<div class="check-cost">
+													<p class="cost-text cost">399 <i class="fa fa-rub"></i></p>
+												</div>
+											</div>
+											<!--  -->
+											<div class="check-block toggle">
+												<div class="check-drop">
+													<div class="drop-img">
+														<div class="img calendar"></div>
+													</div>
+													<div class="drop-select date-drop">
+														 <select>
+				                                            <option value="0" selected>Завтра, 12 ноября 2015</option>
+				                                            <option value="1">13 ноября 2015</option>
+				                                            <option value="2">14 ноября 2015</option>
+				                                            <option value="3">15 ноября 2015</option>
+				                                        </select>
+													</div>
+												</div>
+												<div class="check-drop">
+													<div class="drop-img">
+														<div class="img time"></div>
+													</div>
+													<div class="drop-select time-drop">
+														 <select>
+				                                            <option value="0" selected>c 10 до 12 часов</option>
+				                                            <option value="1">c 12 до 14 часов</option>
+				                                            <option value="2">c 14 до 16 часов</option>
+				                                            <option value="3">c 16 до 18 часов</option>
+				                                        </select>
+													</div>
+												</div>
+												<div class="clearfix"></div>
+											</div>
+											<!--  -->
+										</div>
+										<div class="form-step step-checkbox ">
+											<div class="check-block">
+												<div class="checkb">
+													<input type="radio" name="delivery" id="delivery-4">
+													<label for="delivery-4"></label>
+												</div>
+												<div class="check-info">
+													<p class="info-title">EMS Почта России</p>
+													<p class="info-subtitle icon-clock">
+														Дата доставки: <span class="date">1 - 2 недели</span>
+													</p>
+												</div>
+												<div class="check-cost">
+													<p class="cost-text cost">455 <i class="fa fa-rub"></i></p>
+												</div>
+												<!--  -->
+												<div class="check-block toggle">
+												<div class="check-drop">
+													<div class="drop-img">
+														<div class="img calendar"></div>
+													</div>
+													<div class="drop-select date-drop">
+														 <select>
+				                                            <option value="0" selected>Завтра, 12 ноября 2015</option>
+				                                            <option value="1">13 ноября 2015</option>
+				                                            <option value="2">14 ноября 2015</option>
+				                                            <option value="3">15 ноября 2015</option>
+				                                        </select>
+													</div>
+												</div>
+												<div class="check-drop">
+													<div class="drop-img">
+														<div class="img time"></div>
+													</div>
+													<div class="drop-select time-drop">
+														 <select>
+				                                            <option value="0" selected>c 10 до 12 часов</option>
+				                                            <option value="1">c 12 до 14 часов</option>
+				                                            <option value="2">c 14 до 16 часов</option>
+				                                            <option value="3">c 16 до 18 часов</option>
+				                                        </select>
+													</div>
+												</div>
+												<div class="clearfix"></div>
+											</div>
+												<!--  -->
+											</div>
+										</div>
+										<div class="form-step step-button">
+											<div class="back-basket">
+												<a href="#step-1" class="basket-button waves-effect waves-light">
+													Назад: Шаг 1
+												</a>
+											</div>
+											<div class="next-button">
+												<a href="#step-3" class="button-link waves-effect waves-light">Далее</a>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="step" id="step-3">
+							<div class="step-header">
+								<div class="header-checkbox">
+									<div class="checkbox"></div>
+								</div>
+								<div class="header-title">
+									<p class="title-text">Шаг 3: Способ оплаты</p>
+								</div>
+								<div class="header-img">
+									<div class="img"></div>
+								</div>
+							</div>
+							<div class="step-body">
+								<div class="body-title">
+									<p class="title-text">
+										Выберете способ оплаты Вашего заказа.
+									</p>
+								</div>
+								<div class="payment-bonuses">
+									<div class="bonuses-img">
+										<div class="img"></div>
+									</div>
+									<div class="bonuses-text">
+										<p class="text-title">
+											Оплата бонусными баллами
+										</p>
+										<p class="text-subtitle">
+											Вы можете олатить заказ бонусными баллами. <a href="/" class="link">Подробнее...</a>
+										</p>
+									</div>
+									<div class="plus">
+										<div class="img"></div>
+									</div>
+								</div>
+								<div class="body-content">
+									<form action="" class="form order-form">
+										<div class="form-step step-checkbox ">
+											<div class="check-block">
+												<div class="checkb">
+													<input type="radio" name="payment" id="payment-1">
+													<label for="payment-1"></label>
+												</div>
+												<div class="check-info">
+													<p class="info-title">Наличными при получении</p>
+													<p class="info-subtitle icon-time">
+														Вы отдаете деньги при получении заказа. <a  href="/" class="date">Подробнее..</a>
+													</p>
+												</div>
+											</div>
+										</div>		
+										<div class="form-step step-checkbox ">
+											<div class="check-block">
+												<div class="checkb">
+													<input type="radio" name="payment" id="payment-2">
+													<label for="payment-2"></label>
+												</div>
+												<div class="check-info">
+													<p class="info-title">Банковской картой при получении</p>
+													<p class="info-subtitle icon-time">
+														Вы отдаете деньги при получении заказа. <a  href="/" class="date">Подробнее..</a>
+													</p>
+												</div>
+											</div>
+										</div>			
+										<div class="form-step step-checkbox ">
+											<div class="check-block">
+												<div class="checkb">
+													<input type="radio" name="payment" id="payment-3">
+													<label for="payment-3"></label>
+												</div>
+												<div class="check-info">
+													<p class="info-title">Банковской картой <span>Онлайн</span></p>
+													<p class="info-subtitle icon-time">
+														Вы отдаете деньги при получении заказа. <a  href="/" class="date">Подробнее..</a>
+													</p>
+												</div>
+											</div>
+										</div>				
+										<div class="form-step step-checkbox ">
+											<div class="check-block">
+												<div class="checkb">
+													<input type="radio" name="payment" id="payment-4">
+													<label for="payment-4"></label>
+												</div>
+												<div class="check-info">
+													<p class="info-title">В кредит</p>
+													<p class="info-subtitle icon-time">
+														Вы отдаете деньги при получении заказа. <a  href="/" class="date">Подробнее..</a>
+													</p>
+												</div>
+											</div>
+										</div>					
+										<div class="form-step payment-button">
+											<div class="back-basket">
+												<a href="#step-2" class="basket-button waves-effect waves-light">
+													Назад: Шаг 2
+												</a>
+											</div>
+											<div class="next-button">
+												<button type="submit" class="send-button waves-effect waves-light">Отправить</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+		<!-- content -->
+	</div>
+</div>
+<!-- footer -->
+<div class="subscribe hidden">
+  <div class="container">
+    <div class="subscribe-text">
+      <p class="text-big">Подпишитесь на новые поступления, акции и скидки</p>
+      <p class="text-small">Мы не спамим! Стараемся отправлять только самое интересное.</p>
+    </div>
+    <div class="subscribe-form">
+      <form action="" class="form">
+        <input type="text" placeholder="Введите E-mail" class="input">
+        <button class="button waves-effect waves-light">Подписаться</button>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="footer hidden">
+  <div class="container">
+        <div class="footer-table">
+          <div class="footer-logo table-cell">
+            <a href="" class="logo-link">
+              <div class="img agelia"></div>
+            </a>
+            <div class="socials-list">
+              <div class="item-social">
+                <a href="">
+                  <div class="img vk"></div>
+                </a>
+              </div>
+              <div class="item-social">
+                <a href="">
+                  <div class="img od"></div>
+                </a>
+              </div>
+              <div class="item-social">
+                <a href="">
+                  <div class="img fb"></div>
+                </a>
+              </div>
+              <div class="item-social">
+                <a href="">
+                  <div class="img gp"></div>
+                </a>
+              </div>
+              <div class="item-social">
+                <a href="">
+                  <div class="img in"></div>
+                </a>
+              </div>
+            </div>
+            <div class="copyright">
+              <p class="copyright-text">
+                Интернет-магазин детских товаров.
+                <br>              
+                Все права защищены.
+                <br>©Agelia, 2015</p>
+            </div>
+          </div>
+                    <!--  -->
+          <div class="footer-menu">
+            <div class="menu-title">
+              <p class="title-tex">Интернет-магазин</p>
+            </div>
+            <ul class="menu-list">
+              <li class="list-item"><a href="/" class="item-link">Бонусная программа</a></li>
+              <li class="list-item"><a href="" class="item-link">Доставка</a></li>
+              <li class="list-item"><a href="" class="item-link">Оплата</a></li>
+              <li class="list-item"><a href="" class="item-link">Сборка</a></li>
+              <li class="list-item"><a href="" class="item-link">Примерка</a></li>
+              <li class="list-item"><a href="" class="item-link">Возврат</a></li>
+            </ul>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="footer-menu">
+            <div class="menu-title">
+              <p class="title-tex">Личный кабинет</p>
+            </div>
+            <ul class="menu-list">
+              <li class="list-item"><a href="/" class="item-link">Моя Агелия</a></li>
+              <li class="list-item"><a href="" class="item-link">Мои Заказы</a></li>
+              <li class="list-item"><a href="" class="item-link">Мои Баллы</a></li>
+              <li class="list-item"><a href="" class="item-link">Мои Дети</a></li>
+              <li class="list-item"><a href="" class="item-link">Мои Друзья</a></li>
+              <li class="list-item"><a href="" class="item-link">Мои Новости</a></li>
+            </ul>
+          </div>
+          <!--  -->
+
+          <!--  -->
+          <div class="footer-menu">
+            <div class="menu-title">
+              <p class="title-tex">О компании</p>
+            </div>
+            <ul class="menu-list">
+              <li class="list-item"><a href="/" class="item-link">Новости</a></li>
+              <li class="list-item"><a href="" class="item-link">Партнерство</a></li>
+              <li class="list-item"><a href="" class="item-link">Вакансии</a></li>
+              <li class="list-item"><a href="" class="item-link">Контакты</a></li>
+            </ul>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="footer-menu">
+            <div class="menu-title">
+              <p class="title-tex">Обратная связь</p>
+            </div>
+            <ul class="menu-list">
+              <li class="list-item">
+                <p class="item-link">
+                <span class="link-title">Телефон</span>
+               <a href="tel: +74953453040" class="text">+7 (495) 345-30-40</a>
+                </p>
+              </li>
+              <li class="list-item">
+                <p class="item-link">
+                <span class="link-title">Email</span>
+                  <a href="mailto:info@agelia.ru" class="text">info@agelia.ru</a>
+                </p>
+              </li>
+              <li class="list-item">
+                <p class="item-link">
+                  <span class="link-title">Адрес</span>
+                  <span class="text">г. Москва, Походный пр-д, д. 4, корп. 2, стр. 21 </span>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <!--  -->
+        </div>
+        <!-- <div class="socials">
+ 	<div class="copyright">
+ 		<p class="copyright-text">
+ 			2015 © Agelia Kids. Все права защищены.
+ 		</p>
+ 	</div>
+ 	<div class="socials-list">
+ 		<div class="item-social">
+ 			<a href="">
+ 				<div class="img vk"></div>
+ 			</a>
+ 		</div>
+ 		<div class="item-social">
+ 			<a href="">
+ 				<div class="img od"></div>			
+ 			</a>
+ 		</div>
+ 		<div class="item-social">
+ 			<a href="">
+ 				<div class="img fb"></div>
+ 			</a>
+ 		</div>
+ 		<div class="item-social">
+ 			<a href="">
+ 				<div class="img gp"></div>
+ 			</a>
+ 		</div>
+ 		<div class="item-social">
+ 			<a href="">
+ 				<div class="img in"></div>
+ 			</a>
+ 		</div>
+ 		<div class="item-social">
+ 			<a href="">
+ 				<div class="img hz"></div>		
+ 			</a>
+ 		</div>
+ 	</div>
+ 	<div class="clearfix"></div>
+ </div> -->
+      <div class="clearfix"></div>
+  </div>
+</div>
+    <!-- Modal Cities -->
+  
+    <div id="loginModal" class="modal loginModal">
+  	  <div class="loginModal-title">
+            <p class="title-text">
+                Вход
+            </p>
+            <p class="title-sub">
+                Войдите с помощью социальной сети <br> или укажите email и пароль
+            </p>
+        </div>
+      <div class="modal-content">
+          <div class="loginModal-social">
+              <div class="social-links"><a href="" class="link"><img src="img/vk.png" alt=""></a></div>
+              <div class="social-links"><a href="" class="link"><img src="img/fb.png" alt=""></a></div>
+              <div class="social-links"><a href="" class="link"><img src="img/od.png" alt=""></a></div>
+              <div class="social-links"><a href="" class="link"><img src="img/gp.png" alt=""></a></div>
+          </div>
+          <div class="loginModal-else">
+              <div class="else-block">
+                  <p class="else-text">Или</p>
+              </div>
+          </div>
+          <div class="loginModal-form">
+              <div class="form">
+                <form action="">
+                     <div class="input-field col s12">
+                      <input id="email" type="email">
+                      <label for="email">Email</label>
+                    </div>
+                     <div class="input-field col s12">
+                      <input id="password" type="password" >
+                      <label for="password">Пароль</label>
+                    </div>
+                    <a href="" class="remember-pass">Забыли пароль?</a>
+                    <button class="waves-effect waves-light form-button">Войти</button>
+                </form>
+              </div>
+          </div>
+      </div>
+    </div>
+    
+    <script src="js/vendor/jquery-1.11.3.min.js"></script>
+
+    <script src="js/plugins.js"></script>
+
+    <script src="js/main.js"></script>
+    </body>
+</html>
