@@ -51,6 +51,7 @@
                     <form action="" class="form">
                         <div class="form-block">
                             <b class="icon icon-search closeSearchInputMobile"></b>
+                            <b class="removeTextSearch"></b>
                             <input type="search" id="inputSearch" data-href="searchDropdown" placeholder="Поиск">
                         </div>
                     </form>
@@ -236,7 +237,7 @@
                         <!-- dropdown bottom -->
                         <div class="dropdown-footer">
                             <a href="/" class="dropdown-button button-clear waves-effect waves-light">Очистить все</a>
-                            <a href="favorites.html" class="dropdown-button button-infav waves-effect waves-light">В закладки</a>
+                            <a href="favorites_sq.html" class="dropdown-button button-infav waves-effect waves-light">В закладки</a>
                         </div>
                         <!-- end -->
                         </div>
@@ -461,7 +462,7 @@
                         <!-- end summ -->
                         <!-- dropdown bottom -->
                         <div class="dropdown-footer">
-                            <a href="order.html" class="dropdown-button button-buy waves-effect waves-light">Оформить dasdasзаказ</a>
+                            <a href="order.html" class="dropdown-button button-buy waves-effect waves-light">Оформить заказ</a>
                             <a href="basket.html" class="dropdown-button button-infav waves-effect waves-light">В корзину</a>
                         </div>
                         <!-- end -->
@@ -921,7 +922,7 @@
 		<!-- </div> -->
 		<!-- end menu-left -->
 		<!-- content -->
-		<!-- products -->
+		<!--products -->
 		<div class="col  main-container">
 			<div class="banner">
 				<div class="banner-img">
@@ -945,9 +946,9 @@
 						</div>
 					  <!-- Dropdown Structure -->
 					  <ul id='sort-top1' class='dropdown-content'>
-					    <li><a href="#!">Категория 1</a></li>
-					    <li><a href="#!">Категория 2</a></li>
-					    <li><a href="#!">Категория 3</a></li>
+					    <li><p class="sort-type">Популярности</p></li>
+					    <li><p class="sort-type sort-priceDown">Цене</p></li>
+					    <li><p class="sort-type sort-priceUp">Цене</p></li>
 					  </ul>
 					</div>
 				</div>
@@ -969,6 +970,9 @@
 				<div class="sort-filter">
 				<a href=".menu-right" class="filter-button waves-effect waves-light">
 					Фильтр 
+					<div class="switch">
+			            <label><input type="checkbox"> <span class="lever"></span></label>
+		          </div>
 				</a>
 			</div>
 			<div class="clearfix"></div>
@@ -1730,166 +1734,1281 @@
 			</div>		
 			<!-- right sidebar -->
 			<!-- end right sidebar -->
-				<div class="clearfix"></div>
+		    <div class="clearfix"></div>
+		    <!-- sow	 -->
+		    <div class="sow-block">
+				<div class="product-categories sow-categories">
+					<div class="categories-top">
+						<div class="categories-name">
+							<p class="text">Вы недавно смотрели</p>
+						</div>
+						<div class="product-nav visibleMobile">
+							<div class="nav-button left waves-effect" id="sow-cat-l"></div>
+							<div class="nav-button right waves-effect" id="sow-cat-r"></div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="product-slider" id="sowCatSlid">
+					<!-- product -->
+					<div class="product-block">
+					   <div class="product">
+					    <div class="product-top">
+					        <a href="" class="openProductModal">
+					            <div class="white"></div>
+					            <div class="product-colors">
+					                <div class="color blue"></div>
+					                <div class="color green"></div>
+					                <div class="color red"></div>
+					            </div>
+					            <div class="product-img">
+					                <img src="img/product.jpg" alt="">
+					            </div>
+					        </a>
+					    </div>
+					    <div class="product-bottom">
+					        <div class="action-btn">
+					            <div class="product-button">
+					                <b class="img-x"></b>
+					                <b class="in"></b>
+					            </div>
+					            <ul class="dropup">
+					                <li class="dropup-item clicked-item">
+					                    <div class="dropup-tooltip tooltip-favorites">
+					                        <div class="text">В закладки</div>
+					                    </div>
+					                    <div class="dropup-button add-favorites">
+					                        <b class="img img-fav "></b>
+					                        <b class="in"></b>
+					                    </div>
+					                </li>
+					                <li class="dropup-item clicked-item">
+					                    <div class="dropup-tooltip tooltip-compare">
+					                        <div class="text">Сравнить</div>
+					                    </div>
+					                    <div class="dropup-button add-compare">
+					                        <b class="img img-comp">
+					                            <svg width="24px" height="13px">
+					                               <use xlink:href="#product-compare" width="24px" height="22px">
+					                              </use>
+					                            </svg>
+					                        </b>
+					                        <div class="in"></div>
+					                    </div>
+					                </li>
+					                <li class="dropup-item in-basket-item">
+					                    <div class="dropup-tooltip tooltip-basket">
+					                        <div class="text">В корзину</div>
+					                    </div>
+					                    <div class="dropup-button add-basket">
+					                        <b class="img img-bask">
+					                        </b>
+					                    </div>
+					                </li>
+					            </ul>
+					        </div>
+					        <div class="product-rate">
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star"></div>
+					            <div class="rate-count">
+					                <p class="count-text">(12)</p>
+					            </div>
+					        </div>
+					        <div class="product-info">
+					            <a href="product.html" class="info-text">
+					                <span class="new">Новинка</span> Коляска SMILE LINE комбинированная "Serenade" 3 в 1
+					            </a>
+					        </div>
+					        <div class="product-price">
+					            <p class="price-g">135 000 <i class="fa fa-rub"></i></p>
+					            <p class="price-n">122 850 <i class="fa fa-rub"></i></p>
+					        </div>
+					    </div>
+					</div>
+					</div>
+					<div class="product-block">
+					   <div class="product">
+					    <div class="product-top">
+					        <a href="" class="openProductModal">
+					            <div class="white"></div>
+					            <div class="product-colors">
+					                <div class="color blue"></div>
+					                <div class="color green"></div>
+					                <div class="color red"></div>
+					            </div>
+					            <div class="product-img">
+					                <img src="img/product.jpg" alt="">
+					            </div>
+					        </a>
+					    </div>
+					    <div class="product-bottom">
+					        <div class="action-btn">
+					            <div class="product-button">
+					                <b class="img-x"></b>
+					                <b class="in"></b>
+					            </div>
+					            <ul class="dropup">
+					                <li class="dropup-item clicked-item">
+					                    <div class="dropup-tooltip tooltip-favorites">
+					                        <div class="text">В закладки</div>
+					                    </div>
+					                    <div class="dropup-button add-favorites">
+					                        <b class="img img-fav "></b>
+					                        <b class="in"></b>
+					                    </div>
+					                </li>
+					                <li class="dropup-item clicked-item">
+					                    <div class="dropup-tooltip tooltip-compare">
+					                        <div class="text">Сравнить</div>
+					                    </div>
+					                    <div class="dropup-button add-compare">
+					                        <b class="img img-comp">
+					                            <svg width="24px" height="13px">
+					                               <use xlink:href="#product-compare" width="24px" height="22px">
+					                              </use>
+					                            </svg>
+					                        </b>
+					                        <div class="in"></div>
+					                    </div>
+					                </li>
+					                <li class="dropup-item in-basket-item">
+					                    <div class="dropup-tooltip tooltip-basket">
+					                        <div class="text">В корзину</div>
+					                    </div>
+					                    <div class="dropup-button add-basket">
+					                        <b class="img img-bask">
+					                        </b>
+					                    </div>
+					                </li>
+					            </ul>
+					        </div>
+					        <div class="product-rate">
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star"></div>
+					            <div class="rate-count">
+					                <p class="count-text">(12)</p>
+					            </div>
+					        </div>
+					        <div class="product-info">
+					            <a href="product.html" class="info-text">
+					                <span class="new">Новинка</span> Коляска SMILE LINE комбинированная "Serenade" 3 в 1
+					            </a>
+					        </div>
+					        <div class="product-price">
+					            <p class="price-g">135 000 <i class="fa fa-rub"></i></p>
+					            <p class="price-n">122 850 <i class="fa fa-rub"></i></p>
+					        </div>
+					    </div>
+					</div>
+					</div>
+					<div class="product-block">
+					   <div class="product">
+					    <div class="product-top">
+					        <a href="" class="openProductModal">
+					            <div class="white"></div>
+					            <div class="product-colors">
+					                <div class="color blue"></div>
+					                <div class="color green"></div>
+					                <div class="color red"></div>
+					            </div>
+					            <div class="product-img">
+					                <img src="img/product.jpg" alt="">
+					            </div>
+					        </a>
+					    </div>
+					    <div class="product-bottom">
+					        <div class="action-btn">
+					            <div class="product-button">
+					                <b class="img-x"></b>
+					                <b class="in"></b>
+					            </div>
+					            <ul class="dropup">
+					                <li class="dropup-item clicked-item">
+					                    <div class="dropup-tooltip tooltip-favorites">
+					                        <div class="text">В закладки</div>
+					                    </div>
+					                    <div class="dropup-button add-favorites">
+					                        <b class="img img-fav "></b>
+					                        <b class="in"></b>
+					                    </div>
+					                </li>
+					                <li class="dropup-item clicked-item">
+					                    <div class="dropup-tooltip tooltip-compare">
+					                        <div class="text">Сравнить</div>
+					                    </div>
+					                    <div class="dropup-button add-compare">
+					                        <b class="img img-comp">
+					                            <svg width="24px" height="13px">
+					                               <use xlink:href="#product-compare" width="24px" height="22px">
+					                              </use>
+					                            </svg>
+					                        </b>
+					                        <div class="in"></div>
+					                    </div>
+					                </li>
+					                <li class="dropup-item in-basket-item">
+					                    <div class="dropup-tooltip tooltip-basket">
+					                        <div class="text">В корзину</div>
+					                    </div>
+					                    <div class="dropup-button add-basket">
+					                        <b class="img img-bask">
+					                        </b>
+					                    </div>
+					                </li>
+					            </ul>
+					        </div>
+					        <div class="product-rate">
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star"></div>
+					            <div class="rate-count">
+					                <p class="count-text">(12)</p>
+					            </div>
+					        </div>
+					        <div class="product-info">
+					            <a href="product.html" class="info-text">
+					                <span class="new">Новинка</span> Коляска SMILE LINE комбинированная "Serenade" 3 в 1
+					            </a>
+					        </div>
+					        <div class="product-price">
+					            <p class="price-g">135 000 <i class="fa fa-rub"></i></p>
+					            <p class="price-n">122 850 <i class="fa fa-rub"></i></p>
+					        </div>
+					    </div>
+					</div>
+					</div>
+					<div class="product-block">
+					   <div class="product">
+					    <div class="product-top">
+					        <a href="" class="openProductModal">
+					            <div class="white"></div>
+					            <div class="product-colors">
+					                <div class="color blue"></div>
+					                <div class="color green"></div>
+					                <div class="color red"></div>
+					            </div>
+					            <div class="product-img">
+					                <img src="img/product.jpg" alt="">
+					            </div>
+					        </a>
+					    </div>
+					    <div class="product-bottom">
+					        <div class="action-btn">
+					            <div class="product-button">
+					                <b class="img-x"></b>
+					                <b class="in"></b>
+					            </div>
+					            <ul class="dropup">
+					                <li class="dropup-item clicked-item">
+					                    <div class="dropup-tooltip tooltip-favorites">
+					                        <div class="text">В закладки</div>
+					                    </div>
+					                    <div class="dropup-button add-favorites">
+					                        <b class="img img-fav "></b>
+					                        <b class="in"></b>
+					                    </div>
+					                </li>
+					                <li class="dropup-item clicked-item">
+					                    <div class="dropup-tooltip tooltip-compare">
+					                        <div class="text">Сравнить</div>
+					                    </div>
+					                    <div class="dropup-button add-compare">
+					                        <b class="img img-comp">
+					                            <svg width="24px" height="13px">
+					                               <use xlink:href="#product-compare" width="24px" height="22px">
+					                              </use>
+					                            </svg>
+					                        </b>
+					                        <div class="in"></div>
+					                    </div>
+					                </li>
+					                <li class="dropup-item in-basket-item">
+					                    <div class="dropup-tooltip tooltip-basket">
+					                        <div class="text">В корзину</div>
+					                    </div>
+					                    <div class="dropup-button add-basket">
+					                        <b class="img img-bask">
+					                        </b>
+					                    </div>
+					                </li>
+					            </ul>
+					        </div>
+					        <div class="product-rate">
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star"></div>
+					            <div class="rate-count">
+					                <p class="count-text">(12)</p>
+					            </div>
+					        </div>
+					        <div class="product-info">
+					            <a href="product.html" class="info-text">
+					                <span class="new">Новинка</span> Коляска SMILE LINE комбинированная "Serenade" 3 в 1
+					            </a>
+					        </div>
+					        <div class="product-price">
+					            <p class="price-g">135 000 <i class="fa fa-rub"></i></p>
+					            <p class="price-n">122 850 <i class="fa fa-rub"></i></p>
+					        </div>
+					    </div>
+					</div>
+					</div>
+					<div class="product-block">
+					   <div class="product">
+					    <div class="product-top">
+					        <a href="" class="openProductModal">
+					            <div class="white"></div>
+					            <div class="product-colors">
+					                <div class="color blue"></div>
+					                <div class="color green"></div>
+					                <div class="color red"></div>
+					            </div>
+					            <div class="product-img">
+					                <img src="img/product.jpg" alt="">
+					            </div>
+					        </a>
+					    </div>
+					    <div class="product-bottom">
+					        <div class="action-btn">
+					            <div class="product-button">
+					                <b class="img-x"></b>
+					                <b class="in"></b>
+					            </div>
+					            <ul class="dropup">
+					                <li class="dropup-item clicked-item">
+					                    <div class="dropup-tooltip tooltip-favorites">
+					                        <div class="text">В закладки</div>
+					                    </div>
+					                    <div class="dropup-button add-favorites">
+					                        <b class="img img-fav "></b>
+					                        <b class="in"></b>
+					                    </div>
+					                </li>
+					                <li class="dropup-item clicked-item">
+					                    <div class="dropup-tooltip tooltip-compare">
+					                        <div class="text">Сравнить</div>
+					                    </div>
+					                    <div class="dropup-button add-compare">
+					                        <b class="img img-comp">
+					                            <svg width="24px" height="13px">
+					                               <use xlink:href="#product-compare" width="24px" height="22px">
+					                              </use>
+					                            </svg>
+					                        </b>
+					                        <div class="in"></div>
+					                    </div>
+					                </li>
+					                <li class="dropup-item in-basket-item">
+					                    <div class="dropup-tooltip tooltip-basket">
+					                        <div class="text">В корзину</div>
+					                    </div>
+					                    <div class="dropup-button add-basket">
+					                        <b class="img img-bask">
+					                        </b>
+					                    </div>
+					                </li>
+					            </ul>
+					        </div>
+					        <div class="product-rate">
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star"></div>
+					            <div class="rate-count">
+					                <p class="count-text">(12)</p>
+					            </div>
+					        </div>
+					        <div class="product-info">
+					            <a href="product.html" class="info-text">
+					                <span class="new">Новинка</span> Коляска SMILE LINE комбинированная "Serenade" 3 в 1
+					            </a>
+					        </div>
+					        <div class="product-price">
+					            <p class="price-g">135 000 <i class="fa fa-rub"></i></p>
+					            <p class="price-n">122 850 <i class="fa fa-rub"></i></p>
+					        </div>
+					    </div>
+					</div>
+					</div>
+					<div class="product-block">
+					   <div class="product">
+					    <div class="product-top">
+					        <a href="" class="openProductModal">
+					            <div class="white"></div>
+					            <div class="product-colors">
+					                <div class="color blue"></div>
+					                <div class="color green"></div>
+					                <div class="color red"></div>
+					            </div>
+					            <div class="product-img">
+					                <img src="img/product.jpg" alt="">
+					            </div>
+					        </a>
+					    </div>
+					    <div class="product-bottom">
+					        <div class="action-btn">
+					            <div class="product-button">
+					                <b class="img-x"></b>
+					                <b class="in"></b>
+					            </div>
+					            <ul class="dropup">
+					                <li class="dropup-item clicked-item">
+					                    <div class="dropup-tooltip tooltip-favorites">
+					                        <div class="text">В закладки</div>
+					                    </div>
+					                    <div class="dropup-button add-favorites">
+					                        <b class="img img-fav "></b>
+					                        <b class="in"></b>
+					                    </div>
+					                </li>
+					                <li class="dropup-item clicked-item">
+					                    <div class="dropup-tooltip tooltip-compare">
+					                        <div class="text">Сравнить</div>
+					                    </div>
+					                    <div class="dropup-button add-compare">
+					                        <b class="img img-comp">
+					                            <svg width="24px" height="13px">
+					                               <use xlink:href="#product-compare" width="24px" height="22px">
+					                              </use>
+					                            </svg>
+					                        </b>
+					                        <div class="in"></div>
+					                    </div>
+					                </li>
+					                <li class="dropup-item in-basket-item">
+					                    <div class="dropup-tooltip tooltip-basket">
+					                        <div class="text">В корзину</div>
+					                    </div>
+					                    <div class="dropup-button add-basket">
+					                        <b class="img img-bask">
+					                        </b>
+					                    </div>
+					                </li>
+					            </ul>
+					        </div>
+					        <div class="product-rate">
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star"></div>
+					            <div class="rate-count">
+					                <p class="count-text">(12)</p>
+					            </div>
+					        </div>
+					        <div class="product-info">
+					            <a href="product.html" class="info-text">
+					                <span class="new">Новинка</span> Коляска SMILE LINE комбинированная "Serenade" 3 в 1
+					            </a>
+					        </div>
+					        <div class="product-price">
+					            <p class="price-g">135 000 <i class="fa fa-rub"></i></p>
+					            <p class="price-n">122 850 <i class="fa fa-rub"></i></p>
+					        </div>
+					    </div>
+					</div>
+					</div>
+					<div class="product-block">
+					   <div class="product">
+					    <div class="product-top">
+					        <a href="" class="openProductModal">
+					            <div class="white"></div>
+					            <div class="product-colors">
+					                <div class="color blue"></div>
+					                <div class="color green"></div>
+					                <div class="color red"></div>
+					            </div>
+					            <div class="product-img">
+					                <img src="img/product.jpg" alt="">
+					            </div>
+					        </a>
+					    </div>
+					    <div class="product-bottom">
+					        <div class="action-btn">
+					            <div class="product-button">
+					                <b class="img-x"></b>
+					                <b class="in"></b>
+					            </div>
+					            <ul class="dropup">
+					                <li class="dropup-item clicked-item">
+					                    <div class="dropup-tooltip tooltip-favorites">
+					                        <div class="text">В закладки</div>
+					                    </div>
+					                    <div class="dropup-button add-favorites">
+					                        <b class="img img-fav "></b>
+					                        <b class="in"></b>
+					                    </div>
+					                </li>
+					                <li class="dropup-item clicked-item">
+					                    <div class="dropup-tooltip tooltip-compare">
+					                        <div class="text">Сравнить</div>
+					                    </div>
+					                    <div class="dropup-button add-compare">
+					                        <b class="img img-comp">
+					                            <svg width="24px" height="13px">
+					                               <use xlink:href="#product-compare" width="24px" height="22px">
+					                              </use>
+					                            </svg>
+					                        </b>
+					                        <div class="in"></div>
+					                    </div>
+					                </li>
+					                <li class="dropup-item in-basket-item">
+					                    <div class="dropup-tooltip tooltip-basket">
+					                        <div class="text">В корзину</div>
+					                    </div>
+					                    <div class="dropup-button add-basket">
+					                        <b class="img img-bask">
+					                        </b>
+					                    </div>
+					                </li>
+					            </ul>
+					        </div>
+					        <div class="product-rate">
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star"></div>
+					            <div class="rate-count">
+					                <p class="count-text">(12)</p>
+					            </div>
+					        </div>
+					        <div class="product-info">
+					            <a href="product.html" class="info-text">
+					                <span class="new">Новинка</span> Коляска SMILE LINE комбинированная "Serenade" 3 в 1
+					            </a>
+					        </div>
+					        <div class="product-price">
+					            <p class="price-g">135 000 <i class="fa fa-rub"></i></p>
+					            <p class="price-n">122 850 <i class="fa fa-rub"></i></p>
+					        </div>
+					    </div>
+					</div>
+					</div>
+					<div class="product-block">
+					   <div class="product">
+					    <div class="product-top">
+					        <a href="" class="openProductModal">
+					            <div class="white"></div>
+					            <div class="product-colors">
+					                <div class="color blue"></div>
+					                <div class="color green"></div>
+					                <div class="color red"></div>
+					            </div>
+					            <div class="product-img">
+					                <img src="img/product.jpg" alt="">
+					            </div>
+					        </a>
+					    </div>
+					    <div class="product-bottom">
+					        <div class="action-btn">
+					            <div class="product-button">
+					                <b class="img-x"></b>
+					                <b class="in"></b>
+					            </div>
+					            <ul class="dropup">
+					                <li class="dropup-item clicked-item">
+					                    <div class="dropup-tooltip tooltip-favorites">
+					                        <div class="text">В закладки</div>
+					                    </div>
+					                    <div class="dropup-button add-favorites">
+					                        <b class="img img-fav "></b>
+					                        <b class="in"></b>
+					                    </div>
+					                </li>
+					                <li class="dropup-item clicked-item">
+					                    <div class="dropup-tooltip tooltip-compare">
+					                        <div class="text">Сравнить</div>
+					                    </div>
+					                    <div class="dropup-button add-compare">
+					                        <b class="img img-comp">
+					                            <svg width="24px" height="13px">
+					                               <use xlink:href="#product-compare" width="24px" height="22px">
+					                              </use>
+					                            </svg>
+					                        </b>
+					                        <div class="in"></div>
+					                    </div>
+					                </li>
+					                <li class="dropup-item in-basket-item">
+					                    <div class="dropup-tooltip tooltip-basket">
+					                        <div class="text">В корзину</div>
+					                    </div>
+					                    <div class="dropup-button add-basket">
+					                        <b class="img img-bask">
+					                        </b>
+					                    </div>
+					                </li>
+					            </ul>
+					        </div>
+					        <div class="product-rate">
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star"></div>
+					            <div class="rate-count">
+					                <p class="count-text">(12)</p>
+					            </div>
+					        </div>
+					        <div class="product-info">
+					            <a href="product.html" class="info-text">
+					                <span class="new">Новинка</span> Коляска SMILE LINE комбинированная "Serenade" 3 в 1
+					            </a>
+					        </div>
+					        <div class="product-price">
+					            <p class="price-g">135 000 <i class="fa fa-rub"></i></p>
+					            <p class="price-n">122 850 <i class="fa fa-rub"></i></p>
+					        </div>
+					    </div>
+					</div>
+					</div>
+					<div class="product-block">
+					   <div class="product">
+					    <div class="product-top">
+					        <a href="" class="openProductModal">
+					            <div class="white"></div>
+					            <div class="product-colors">
+					                <div class="color blue"></div>
+					                <div class="color green"></div>
+					                <div class="color red"></div>
+					            </div>
+					            <div class="product-img">
+					                <img src="img/product.jpg" alt="">
+					            </div>
+					        </a>
+					    </div>
+					    <div class="product-bottom">
+					        <div class="action-btn">
+					            <div class="product-button">
+					                <b class="img-x"></b>
+					                <b class="in"></b>
+					            </div>
+					            <ul class="dropup">
+					                <li class="dropup-item clicked-item">
+					                    <div class="dropup-tooltip tooltip-favorites">
+					                        <div class="text">В закладки</div>
+					                    </div>
+					                    <div class="dropup-button add-favorites">
+					                        <b class="img img-fav "></b>
+					                        <b class="in"></b>
+					                    </div>
+					                </li>
+					                <li class="dropup-item clicked-item">
+					                    <div class="dropup-tooltip tooltip-compare">
+					                        <div class="text">Сравнить</div>
+					                    </div>
+					                    <div class="dropup-button add-compare">
+					                        <b class="img img-comp">
+					                            <svg width="24px" height="13px">
+					                               <use xlink:href="#product-compare" width="24px" height="22px">
+					                              </use>
+					                            </svg>
+					                        </b>
+					                        <div class="in"></div>
+					                    </div>
+					                </li>
+					                <li class="dropup-item in-basket-item">
+					                    <div class="dropup-tooltip tooltip-basket">
+					                        <div class="text">В корзину</div>
+					                    </div>
+					                    <div class="dropup-button add-basket">
+					                        <b class="img img-bask">
+					                        </b>
+					                    </div>
+					                </li>
+					            </ul>
+					        </div>
+					        <div class="product-rate">
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star"></div>
+					            <div class="rate-count">
+					                <p class="count-text">(12)</p>
+					            </div>
+					        </div>
+					        <div class="product-info">
+					            <a href="product.html" class="info-text">
+					                <span class="new">Новинка</span> Коляска SMILE LINE комбинированная "Serenade" 3 в 1
+					            </a>
+					        </div>
+					        <div class="product-price">
+					            <p class="price-g">135 000 <i class="fa fa-rub"></i></p>
+					            <p class="price-n">122 850 <i class="fa fa-rub"></i></p>
+					        </div>
+					    </div>
+					</div>
+					</div>
+					<div class="product-block">
+					   <div class="product">
+					    <div class="product-top">
+					        <a href="" class="openProductModal">
+					            <div class="white"></div>
+					            <div class="product-colors">
+					                <div class="color blue"></div>
+					                <div class="color green"></div>
+					                <div class="color red"></div>
+					            </div>
+					            <div class="product-img">
+					                <img src="img/product.jpg" alt="">
+					            </div>
+					        </a>
+					    </div>
+					    <div class="product-bottom">
+					        <div class="action-btn">
+					            <div class="product-button">
+					                <b class="img-x"></b>
+					                <b class="in"></b>
+					            </div>
+					            <ul class="dropup">
+					                <li class="dropup-item clicked-item">
+					                    <div class="dropup-tooltip tooltip-favorites">
+					                        <div class="text">В закладки</div>
+					                    </div>
+					                    <div class="dropup-button add-favorites">
+					                        <b class="img img-fav "></b>
+					                        <b class="in"></b>
+					                    </div>
+					                </li>
+					                <li class="dropup-item clicked-item">
+					                    <div class="dropup-tooltip tooltip-compare">
+					                        <div class="text">Сравнить</div>
+					                    </div>
+					                    <div class="dropup-button add-compare">
+					                        <b class="img img-comp">
+					                            <svg width="24px" height="13px">
+					                               <use xlink:href="#product-compare" width="24px" height="22px">
+					                              </use>
+					                            </svg>
+					                        </b>
+					                        <div class="in"></div>
+					                    </div>
+					                </li>
+					                <li class="dropup-item in-basket-item">
+					                    <div class="dropup-tooltip tooltip-basket">
+					                        <div class="text">В корзину</div>
+					                    </div>
+					                    <div class="dropup-button add-basket">
+					                        <b class="img img-bask">
+					                        </b>
+					                    </div>
+					                </li>
+					            </ul>
+					        </div>
+					        <div class="product-rate">
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star"></div>
+					            <div class="rate-count">
+					                <p class="count-text">(12)</p>
+					            </div>
+					        </div>
+					        <div class="product-info">
+					            <a href="product.html" class="info-text">
+					                <span class="new">Новинка</span> Коляска SMILE LINE комбинированная "Serenade" 3 в 1
+					            </a>
+					        </div>
+					        <div class="product-price">
+					            <p class="price-g">135 000 <i class="fa fa-rub"></i></p>
+					            <p class="price-n">122 850 <i class="fa fa-rub"></i></p>
+					        </div>
+					    </div>
+					</div>
+					</div>
+					<div class="product-block">
+					   <div class="product">
+					    <div class="product-top">
+					        <a href="" class="openProductModal">
+					            <div class="white"></div>
+					            <div class="product-colors">
+					                <div class="color blue"></div>
+					                <div class="color green"></div>
+					                <div class="color red"></div>
+					            </div>
+					            <div class="product-img">
+					                <img src="img/product.jpg" alt="">
+					            </div>
+					        </a>
+					    </div>
+					    <div class="product-bottom">
+					        <div class="action-btn">
+					            <div class="product-button">
+					                <b class="img-x"></b>
+					                <b class="in"></b>
+					            </div>
+					            <ul class="dropup">
+					                <li class="dropup-item clicked-item">
+					                    <div class="dropup-tooltip tooltip-favorites">
+					                        <div class="text">В закладки</div>
+					                    </div>
+					                    <div class="dropup-button add-favorites">
+					                        <b class="img img-fav "></b>
+					                        <b class="in"></b>
+					                    </div>
+					                </li>
+					                <li class="dropup-item clicked-item">
+					                    <div class="dropup-tooltip tooltip-compare">
+					                        <div class="text">Сравнить</div>
+					                    </div>
+					                    <div class="dropup-button add-compare">
+					                        <b class="img img-comp">
+					                            <svg width="24px" height="13px">
+					                               <use xlink:href="#product-compare" width="24px" height="22px">
+					                              </use>
+					                            </svg>
+					                        </b>
+					                        <div class="in"></div>
+					                    </div>
+					                </li>
+					                <li class="dropup-item in-basket-item">
+					                    <div class="dropup-tooltip tooltip-basket">
+					                        <div class="text">В корзину</div>
+					                    </div>
+					                    <div class="dropup-button add-basket">
+					                        <b class="img img-bask">
+					                        </b>
+					                    </div>
+					                </li>
+					            </ul>
+					        </div>
+					        <div class="product-rate">
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star"></div>
+					            <div class="rate-count">
+					                <p class="count-text">(12)</p>
+					            </div>
+					        </div>
+					        <div class="product-info">
+					            <a href="product.html" class="info-text">
+					                <span class="new">Новинка</span> Коляска SMILE LINE комбинированная "Serenade" 3 в 1
+					            </a>
+					        </div>
+					        <div class="product-price">
+					            <p class="price-g">135 000 <i class="fa fa-rub"></i></p>
+					            <p class="price-n">122 850 <i class="fa fa-rub"></i></p>
+					        </div>
+					    </div>
+					</div>
+					</div>
+					<div class="product-block">
+					   <div class="product">
+					    <div class="product-top">
+					        <a href="" class="openProductModal">
+					            <div class="white"></div>
+					            <div class="product-colors">
+					                <div class="color blue"></div>
+					                <div class="color green"></div>
+					                <div class="color red"></div>
+					            </div>
+					            <div class="product-img">
+					                <img src="img/product.jpg" alt="">
+					            </div>
+					        </a>
+					    </div>
+					    <div class="product-bottom">
+					        <div class="action-btn">
+					            <div class="product-button">
+					                <b class="img-x"></b>
+					                <b class="in"></b>
+					            </div>
+					            <ul class="dropup">
+					                <li class="dropup-item clicked-item">
+					                    <div class="dropup-tooltip tooltip-favorites">
+					                        <div class="text">В закладки</div>
+					                    </div>
+					                    <div class="dropup-button add-favorites">
+					                        <b class="img img-fav "></b>
+					                        <b class="in"></b>
+					                    </div>
+					                </li>
+					                <li class="dropup-item clicked-item">
+					                    <div class="dropup-tooltip tooltip-compare">
+					                        <div class="text">Сравнить</div>
+					                    </div>
+					                    <div class="dropup-button add-compare">
+					                        <b class="img img-comp">
+					                            <svg width="24px" height="13px">
+					                               <use xlink:href="#product-compare" width="24px" height="22px">
+					                              </use>
+					                            </svg>
+					                        </b>
+					                        <div class="in"></div>
+					                    </div>
+					                </li>
+					                <li class="dropup-item in-basket-item">
+					                    <div class="dropup-tooltip tooltip-basket">
+					                        <div class="text">В корзину</div>
+					                    </div>
+					                    <div class="dropup-button add-basket">
+					                        <b class="img img-bask">
+					                        </b>
+					                    </div>
+					                </li>
+					            </ul>
+					        </div>
+					        <div class="product-rate">
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star active"></div>
+					            <div class="star"></div>
+					            <div class="rate-count">
+					                <p class="count-text">(12)</p>
+					            </div>
+					        </div>
+					        <div class="product-info">
+					            <a href="product.html" class="info-text">
+					                <span class="new">Новинка</span> Коляска SMILE LINE комбинированная "Serenade" 3 в 1
+					            </a>
+					        </div>
+					        <div class="product-price">
+					            <p class="price-g">135 000 <i class="fa fa-rub"></i></p>
+					            <p class="price-n">122 850 <i class="fa fa-rub"></i></p>
+					        </div>
+					    </div>
+					</div>
+					</div>
+					<!-- end product -->
+					</div>
+				</div>
+		    </div>
+		    <!-- end sow -->
 			</div>
 			<!-- <div class="col"> -->
-			   <div class="menu-right animatedMenuRight">
-		        <div class="filter-block favorites-section">
-        		    <ul class="accardion not-accardion">
-        		        <li>
-        		            <div class="collapsible-header">
-        		                <div class="header-title">
-        		                    <p class="title-text">
-        		                        Показать
-        		                    </p>
-        		                </div>
-        		                <div class="favorites-reset reset-content">
-        		                    <p class="reset-text">Сбросить</p>
-        		                </div>
-        		            </div>
-        		            <div class="collapsible-body">
-        		               <div class="favorites-a">
-        		                <div class="brand-item">
-        		                    <div class="brand-checkbox">
-        		                        <input type="checkbox" class="filled-in" id="brand1" />
-        		                        <label for="brand1"></label>
-        		                    </div>	
-        		                    <div class="brand-name">
-        		                        <p class="name-text">
-        		                            Фруктовые
-        		                        </p>
-        		                    </div>
-        		                    <div class="brand-count">
-        		                        240
-        		                    </div>
-        		                </div>
-        		                <div class="brand-item">
-        		                    <div class="brand-checkbox">
-        		                        <input type="checkbox" class="filled-in" id="brand2" />
-        		                        <label for="brand2"></label>
-        		                    </div>	
-        		                    <div class="brand-name">
-        		                        <p class="name-text">
-        		                            Овощные
-        		                        </p>
-        		                    </div>
-        		                    <div class="brand-count">
-        		                        70
-        		                    </div>
-        		                </div>
-        		                <div class="brand-item">
-        		                    <div class="brand-checkbox">
-        		                        <input type="checkbox" class="filled-in" id="brand3" />
-        		                        <label for="brand3"></label>
-        		                    </div>	
-        		                    <div class="brand-name">
-        		                        <p class="name-text">
-        		                            Фруктово-йогуртные
-        		                        </p>
-        		                    </div>
-        		                    <div class="brand-count">
-        		                        2460
-        		                    </div>
-        		                </div>
-        		                <div class="brand-item">
-        		                    <div class="brand-checkbox">
-        		                        <input type="checkbox" class="filled-in" id="brand4" />
-        		                        <label for="brand4"></label>
-        		                    </div>	
-        		                    <div class="brand-name">
-        		                        <p class="name-text">
-        		                            Овощные с мясом
-        		                        </p>
-        		                    </div>
-        		                    <div class="brand-count">
-        		                        42
-        		                    </div>
-        		                </div>
-        		                
-        		                <div class="brand-item">
-        		                    <div class="brand-checkbox">
-        		                        <input type="checkbox" class="filled-in" id="brand5" />
-        		                        <label for="brand5"></label>
-        		                    </div>	
-        		                    <div class="brand-name">
-        		                        <p class="name-text">
-        		                            Мясные
-        		                        </p>
-        		                    </div>
-        		                    <div class="brand-count">
-        		                        5
-        		                    </div>
-        		                </div>
-        		                <div class="brand-item">
-        		                    <div class="brand-checkbox">
-        		                        <input type="checkbox" class="filled-in" id="brand5" />
-        		                        <label for="brand5"></label>
-        		                    </div>	
-        		                    <div class="brand-name">
-        		                        <p class="name-text">
-        		                            Фруктово-овощные
-        		                        </p>
-        		                    </div>
-        		                    <div class="brand-count">
-        		                        5
-        		                    </div>
-        		                </div>
-        		                <div class="brand-item">
-        		                    <div class="brand-checkbox">
-        		                        <input type="checkbox" class="filled-in" id="brand5" />
-        		                        <label for="brand5"></label>
-        		                    </div>	
-        		                    <div class="brand-name">
-        		                        <p class="name-text">
-        		                            Фруктово-овощные
-        		                        </p>
-        		                    </div>
-        		                    <div class="brand-count">
-        		                        5
-        		                    </div>
-        		                </div>
-        		                <div class="brand-item">
-        		                    <div class="brand-checkbox">
-        		                        <input type="checkbox" class="filled-in" id="brand5" />
-        		                        <label for="brand5"></label>
-        		                    </div>	
-        		                    <div class="brand-name">
-        		                        <p class="name-text">
-        		                            Фруктово-овощные
-        		                        </p>
-        		                    </div>
-        		                    <div class="brand-count">
-        		                        5
-        		                    </div>
-        		                </div>    
-        		               </div>
-        		<!--              -->
-        		            </div>
-        		        </li>
-        		    </ul>
-        		</div>
-		    </div>
+			  <div class="menu-right animatedMenuRight">
+  				<div class="filter-block categoriesf-section">
+				  	<ul class="accardion not-accardion">
+				  	    <li>
+				  	    	<div class="collapsible-header">
+				  		    	<div class="header-title">
+				  		    		<p class="title-text">
+				  		    			Пюре
+				  		    		</p>
+				  		    	</div>
+				  	    	</div>
+				       		 <div class="collapsible-body">
+				       			<div class="brand-item">
+				       				<div class="brand-checkbox">
+				  					  <input type="checkbox" class="filled-in" id="brand1" />
+				  				      <label for="brand1"></label>
+				  					</div>	
+				  					<div class="brand-name">
+				  						<p class="name-text">
+				  							Фруктовые
+				  						</p>
+				  					</div>
+				  					<div class="brand-count">
+				  						240
+				  					</div>
+				       			</div>
+				       			<div class="brand-item">
+				       				<div class="brand-checkbox">
+				  					  <input type="checkbox" class="filled-in" id="brand2" />
+				  				      <label for="brand2"></label>
+				  					</div>	
+				  					<div class="brand-name">
+				  						<p class="name-text">
+				  							Овощные
+				  						</p>
+				  					</div>
+				  					<div class="brand-count">
+				  						70
+				  					</div>
+				       			</div>
+				       			<div class="brand-item">
+				       				<div class="brand-checkbox">
+				  					  <input type="checkbox" class="filled-in" id="brand3" />
+				  				      <label for="brand3"></label>
+				  					</div>	
+				  					<div class="brand-name">
+				  						<p class="name-text">
+				  							Фруктово-йогуртные
+				  						</p>
+				  					</div>
+				  					<div class="brand-count">
+				  						2460
+				  					</div>
+				       			</div>
+				       			<div class="brand-item">
+				       				<div class="brand-checkbox">
+				  					  <input type="checkbox" class="filled-in" id="brand4" />
+				  				      <label for="brand4"></label>
+				  					</div>	
+				  					<div class="brand-name">
+				  						<p class="name-text">
+				  							Овощные с мясом
+				  						</p>
+				  					</div>
+				  					<div class="brand-count">
+				  						42
+				  					</div>
+				       			</div>
+				       			<div class="brand-item">
+				       				<div class="brand-checkbox">
+				  					  <input type="checkbox" class="filled-in" id="brand5" />
+				  				      <label for="brand5"></label>
+				  					</div>	
+				  					<div class="brand-name">
+				  						<p class="name-text">
+				  							Мясные
+				  						</p>
+				  					</div>
+				  					<div class="brand-count">
+				  						5
+				  					</div>
+				       			</div>
+				       			<div class="brand-item">
+				       				<div class="brand-checkbox">
+				  					  <input type="checkbox" class="filled-in" id="brand5" />
+				  				      <label for="brand5"></label>
+				  					</div>	
+				  					<div class="brand-name">
+				  						<p class="name-text">
+				  							Фруктово-овощные
+				  						</p>
+				  					</div>
+				  					<div class="brand-count">
+				  						5
+				  					</div>
+				       			</div>
+				       		 </div>
+				  	    </li>
+				  	</ul>
+				  </div>
+  				<div class="child-button">		
+				  	<a href="/" class="button-link waves-effect waves-light">
+				  		Добавить ребенка
+				  	</a>
+				  </div>	
+  				<div class="filter-block">
+				  	<ul class="accardion" >
+				  	    <li>
+				  	    	<div class="collapsible-header">
+				  		    	<div class="header-title">
+				  		    		<p class="title-text">
+				  		    			Цена, руб
+				  		    		</p>
+				  		    	</div>
+				  	    		<div class="range-reset reset-content">
+				  	    			<p class="reset-text">Сбросить</p>
+				  	    		</div>
+				  				<div class="img toggle-accardion"></div>
+				  	    	</div>
+				       		 <div class="collapsible-body">
+				       			<div class="price-range">
+				       			<div class="range-output">
+				       				<input class="range-min js-input">
+				       				<div class="range-sep">-</div>
+				       				<input class="range-max js-input-to">
+				       			</div>
+				       				<div class="range">
+				       					<input type="range" class="js-range-slider">
+				       				</div>
+				       			</div>
+				       			<div class="range-button waves-effect waves-light">
+				       				<p class="button-text">Применить</p>
+				       			</div>
+				       		 </div>
+				  	    </li>
+				  	</ul>
+				  </div>
+  				<div class="filter-block brand-section withAll-section">
+				  	<ul class="accardion" >
+				  	    <li>
+				  	    	<div class="collapsible-header">
+				  		    	<div class="header-title">
+				  		    		<p class="title-text">
+				  		    			Бренд
+				  		    		</p>
+				  		    	</div>
+				  	    		<div class="brand-reset reset-content">
+				  	    			<p class="reset-text">Сбросить</p>
+				  	    		</div>
+				  				<div class="img toggle-accardion"></div>
+				  	    	</div>
+				       		 <div class="collapsible-body">
+				       			<div class="brand-item">
+				       				<div class="brand-checkbox">
+				  					  <input type="checkbox" class="filled-in" id="brand1" />
+				  				      <label for="brand1"></label>
+				  					</div>	
+				  					<div class="brand-name">
+				  						<p class="name-text">
+				  							Asus
+				  						</p>
+				  					</div>
+				  					<div class="brand-count">
+				  						240
+				  					</div>
+				       			</div>
+				       			<div class="brand-item">
+				       				<div class="brand-checkbox">
+				  					  <input type="checkbox" class="filled-in" id="brand2" />
+				  				      <label for="brand2"></label>
+				  					</div>	
+				  					<div class="brand-name">
+				  						<p class="name-text">
+				  							Acer
+				  						</p>
+				  					</div>
+				  					<div class="brand-count">
+				  						70
+				  					</div>
+				       			</div>
+				       			<div class="brand-item">
+				       				<div class="brand-checkbox">
+				  					  <input type="checkbox" class="filled-in" id="brand3" />
+				  				      <label for="brand3"></label>
+				  					</div>	
+				  					<div class="brand-name">
+				  						<p class="name-text">
+				  							Apple
+				  						</p>
+				  					</div>
+				  					<div class="brand-count">
+				  						2460
+				  					</div>
+				       			</div>
+				       			<div class="brand-item">
+				       				<div class="brand-checkbox">
+				  					  <input type="checkbox" class="filled-in" id="brand4" />
+				  				      <label for="brand4"></label>
+				  					</div>	
+				  					<div class="brand-name">
+				  						<p class="name-text">
+				  							Dell
+				  						</p>
+				  					</div>
+				  					<div class="brand-count">
+				  						42
+				  					</div>
+				       			</div>
+				       			<div class="brand-item">
+				       				<div class="brand-checkbox">
+				  					  <input type="checkbox" class="filled-in" id="brand5" />
+				  				      <label for="brand5"></label>
+				  					</div>	
+				  					<div class="brand-name">
+				  						<p class="name-text">
+				  							HP
+				  						</p>
+				  					</div>
+				  					<div class="brand-count">
+				  						5
+				  					</div>
+				       			</div>
+				       			<!--<div class="brand-all">
+				       				<a href="/" class="all-see">Показать все</a>
+				       			</div>-->
+				       		 </div>
+				  	    </li>
+				  	</ul>
+				  </div>
+  				<div class="filter-block color-section">
+				  	<ul class="accardion">
+				  	    <li>
+				  	    	<div class="collapsible-header">
+				  		    	<div class="header-title">
+				  		    		<p class="title-text">
+				  		    			Цвет
+				  		    		</p>
+				  		    	</div>
+				  	    		<div class="color-reset reset-content">
+				  	    			<p class="reset-text">Сбросить</p>
+				  	    		</div>
+				  				<div class="img toggle-accardion"></div>
+				  	    	</div>
+				       		 <div class="collapsible-body">
+				  				<div class="color-checkbox">
+				  					<input type="checkbox" class="filled-in" id="color1" />
+				  			      <label for="color1">
+				  			      	<div class="color light-blue"></div>
+				  			      </label>
+				  				</div>
+				  				<div class="color-checkbox">
+				  					<input type="checkbox" class="filled-in" id="color2" />
+				  			      <label for="color2">
+				  			      	<div class="color blue"></div>
+				  			      </label>
+				  				</div>
+				  				<div class="color-checkbox">
+				  					<input type="checkbox" class="filled-in" id="color3" />
+				  			      <label for="color3">
+				  			      	<div class="color orange"></div>
+				  			      </label>
+				  				</div>
+				  				<div class="color-checkbox">
+				  					<input type="checkbox" class="filled-in" id="color4" />
+				  			      <label for="color4">
+				  			      	<div class="color red" ></div>
+				  			      </label>
+				  				</div>
+				  				<div class="color-checkbox">
+				  					<input type="checkbox" class="filled-in" id="color5" />
+				  			      <label for="color5">
+				  			      	<div class="color yellow"></div>
+				  			      </label>
+				  				</div>
+				  				<div class="color-checkbox">
+				  					<input type="checkbox" class="filled-in" id="color6" />
+				  			      <label for="color6">
+				  			      	<div class="color light-green"></div>
+				  			      </label>
+				  				</div>
+				  				<div class="color-checkbox">
+				  					<input type="checkbox" class="filled-in" id="color7" />
+				  			      <label for="color7">
+				  			      	<div class="color green"></div>
+				  			      </label>
+				  				</div>
+				  				<div class="color-checkbox">
+				  					<input type="checkbox" class="filled-in" id="color8" />
+				  			      <label for="color8">
+				  			      	<div class="color light-teal"></div>
+				  			      </label>
+				  				</div>
+				  				<div class="color-checkbox">
+				  					<input type="checkbox" class="filled-in" id="color9" />
+				  			      <label for="color9">
+				  			      	<div class="color teal"></div>
+				  			      </label>
+				  				</div>
+				  				<div class="color-checkbox">
+				  					<input type="checkbox" class="filled-in" id="color10" />
+				  			      <label for="color10">
+				  			      	<div class="color purple"></div>
+				  			      </label>
+				  				</div>
+				       		 </div>
+				  	    </li>
+				  	</ul>
+				  </div>
+  			</div>
 		    </div>
 		</div>
-		<!-- end products -->
+		<!-- end products
 		<!-- content -->
 	</div>
 </div>
 <!-- footer -->
-<div class="subscribe">
-  <div class="container">
-    <div class="subscribe-text">
-      <p class="text-big">Подпишитесь на новые поступления, акции и скидки</p>
-      <p class="text-small">Мы не спамим! Стараемся отправлять только самое интересное.</p>
-    </div>
-    <div class="subscribe-form">
-      <form action="" class="form">
-        <input type="text" placeholder="Введите E-mail" class="input">
-        <button class="button waves-effect waves-light">Подписаться</button>
-      </form>
-    </div>
-  </div>
-</div>
 <div class="footer">
   <div class="container">
         <div class="footer-table">
@@ -1897,15 +3016,22 @@
             <a href="" class="logo-link">
               <div class="img agelia"></div>
             </a>
+          </div>
+            <!--  -->
+          <div class="footer-menu first-child">
+           <div class="copyright">
+              <p class="copyright-text">
+                <span>©Agelia, 2015</span> 
+                <span>Все права защищены.</span></p>
+            </div>
+            </div>
+          <!--  -->
+          <!--  -->
+          <div class="footer-menu">
             <div class="socials-list">
               <div class="item-social">
                 <a href="">
                   <div class="img vk"></div>
-                </a>
-              </div>
-              <div class="item-social">
-                <a href="">
-                  <div class="img od"></div>
                 </a>
               </div>
               <div class="item-social">
@@ -1915,7 +3041,17 @@
               </div>
               <div class="item-social">
                 <a href="">
+                  <div class="img od"></div>
+                </a>
+              </div>
+              <div class="item-social">
+                <a href="">
                   <div class="img gp"></div>
+                </a>
+              </div>
+              <div class="item-social">
+                <a href="">
+                  <div class="img tw"></div>
                 </a>
               </div>
               <div class="item-social">
@@ -1924,126 +3060,9 @@
                 </a>
               </div>
             </div>
-            <div class="copyright">
-              <p class="copyright-text">
-                Интернет-магазин детских товаров.
-                <br>              
-                Все права защищены.
-                <br>©Agelia, 2015</p>
-            </div>
           </div>
-                    <!--  -->
-          <div class="footer-menu first-child">
-            <div class="menu-title">
-              <p class="title-tex">Интернет-магазин</p>
-            </div>
-            <ul class="menu-list">
-              <li class="list-item"><a href="/" class="item-link">Бонусная программа</a></li>
-              <li class="list-item"><a href="" class="item-link">Доставка</a></li>
-              <li class="list-item"><a href="" class="item-link">Оплата</a></li>
-              <li class="list-item"><a href="" class="item-link">Сборка</a></li>
-              <li class="list-item"><a href="" class="item-link">Примерка</a></li>
-              <li class="list-item"><a href="" class="item-link">Возврат</a></li>
-            </ul>
-          </div>
-          <!--  -->
-          <!--  -->
-          <div class="footer-menu">
-            <div class="menu-title">
-              <p class="title-tex">Личный кабинет</p>
-            </div>
-            <ul class="menu-list">
-              <li class="list-item"><a href="/" class="item-link">Моя Агелия</a></li>
-              <li class="list-item"><a href="" class="item-link">Мои Заказы</a></li>
-              <li class="list-item"><a href="" class="item-link">Мои Баллы</a></li>
-              <li class="list-item"><a href="" class="item-link">Мои Дети</a></li>
-              <li class="list-item"><a href="" class="item-link">Мои Друзья</a></li>
-              <li class="list-item"><a href="" class="item-link">Мои Новости</a></li>
-            </ul>
-          </div>
-          <!--  -->
-
-          <!--  -->
-          <div class="footer-menu">
-            <div class="menu-title">
-              <p class="title-tex">О компании</p>
-            </div>
-            <ul class="menu-list">
-              <li class="list-item"><a href="/" class="item-link">Новости</a></li>
-              <li class="list-item"><a href="" class="item-link">Партнерство</a></li>
-              <li class="list-item"><a href="" class="item-link">Вакансии</a></li>
-              <li class="list-item"><a href="" class="item-link">Контакты</a></li>
-            </ul>
-          </div>
-          <!--  -->
-          <!--  -->
-          <div class="footer-menu">
-            <div class="menu-title">
-              <p class="title-tex">Обратная связь</p>
-            </div>
-            <ul class="menu-list">
-              <li class="list-item">
-                <p class="item-link">
-                <span class="link-title">Телефон</span>
-               <a href="tel: +74953453040" class="text">+7 (495) 345-30-40</a>
-                </p>
-              </li>
-              <li class="list-item">
-                <p class="item-link">
-                <span class="link-title">Email</span>
-                  <a href="mailto:info@agelia.ru" class="text">info@agelia.ru</a>
-                </p>
-              </li>
-              <li class="list-item">
-                <p class="item-link">
-                  <span class="link-title">Адрес</span>
-                  <span class="text">г. Москва, Походный пр-д, д. 4, корп. 2, стр. 21 </span>
-                </p>
-              </li>
-            </ul>
-          </div>
-          <!--  -->
+          <!--  --> 
         </div>
-        <!-- <div class="socials">
- 	<div class="copyright">
- 		<p class="copyright-text">
- 			2015 © Agelia Kids. Все права защищены.
- 		</p>
- 	</div>
- 	<div class="socials-list">
- 		<div class="item-social">
- 			<a href="">
- 				<div class="img vk"></div>
- 			</a>
- 		</div>
- 		<div class="item-social">
- 			<a href="">
- 				<div class="img od"></div>			
- 			</a>
- 		</div>
- 		<div class="item-social">
- 			<a href="">
- 				<div class="img fb"></div>
- 			</a>
- 		</div>
- 		<div class="item-social">
- 			<a href="">
- 				<div class="img gp"></div>
- 			</a>
- 		</div>
- 		<div class="item-social">
- 			<a href="">
- 				<div class="img in"></div>
- 			</a>
- 		</div>
- 		<div class="item-social">
- 			<a href="">
- 				<div class="img hz"></div>		
- 			</a>
- 		</div>
- 	</div>
- 	<div class="clearfix"></div>
- </div> -->
       <div class="clearfix"></div>
   </div>
 </div>
@@ -2078,11 +3097,11 @@
                         <label for="email">Email</label>
                       </div>
                        <div class="input-field col s12">
-                        <input id="password" type="password" >
-                        <label for="password">Пароль</label>
+                        <input id="password" type="password" class="validate">
+                        <label for="password_password">Пароль</label>
                       </div>
                       <a href="" class="remember-pass">Забыли пароль?</a>
-                      <button class="waves-effect waves-light form-button">Войти</button>
+                      <button class="waves-effect dis-button form-button">Войти</button>
                   </form>
                 </div>
             </div>
@@ -2120,14 +3139,14 @@
     					<p class="text">Через Google+</p>
     				</a>
     			</div>
-    			<div class="regModal-check check-pink">
+    			<div class="regModal-check check-pink nosocial-checkbox ">
     				<div class="checkbox">
     					<input type="checkbox" class="filled-in" id="filled-in-box"/>
     					 <label for="filled-in-box">Меня нет в социальных сетях</label>
     				</div>
     			</div>
     			<div class="regModal-next">
-    				<a href="passwordStep" class="step-button next-button waves-effect waves-light">Далее</a>
+    				<a href="passwordStep" class="dis-button next-button waves-effect nosocial-button">Далее</a>
     				<!-- <a href="" class="next-button waves-effect waves-light active">Далее</a> -->
     			</div>
     		</div>
@@ -2149,24 +3168,25 @@
     			<form action="">
     				<div class="input-field col s12">
     					<b class="ok"></b>
-    					<input id="name-pass" placeholder="Имя" type="text" class="validate">
+    					<input id="name-pass" type="text" class="validate">
     					<label for="name-pass">Имя</label>
     				</div>
     				<div class="input-field col s12">
     				<b class="error"></b>
-    					<input id="f-pass" placeholder="Фамилия" type="text" class="validate">
+    					<input id="f-pass" type="text" class="validate">
     					<label for="f-pass">Фамилия</label>
     				</div>
     				<div class="input-field col s12">
-    					<input id="tell-pass" placeholder="Телефон" type="tel" class="validate">		
+    					<input id="tell-pass" type="tel" class="validate">		
     					<label for="tell-pass">Телефон</label>
     				</div>
     				<div class="input-field col s12">
-    					<input id="email-pass" placeholder="Email" type="email" class="validate">		
+    					<input id="email-pass" type="email" class="validate">		
     					<label for="email-pass">Email</label>
     				</div>
     				<div class="input-field col s12 margin">
-    					<input id="password-pass" placeholder="Пароль" type="password" class="password" >		
+    					<input id="password-pass" type="password" class="password" >	
+    					<label for="password-pass">Пароль</label>	
     				</div>
     				<div class="regModal-check green-check">
     					<div class="checkbox">
@@ -2200,20 +3220,20 @@
     			<form action="">
     				<div class="input-field col s12">
     					<b class="ok"></b>
-    					<input id="name-soc" placeholder="Имя" type="text" class="validate">
+    					<input id="name-soc" type="text" class="validate">
     					<label for="name-soc">Имя</label>
     				</div>
     				<div class="input-field col s12">
     				<b class="error"></b>
-    					<input id="f-soc" placeholder="Фамилия" type="text" class="validate">
+    					<input id="f-soc" type="text" class="validate">
     					<label for="f-soc">Фамилия</label>
     				</div>
     				<div class="input-field col s12">
-    					<input id="tell-soc" placeholder="Телефон" type="tel" class="validate">		
+    					<input id="tell-soc" type="tel" class="validate">		
     					<label for="tell-soc">Телефон</label>
     				</div>
     				<div class="input-field col s12">
-    					<input id="email-soc" placeholder="Email" type="email" class="validate">		
+    					<input id="email-soc" type="email" class="validate">		
     					<label for="email-soc">Email</label>
     				</div>
     				<div class="regModal-check green-check">
@@ -2265,7 +3285,7 @@
 		    			<div class="clearfix"></div>
 		    		</div>
 		    		<div class="fl_right">
-		    			<div class="card-add add-favorites active">
+		    			<div class="card-add add-favorites">
 		    				<div class="img"></div>
 		    			</div>
 		    			<div class="card-add add-compare">
@@ -2424,7 +3444,7 @@
 		    					</div>
 		    				</div>
 		    				<div class="parameter-how">
-		    					<a href="/" class="how-link"><b class="img"></b><span class="text">Как подобрать размер?</span></a>
+		    					<a href="/" class="how-link"><b class="img"></b><span class="text">Таблица</span></a>
 		    				</div>
 		    			</div>
 		    		<!-- summ -->
@@ -2523,6 +3543,7 @@
     
     <script src="js/vendor/jquery-1.11.3.min.js"></script>
 
+    <!-- <script src="js/plugins/materialize.js"></script> -->
     <script src="js/plugins.js"></script>
 
     <script src="js/main.js"></script>

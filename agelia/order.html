@@ -23,7 +23,7 @@
     <path d="M20,11H7.8l5.6-5.6L12,4l-8,8l8,8l1.4-1.4L7.8,13H20V11z"></path>
 </symbol>
 </svg>
-<div class="header header__white">
+<div class="header header__white header__order">
     <div class="container max-width">
         <div class="row">
             <!-- <div class="col m2"> -->
@@ -1037,6 +1037,7 @@
 			</div>
 				<!--  -->
 					<div class="order-steps">
+					<div class="animation-steps">
 						<div class="step open" id="step-1">
 							<div class="step-header">
 								<div class="header-checkbox">
@@ -1102,12 +1103,12 @@
 												<input type="text" name="houseInput" id="houseInput" class="validate">
 												<label for="houseInput">Дом</label>
 											</div>
-											<div class="step-input three-input input-field ok">
-												<input type="text" name="stInput" id="stInput" class="validate">
+											<div class="step-input three-input input-field ">
+												<input type="text" name="stInput" id="stInput" >
 												<label for="stInput">Строение</label>
 											</div>
-											<div class="step-input three-input input-field error">
-												<input type="text" name="cpInput" id="cpInput" class="validate">
+											<div class="step-input three-input input-field ">
+												<input type="text" name="cpInput" id="cpInput" >
 												<label for="cpInput">Корпус</label>
 											</div>	
 										</div>
@@ -1374,19 +1375,41 @@
 									</p>
 								</div>
 								<div class="payment-bonuses">
-									<div class="bonuses-img">
-										<div class="img"></div>
+									<div class="bonuses-header">
+										<div class="bonuses-img">
+											<div class="img"></div>
+										</div>
+										<div class="bonuses-text">
+											<p class="text-title">
+												Оплата бонусными баллами
+											</p>
+											<p class="text-subtitle">
+												Вы можете олатить заказ бонусными баллами. <!-- <a href="/" class="link">Подробнее...</a> -->
+											</p>
+										</div>
+										<div class="plus">
+											<div class="img"></div>
+										</div>
 									</div>
-									<div class="bonuses-text">
-										<p class="text-title">
-											Оплата бонусными баллами
-										</p>
-										<p class="text-subtitle">
-											Вы можете олатить заказ бонусными баллами. <a href="/" class="link">Подробнее...</a>
-										</p>
-									</div>
-									<div class="plus">
-										<div class="img"></div>
+									<div class="bonuses-bropdown">
+										<div class="user">
+											<div class="user-img">
+												<img src="" alt="">
+											</div>
+											<div class="user-info">
+												<p class="info-text">Василий</p>
+												<p class="info-text">Мурзайкин</p>
+											</div>
+										</div>
+										<div class="user-bonuses">
+											<p class="bonuses-text">250</p>
+											<p class="bonuses-subtext">Доступных баллов</p>
+										</div>
+										<div class="user-sell">
+											<input type="text" class="sell-input">
+											<a href="/" class="sell-button waves-effect waves-light">Потратить</a>
+										</div>
+										<div class="clearfix"></div>
 									</div>
 								</div>
 								<div class="body-content">
@@ -1400,7 +1423,7 @@
 												<div class="check-info">
 													<p class="info-title">Наличными при получении</p>
 													<p class="info-subtitle icon-time">
-														Вы отдаете деньги при получении заказа. <a  href="/" class="date">Подробнее..</a>
+														Вы отдаете деньги при получении заказа. <!-- <a  href="/" class="date">Подробнее..</a> -->
 													</p>
 												</div>
 											</div>
@@ -1414,7 +1437,7 @@
 												<div class="check-info">
 													<p class="info-title">Банковской картой при получении</p>
 													<p class="info-subtitle icon-time">
-														Вы отдаете деньги при получении заказа. <a  href="/" class="date">Подробнее..</a>
+														Вы отдаете деньги при получении заказа. <!-- <a  href="/" class="date">Подробнее..</a> -->
 													</p>
 												</div>
 											</div>
@@ -1428,7 +1451,7 @@
 												<div class="check-info">
 													<p class="info-title">Банковской картой <span>Онлайн</span></p>
 													<p class="info-subtitle icon-time">
-														Вы отдаете деньги при получении заказа. <a  href="/" class="date">Подробнее..</a>
+														Вы отдаете деньги при получении заказа. <!-- <a  href="/" class="date">Подробнее..</a> -->
 													</p>
 												</div>
 											</div>
@@ -1442,7 +1465,7 @@
 												<div class="check-info">
 													<p class="info-title">В кредит</p>
 													<p class="info-subtitle icon-time">
-														Вы отдаете деньги при получении заказа. <a  href="/" class="date">Подробнее..</a>
+														Вы отдаете деньги при получении заказа. <!-- <a  href="/" class="date">Подробнее..</a> -->
 													</p>
 												</div>
 											</div>
@@ -1454,7 +1477,8 @@
 												</a>
 											</div>
 											<div class="next-button">
-												<button type="submit" class="send-button waves-effect waves-light">Отправить</button>
+													<a href="#order-finish" class="button-link waves-effect waves-light">Готово</a>
+												<!-- <button type="submit" class="send-button waves-effect waves-light">Готово</button> -->
 											</div>
 										</div>
 									</form>
@@ -1462,6 +1486,88 @@
 							</div>
 						</div>
 					</div>
+						<!--  -->
+						<div class="order-finish" id="order-finish">
+							<div class="finish-header">
+								<div class="header-title">
+									<p class="title-text">Информация о доставке</p>
+								</div>
+								<div class="header-edit">
+									<p class="edit-text">Редактировать</p>
+								</div>
+							</div>
+							<div class="finish-body">
+								<div class="finish-map">
+									<div id="map" class="map">
+										<!-- there paste map -->
+										<img src="img/map.jpg" alt="">
+									</div>
+								</div>
+								<div class="body-info">
+									<!--  -->
+									<div class="finish-contact">
+										<div class="contact-face">
+											<div class="face-img">
+												<div class="img"></div>
+											</div>
+											<div class="contact-block">
+												<p class="contact-title">Контактное лицо</p>
+												<p class="contact-subtitle">
+													<span class="bold">Василий Мурзайкин</span>
+												</p>
+											</div>
+										</div>
+										<div class="contact-block">
+											<p class="contact-title">Телефон</p>
+											<p class="contact-subtitle">
+												+7 (977) 833-46-65
+											</p>
+										</div>
+										<div class="contact-block">
+											<p class="contact-title">E-mail</p>
+											<p class="contact-subtitle">
+												vmurzaykin@agelia.ru
+											</p>
+										</div>
+										<div class="contact-block">
+											<p class="contact-title">Адрес</p>
+											<p class="contact-subtitle">
+												г. Москва, ул. Рождественская, д. 1, стр. 1, корп. 1 
+											</p>
+										</div>
+									</div>
+									<!--  -->
+									<div class="right-block">
+										<div class="finish-delivery">
+											<div class="delivery-img">
+												<div class="img"></div>
+											</div>
+											<div class="delivery-block">
+												<p class="delivery-title">Курьерская доставка</p>
+												<p class="delivery-time">12.11.2015, с 10 до 12 часов</p>
+											</div>
+										</div>
+										<div class="finish-payment">
+											<div class="payment-img">
+												<div class="img"></div>
+											</div>
+											<div class="payment-block">
+												<p class="payment-title">Способ оплаты</p>
+												<p class="payment-info">Банковской картой Онлайн </p>
+											</div>
+										</div>
+										<div class="finish-buy">
+											<button type="submit" class="waves-effect waves-light buy-button">Подтвердить заказ</button>
+										</div>
+									</div>
+									<!--  -->
+								</div>
+								<!--  -->
+							</div>
+						</div>
+						<!--  -->
+					</div>
+					<!-- <div class="clearfix"></div> -->
 			</div>
 		<!-- content -->
 	</div>
@@ -1669,11 +1775,11 @@
                       <label for="email">Email</label>
                     </div>
                      <div class="input-field col s12">
-                      <input id="password" type="password" >
-                      <label for="password">Пароль</label>
+                      <input id="password" type="password" class="validate">
+                      <label for="password_password">Пароль</label>
                     </div>
                     <a href="" class="remember-pass">Забыли пароль?</a>
-                    <button class="waves-effect waves-light form-button">Войти</button>
+                    <button class="waves-effect dis-button form-button">Войти</button>
                 </form>
               </div>
           </div>
@@ -1682,6 +1788,7 @@
     
     <script src="js/vendor/jquery-1.11.3.min.js"></script>
 
+    <!-- <script src="js/plugins/materialize.js"></script> -->
     <script src="js/plugins.js"></script>
 
     <script src="js/main.js"></script>

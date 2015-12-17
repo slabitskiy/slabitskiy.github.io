@@ -51,6 +51,7 @@
                     <form action="" class="form">
                         <div class="form-block">
                             <b class="icon icon-search closeSearchInputMobile"></b>
+                            <b class="removeTextSearch"></b>
                             <input type="search" id="inputSearch" data-href="searchDropdown" placeholder="Поиск">
                         </div>
                     </form>
@@ -236,7 +237,7 @@
                         <!-- dropdown bottom -->
                         <div class="dropdown-footer">
                             <a href="/" class="dropdown-button button-clear waves-effect waves-light">Очистить все</a>
-                            <a href="favorites.html" class="dropdown-button button-infav waves-effect waves-light">В закладки</a>
+                            <a href="favorites_sq.html" class="dropdown-button button-infav waves-effect waves-light">В закладки</a>
                         </div>
                         <!-- end -->
                         </div>
@@ -461,7 +462,7 @@
                         <!-- end summ -->
                         <!-- dropdown bottom -->
                         <div class="dropdown-footer">
-                            <a href="order.html" class="dropdown-button button-buy waves-effect waves-light">Оформить dasdasзаказ</a>
+                            <a href="order.html" class="dropdown-button button-buy waves-effect waves-light">Оформить заказ</a>
                             <a href="basket.html" class="dropdown-button button-infav waves-effect waves-light">В корзину</a>
                         </div>
                         <!-- end -->
@@ -949,6 +950,9 @@
                 <div class="sort-filter">
                 <a href=".menu-right" class="filter-button waves-effect waves-light">
                     Фильтр 
+                    <div class="switch">
+                        <label><input type="checkbox"> <span class="lever"></span></label>
+                  </div>
                 </a>
             </div>
             <div class="clearfix"></div>
@@ -1716,7 +1720,7 @@
             </div>
             <!-- <div class="col"> -->
             <div class="menu-right animatedMenuRight">
-                <div class="filter-block favorites-section">
+                <div class="filter-block favorites-section withAll-section">
                     <ul class="accardion not-accardion">
                         <li>
                             <div class="collapsible-header">
@@ -1858,20 +1862,6 @@
     </div>
 </div>
 <!-- footer -->
-<div class="subscribe">
-  <div class="container">
-    <div class="subscribe-text">
-      <p class="text-big">Подпишитесь на новые поступления, акции и скидки</p>
-      <p class="text-small">Мы не спамим! Стараемся отправлять только самое интересное.</p>
-    </div>
-    <div class="subscribe-form">
-      <form action="" class="form">
-        <input type="text" placeholder="Введите E-mail" class="input">
-        <button class="button waves-effect waves-light">Подписаться</button>
-      </form>
-    </div>
-  </div>
-</div>
 <div class="footer">
   <div class="container">
         <div class="footer-table">
@@ -1879,15 +1869,22 @@
             <a href="" class="logo-link">
               <div class="img agelia"></div>
             </a>
+          </div>
+            <!--  -->
+          <div class="footer-menu first-child">
+           <div class="copyright">
+              <p class="copyright-text">
+                <span>©Agelia, 2015</span> 
+                <span>Все права защищены.</span></p>
+            </div>
+            </div>
+          <!--  -->
+          <!--  -->
+          <div class="footer-menu">
             <div class="socials-list">
               <div class="item-social">
                 <a href="">
                   <div class="img vk"></div>
-                </a>
-              </div>
-              <div class="item-social">
-                <a href="">
-                  <div class="img od"></div>
                 </a>
               </div>
               <div class="item-social">
@@ -1897,7 +1894,17 @@
               </div>
               <div class="item-social">
                 <a href="">
+                  <div class="img od"></div>
+                </a>
+              </div>
+              <div class="item-social">
+                <a href="">
                   <div class="img gp"></div>
+                </a>
+              </div>
+              <div class="item-social">
+                <a href="">
+                  <div class="img tw"></div>
                 </a>
               </div>
               <div class="item-social">
@@ -1906,126 +1913,9 @@
                 </a>
               </div>
             </div>
-            <div class="copyright">
-              <p class="copyright-text">
-                Интернет-магазин детских товаров.
-                <br>              
-                Все права защищены.
-                <br>©Agelia, 2015</p>
-            </div>
           </div>
-                    <!--  -->
-          <div class="footer-menu first-child">
-            <div class="menu-title">
-              <p class="title-tex">Интернет-магазин</p>
-            </div>
-            <ul class="menu-list">
-              <li class="list-item"><a href="/" class="item-link">Бонусная программа</a></li>
-              <li class="list-item"><a href="" class="item-link">Доставка</a></li>
-              <li class="list-item"><a href="" class="item-link">Оплата</a></li>
-              <li class="list-item"><a href="" class="item-link">Сборка</a></li>
-              <li class="list-item"><a href="" class="item-link">Примерка</a></li>
-              <li class="list-item"><a href="" class="item-link">Возврат</a></li>
-            </ul>
-          </div>
-          <!--  -->
-          <!--  -->
-          <div class="footer-menu">
-            <div class="menu-title">
-              <p class="title-tex">Личный кабинет</p>
-            </div>
-            <ul class="menu-list">
-              <li class="list-item"><a href="/" class="item-link">Моя Агелия</a></li>
-              <li class="list-item"><a href="" class="item-link">Мои Заказы</a></li>
-              <li class="list-item"><a href="" class="item-link">Мои Баллы</a></li>
-              <li class="list-item"><a href="" class="item-link">Мои Дети</a></li>
-              <li class="list-item"><a href="" class="item-link">Мои Друзья</a></li>
-              <li class="list-item"><a href="" class="item-link">Мои Новости</a></li>
-            </ul>
-          </div>
-          <!--  -->
-
-          <!--  -->
-          <div class="footer-menu">
-            <div class="menu-title">
-              <p class="title-tex">О компании</p>
-            </div>
-            <ul class="menu-list">
-              <li class="list-item"><a href="/" class="item-link">Новости</a></li>
-              <li class="list-item"><a href="" class="item-link">Партнерство</a></li>
-              <li class="list-item"><a href="" class="item-link">Вакансии</a></li>
-              <li class="list-item"><a href="" class="item-link">Контакты</a></li>
-            </ul>
-          </div>
-          <!--  -->
-          <!--  -->
-          <div class="footer-menu">
-            <div class="menu-title">
-              <p class="title-tex">Обратная связь</p>
-            </div>
-            <ul class="menu-list">
-              <li class="list-item">
-                <p class="item-link">
-                <span class="link-title">Телефон</span>
-               <a href="tel: +74953453040" class="text">+7 (495) 345-30-40</a>
-                </p>
-              </li>
-              <li class="list-item">
-                <p class="item-link">
-                <span class="link-title">Email</span>
-                  <a href="mailto:info@agelia.ru" class="text">info@agelia.ru</a>
-                </p>
-              </li>
-              <li class="list-item">
-                <p class="item-link">
-                  <span class="link-title">Адрес</span>
-                  <span class="text">г. Москва, Походный пр-д, д. 4, корп. 2, стр. 21 </span>
-                </p>
-              </li>
-            </ul>
-          </div>
-          <!--  -->
+          <!--  --> 
         </div>
-        <!-- <div class="socials">
- 	<div class="copyright">
- 		<p class="copyright-text">
- 			2015 © Agelia Kids. Все права защищены.
- 		</p>
- 	</div>
- 	<div class="socials-list">
- 		<div class="item-social">
- 			<a href="">
- 				<div class="img vk"></div>
- 			</a>
- 		</div>
- 		<div class="item-social">
- 			<a href="">
- 				<div class="img od"></div>			
- 			</a>
- 		</div>
- 		<div class="item-social">
- 			<a href="">
- 				<div class="img fb"></div>
- 			</a>
- 		</div>
- 		<div class="item-social">
- 			<a href="">
- 				<div class="img gp"></div>
- 			</a>
- 		</div>
- 		<div class="item-social">
- 			<a href="">
- 				<div class="img in"></div>
- 			</a>
- 		</div>
- 		<div class="item-social">
- 			<a href="">
- 				<div class="img hz"></div>		
- 			</a>
- 		</div>
- 	</div>
- 	<div class="clearfix"></div>
- </div> -->
       <div class="clearfix"></div>
   </div>
 </div>
@@ -2060,11 +1950,11 @@
                         <label for="email">Email</label>
                       </div>
                        <div class="input-field col s12">
-                        <input id="password" type="password" >
-                        <label for="password">Пароль</label>
+                        <input id="password" type="password" class="validate">
+                        <label for="password_password">Пароль</label>
                       </div>
                       <a href="" class="remember-pass">Забыли пароль?</a>
-                      <button class="waves-effect waves-light form-button">Войти</button>
+                      <button class="waves-effect dis-button form-button">Войти</button>
                   </form>
                 </div>
             </div>
@@ -2102,14 +1992,14 @@
     					<p class="text">Через Google+</p>
     				</a>
     			</div>
-    			<div class="regModal-check check-pink">
+    			<div class="regModal-check check-pink nosocial-checkbox ">
     				<div class="checkbox">
     					<input type="checkbox" class="filled-in" id="filled-in-box"/>
     					 <label for="filled-in-box">Меня нет в социальных сетях</label>
     				</div>
     			</div>
     			<div class="regModal-next">
-    				<a href="passwordStep" class="step-button next-button waves-effect waves-light">Далее</a>
+    				<a href="passwordStep" class="dis-button next-button waves-effect nosocial-button">Далее</a>
     				<!-- <a href="" class="next-button waves-effect waves-light active">Далее</a> -->
     			</div>
     		</div>
@@ -2131,24 +2021,25 @@
     			<form action="">
     				<div class="input-field col s12">
     					<b class="ok"></b>
-    					<input id="name-pass" placeholder="Имя" type="text" class="validate">
+    					<input id="name-pass" type="text" class="validate">
     					<label for="name-pass">Имя</label>
     				</div>
     				<div class="input-field col s12">
     				<b class="error"></b>
-    					<input id="f-pass" placeholder="Фамилия" type="text" class="validate">
+    					<input id="f-pass" type="text" class="validate">
     					<label for="f-pass">Фамилия</label>
     				</div>
     				<div class="input-field col s12">
-    					<input id="tell-pass" placeholder="Телефон" type="tel" class="validate">		
+    					<input id="tell-pass" type="tel" class="validate">		
     					<label for="tell-pass">Телефон</label>
     				</div>
     				<div class="input-field col s12">
-    					<input id="email-pass" placeholder="Email" type="email" class="validate">		
+    					<input id="email-pass" type="email" class="validate">		
     					<label for="email-pass">Email</label>
     				</div>
     				<div class="input-field col s12 margin">
-    					<input id="password-pass" placeholder="Пароль" type="password" class="password" >		
+    					<input id="password-pass" type="password" class="password" >	
+    					<label for="password-pass">Пароль</label>	
     				</div>
     				<div class="regModal-check green-check">
     					<div class="checkbox">
@@ -2182,20 +2073,20 @@
     			<form action="">
     				<div class="input-field col s12">
     					<b class="ok"></b>
-    					<input id="name-soc" placeholder="Имя" type="text" class="validate">
+    					<input id="name-soc" type="text" class="validate">
     					<label for="name-soc">Имя</label>
     				</div>
     				<div class="input-field col s12">
     				<b class="error"></b>
-    					<input id="f-soc" placeholder="Фамилия" type="text" class="validate">
+    					<input id="f-soc" type="text" class="validate">
     					<label for="f-soc">Фамилия</label>
     				</div>
     				<div class="input-field col s12">
-    					<input id="tell-soc" placeholder="Телефон" type="tel" class="validate">		
+    					<input id="tell-soc" type="tel" class="validate">		
     					<label for="tell-soc">Телефон</label>
     				</div>
     				<div class="input-field col s12">
-    					<input id="email-soc" placeholder="Email" type="email" class="validate">		
+    					<input id="email-soc" type="email" class="validate">		
     					<label for="email-soc">Email</label>
     				</div>
     				<div class="regModal-check green-check">
@@ -2247,7 +2138,7 @@
 		    			<div class="clearfix"></div>
 		    		</div>
 		    		<div class="fl_right">
-		    			<div class="card-add add-favorites active">
+		    			<div class="card-add add-favorites">
 		    				<div class="img"></div>
 		    			</div>
 		    			<div class="card-add add-compare">
@@ -2406,7 +2297,7 @@
 		    					</div>
 		    				</div>
 		    				<div class="parameter-how">
-		    					<a href="/" class="how-link"><b class="img"></b><span class="text">Как подобрать размер?</span></a>
+		    					<a href="/" class="how-link"><b class="img"></b><span class="text">Таблица</span></a>
 		    				</div>
 		    			</div>
 		    		<!-- summ -->
@@ -2505,6 +2396,7 @@
     
     <script src="js/vendor/jquery-1.11.3.min.js"></script>
 
+    <!-- <script src="js/plugins/materialize.js"></script> -->
     <script src="js/plugins.js"></script>
 
     <script src="js/main.js"></script>
