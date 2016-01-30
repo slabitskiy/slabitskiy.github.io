@@ -1,0 +1,1 @@
+$(document).ready(function(){function e(e){$(e).on("change keyup",function(){""===$(this).val()?$(this).parent().removeClass("active"):$(this).parent().addClass("active")})}/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);$(".slides").owlCarousel({items:1}),e("#inputSearch")});
