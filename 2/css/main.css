@@ -26,6 +26,12 @@
     font-weight: normal;
     font-style: normal;
 }
+.hidden{
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
 *{
     margin: 0;
     padding: 0;
@@ -125,7 +131,7 @@ body{
 .screen_1_content h1, .screen_1_content h1 p{
     font-size: 50px;
     font-family: "Muller-Light";
-    color: #5ddc35;
+    color: #0473b9;
     line-height: 0.892;
     text-align: left;
     margin: 50px 0 28px 0;
@@ -153,7 +159,7 @@ body{
     color: #ffffff;
     text-align: center;
     border-radius: 5px;
-    background: #5ddc35;
+    background: #0473b9;
     width: 353px;
     height: 70px;
     line-height: 70px;
@@ -436,7 +442,7 @@ h2{
 .screen_6 input[type=submit]{
     border: none;
     border-radius: 5px;
-    background-color: rgb( 99, 205, 66 );
+    background-color: #0473b9;
     width: 228px;
     height: 58px;
     /*padding: 0 15px;*/
