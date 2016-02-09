@@ -1,0 +1,537 @@
+@font-face {
+    font-family: "ProximaNova-Light";
+    src: url('../fonts/ProximaNova-Light.eot');
+    src: url('../fonts/ProximaNova-Light.eot'), url('../fonts/ProximaNova-Light.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Muller-Regular";
+    src: url('../fonts/Muller-Regular.eot');
+    src: url('../fonts/Muller-Regular.eot'), url('../fonts/Muller-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Muller-Light";
+    src: url('../fonts/Muller-Regular.eot');
+    src: url('../fonts/Muller-Regular.eot'), url('../fonts/Muller-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "ProximaNova-Reg";
+    src: url('../fonts/ProximaNova-Reg.eot');
+    src: url('../fonts/ProximaNova-Reg.eot'), url('../fonts/ProximaNova-Reg.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+img{
+    border: none;
+}
+h1, h2, h3{
+    font-weight: normal;
+}
+body{
+    background: #ffffff;
+    font-family: "Sans-serif";
+}
+.main_content{
+    max-width: 1980px;
+    margin: 0 auto;
+}
+.container{
+    width: 1059px;
+    margin: 0 auto;
+    height: inherit;
+}
+.screen_2:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*=================================screen_1==================================*/
+.screen_1{
+    height: 698px;
+    background: url("../images/screen_1_bg.jpg") center top no-repeat;
+    background-size: cover;
+}
+
+.header{
+    height: 130px;
+    position: relative;
+}
+.logo{
+    float: left;
+    margin: 51px 80px 0 6px;
+}
+.menu_button{
+    display: none;
+}
+.menu{
+    float: left;
+    margin: 0 0 0 0;
+}
+.menu li{
+    float: left;
+}
+.menu li a{
+    font-size: 15.63px;
+    font-family: "ProximaNova-Light", "Verdana";
+    color: #4d5961;
+    text-align: left;
+    margin: 56px 33px 0 0;
+}
+.right{
+  float: right;
+  margin: 23px 0 0 0;
+  text-align: right;
+
+}
+.header .header-tell{
+  font-size: 30px;
+  font-family: "ProximaNova-Light", "Verdana";
+  color: #4d5961;
+  /*margin-bottom: 10px;*/
+}
+.button{
+    font-size: 13.04px;
+    font-family: "Muller-Regular";
+    color: #384650;
+    text-transform: uppercase;
+    /*text-align: center;*/
+    /*border: 2px solid #070707;*/
+    border-radius: 5px;
+    width: 175px;
+    height: 30px;
+    line-height: 34px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+.screen_1_content h1, .screen_1_content h1 p{
+    font-size: 50px;
+    font-family: "Muller-Light";
+    color: #5ddc35;
+    line-height: 0.892;
+    text-align: left;
+    margin: 50px 0 28px 0;
+}
+.screen_1_content h1 p{
+    margin: 0;
+    display: inline-block;
+}
+.screen_1_content h1 span{
+    width: auto;
+    display: inline-block;
+    margin: 0;
+    color: #5ddc35;
+}
+.screen_1_content p{
+    font-size: 29.38px;
+    font-family: "Muller-Light";
+    color: #000;
+    /*color: #ffffff;*/
+    text-align: left;
+}
+.green_button{
+    font-size: 18.9px;
+    font-family: "Muller-Regular";
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    background: #5ddc35;
+    width: 353px;
+    height: 70px;
+    line-height: 70px;
+    margin: 130px 0 0 0;
+    cursor: pointer;
+}
+
+
+/*=================================screen_2==================================*/
+.screen_2{
+    padding: 0 0 59px 0;
+}
+h2{
+    font-size: 40.03px;
+    font-family: "Muller-Light";
+    color: #384650;
+    text-align: center;
+    margin: 108px 0 89px 0;
+}
+.advantages{
+    text-align: center;
+    font-size: 15px;
+    font-family: "ProximaNova-Light", "Verdana";
+    color: #384650;
+    line-height: 2;
+    display: inline-block;
+    vertical-align: top;
+    width: 280px;
+    margin: 0 35px 76px 35px;
+}
+.advantages .title{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/*=================================screen_3==================================*/
+.screen_3{
+    height: 740px;
+    background: url("../images/screen_3_bg.jpg") center center no-repeat;
+    padding: 70px 0 0 0;
+}
+.screen_3 h2, .screen_4 h2{
+    margin: 0;
+}
+.left_menu{
+    margin: 135px 0 0 242px;
+    float: left;
+}
+.left_menu li{
+    list-style-image: url("../images/point.png");
+    font-size: 15px;
+    font-family: "ProximaNova-Reg", "Verdana";
+    color: #aaafb2;
+    text-align: left;
+    line-height: 18px;
+    cursor: pointer;
+    min-height: 45px;
+}
+.left_menu li.active{
+    list-style-image: url("../images/point_active.png");
+    color: #0473b9;
+}
+.left_menu li:nth-child(2){
+    margin: 36px 0 0 44px;
+}
+.left_menu li:nth-child(3){
+    margin: 30px 0 0 61px;
+}
+.left_menu li:nth-child(4){
+    margin: 43px 0 0 50px;
+}
+.left_menu li:nth-child(5){
+    margin: 36px 0 0 16px;
+}
+.left_menu li:nth-child(6){
+    margin: -4px 0px 0px -15px;
+}
+.left_menu li hr{
+    border: none;
+    border-bottom: 1px solid #0473b9;
+    width: 47px;
+    margin: 4px 0 0 0;
+    display: none;
+}
+.left_menu li hr.active{
+    display: block;
+}
+
+.this_menu{
+    float: right;
+    width: 453px;
+}
+.this_menu li{
+    margin: 53px 0 0 0;
+    display: none;
+}
+.this_menu li.active{
+    display: block;
+}
+.this_menu li h3{
+    font-size: 17px;
+    font-family: "Muller-Light";
+    color: #0473b9;
+    text-align: left;
+}
+.this_menu li hr{
+    border: none;
+    border-bottom: 2px solid #0473b9;
+    width: 90px;
+    margin: 13px 0 57px 0;
+}
+.this_menu li a{
+    margin: 0 0 30px 0;
+    position: relative;
+    width: 453px;
+    height: 233px;
+}
+.this_menu li a:hover .zoom{
+    display: block;
+}
+.zoom{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: 0;
+    left: 0;
+    background: url("../images/zoom.png") center center no-repeat, rgba(150, 150, 150, 0.2);
+    display: none;
+}
+.this_menu li img{
+    width: inherit;
+    height: inherit;
+}
+.this_menu li p{
+    font-size: 15px;
+    font-family: "ProximaNova-Light", "Verdana";
+    color: #384650;
+    line-height: 1.6;
+    text-align: left;
+}
+.this_menu li a.green_button{
+    width: 234px;
+    height: 46px;
+    margin: 36px 0 0 0;
+    font-size: 15.6px;
+    line-height: 46px;
+}
+
+/*=================================screen_4==================================*/
+.screen_4{
+    padding: 70px 0 0 0;
+}
+.steps{
+    height: 782px;
+    width: 100%;
+    background: url("../images/screen_4_bg.jpg") center center no-repeat;
+    margin: 81px 0 100px 0;
+}
+.steps_640{
+    display: none;
+}
+.steps .text{
+  min-height: 205px;
+}
+
+.left_block, .right_block{
+    float: left;
+    text-align: right;
+    width: 332px;
+    margin: 26px 0 0 0;
+}
+.left_block{
+  margin-top: 85px;
+}
+.right_block{
+    float: right;
+    text-align: left;
+    margin: -15px 0 0 0;
+    /*margin: 85px 0 0 0;*/
+}
+.left_block p, .right_block p, .steps_640 p{
+    font-size: 19.22px;
+    font-family: "Muller-Light";
+    color: #0473b9;
+    line-height: 1.249;
+}
+.right_block p{
+    margin: 116px 0 0 0;
+}
+.left_block span, .right_block span, .steps_640 span {
+    display: block;
+    font-size: 16.96px;
+    font-family: "ProximaNova-Light", "Verdana";
+    color: #8b8b8b;
+    line-height: 1.249;
+    margin: 7px 0 0 0;
+}
+.right_block span{
+    margin: 7px 0 45px 0;
+}
+.left_block img{
+    margin: 11px 0 133px 0;
+}
+
+/*=================================screen_5==================================*/
+.screen_5{
+    padding: 0 0 0 0;
+    padding-bottom: 70px;
+    background: #f7f9fb;
+}
+.screen_5 .container{
+    background: url("../images/screen_5_bg.png") center top no-repeat;
+}
+.screen_5 h2{
+    padding: 64px 0 0 0;
+}
+.questions{
+    text-align: center;
+    width: 510px;
+    margin: 0 auto;
+}
+.questions ul li{
+    margin: 0 0 33px 0;
+}
+.questions ul li p{
+    font-size: 18.89px;
+    font-family: "Muller-Light";
+    color: #0473b9;
+    border-bottom: 1px dashed #0473b9;
+    padding-bottom: 5px;
+    line-height: 25px;
+    cursor: pointer;
+    display: inline;
+}
+.questions ul li span{
+    display: block;
+    font-size: 15px;
+    font-family: "ProximaNova-Light", "Verdana";
+    color: #384650;
+    line-height: 1.6;
+    margin: 31px 0 0 0;
+    display: none;
+}
+.questions ul li span.active{
+    display: block;
+}
+
+/*=================================screen_6==================================*/
+.screen_6{
+    /*height: 635px;*/
+    padding-bottom: 150px;
+    background: url("../images/screen_6_bg.png") center top no-repeat;
+    /*background-size: cover;*/
+    text-align: center;
+}
+.screen_6 h2{
+    padding: 130px 0 0 0;
+    margin: 0 0 64px 0;
+    font-size: 38.98px;
+}
+.screen_6 form{
+    width: 740px;
+    margin: 0 auto;
+}
+.screen_6 input:not([type=submit]){
+    border-radius: 5px;
+    background-color: rgb( 241, 241, 241 );
+    width: 203px;
+    font-size: 13.64px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-family: "Muller-Regular";
+    color: rgb( 0, 0, 0 );
+    text-align: left;
+    margin: 10px 0px 0 16px;
+    height: 42px;
+    float: left;
+}
+.screen_6 input[type=submit]{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb( 99, 205, 66 );
+    width: 228px;
+    height: 58px;
+    /*padding: 0 15px;*/
+    outline: none;
+    margin: 0 0 0 8px;
+    line-height: normal;
+    float: right!important;
+}
+@media only screen and (max-width:991px){
+  .screen_6 input:not([type=submit]){
+    float: none;
+    margin: 15px auto;
+  }
+  .screen_6 input[type=submit]{
+    float: none!important;
+    margin: 15px auto;
+
+  }
+}
+/*=================================screen_7==================================*/
+.screen_7{
+    height: 509px;
+    position: relative;
+}
+.contacts{
+    position: absolute;
+    width: 384px;
+    top: 33px;
+    margin-left: -444px;
+    left: 50%;
+    height: 433px;
+    background: url("../images/contacts_bg.png") center center no-repeat;
+    z-index: 1;
+}
+.contacts p{
+    font-size: 38.98px;
+    font-family: "Muller-Light";
+    color: rgb( 255, 255, 255 );
+    text-align: left;
+    margin: 83px 0 0 43px;
+}
+.contacts span{
+    font-size: 15.36px;
+    font-family: "Muller-Light";
+    color: rgb( 255, 255, 255 );
+    line-height: 1.562;
+    text-align: left;
+    display: block;
+    margin: 33px 0 0 45px;
+}
+
+/*=================================pop_up==================================*/
+.pop_up{
+    border-radius: 3px;
+    background: url("../images/pop_up_bg.png") center center no-repeat, #ffffff;
+    width: 637px;
+    /*height: 433px;*/
+    padding-bottom: 45px;
+    display: none;
+}
+.pop_up h2{
+    font-size: 27.62px;
+    margin: 0;
+    padding: 44px 0 0 0;
+}
+.pop_up form{
+    width: 228px;
+    text-align: center;
+    margin: 33px auto 0 auto;
+}
+.pop_up form input[type=text],input[type=tel],input[type=url]{
+    border-radius: 5px;
+    background-color: rgb( 241, 241, 241 );
+    width: 203px;
+    height: 42px;
+    font-size: 13.64px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-family: "Muller-Regular";
+    color: rgb( 0, 0, 0 );
+    text-align: left;
+    margin: 0 0 20px 0;
+}
+.pop_up form input[type=submit]{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb( 99, 205, 66 );
+    width: 228px;
+    height: 58px;
+    outline: none;
+    margin: 19px 0 0 0;
+    line-height: normal;
+}
+/*=================================success==================================*/
+#success{
+    display: none;
+}
