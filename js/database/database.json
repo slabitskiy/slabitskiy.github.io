@@ -1,0 +1,40 @@
+{
+    	"works" : [
+    				{
+					"name": "Agelia",
+					"link": "http://slabitskiy.zz.mu/portfolio/agelia",
+					"technologies": ["Html","Sass","JavaScript (jQuery)"],
+					"img": "img/agelia.png"
+					},
+					{
+					"name": "Discontimo",
+					"link": "http://slabitskiy.zz.mu/portfolio/discontimo",
+					"technologies": ["html","less","JavaScript/jQuery"],
+					"img": "img/discontimo.jpg"
+					},
+					{
+					"name": "Voentanktour",
+					"link": "http://slabitskiy.zz.mu/portfolio/voentanktour",
+					"technologies": ["html","sass","JavaScript (jQuery)"],
+					"img": "img/Voentanktour.jpg"
+					},
+    				{
+					"name": "Royalty Free Music Supermarket",
+					"link": "http://royaltyfreemusic.me/",
+					"technologies": ["html","less","Twitter Bootstrap","JavaScript (jQuery)"],
+					"img": "img/royalty.jpg"
+					},
+					{
+					"name": "As It Is Written",
+					"link": "http://slabitskiy.zz.mu/portfolio/asitiswritten",
+					"technologies": ["html","less","Twitter Bootstrap","JavaScript (jQuery)"],
+					"img": "img/asitiswritten.jpg"
+					},
+					{
+					"name": "Onepage",
+					"link": "http://slabitskiy.zz.mu/portfolio/onepage",
+					"technologies": ["html","sass","JavaScript (jQuery)"],
+					"img": "img/onepage.jpg"
+					}
+				]
+    }
